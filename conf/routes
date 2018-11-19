@@ -1,0 +1,9 @@
+
+GET        /meters
+
+GET        /meters/relations
+#Reports
+
+GET        /reports/consumption
+
+GET        /reports/price
