@@ -10,7 +10,7 @@ public class ReportController extends Controller {
         return ok();
     }
 
-    public Result price() {
+    public Result prices() {
 
         return ok();
     }

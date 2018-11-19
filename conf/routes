@@ -4,6 +4,6 @@ GET        /meters
 GET        /meters/relations
 #Reports
 
-GET        /reports/consumption
+GET        /reports/consumption  tech.onder.reports.ReportController.consumption()
 
-GET        /reports/price
+GET        /reports/price tech.onder.reports.ReportController.prices()
