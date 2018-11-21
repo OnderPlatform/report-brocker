@@ -32,6 +32,11 @@ public class Meter {
         this.comment = comment;
     }
 
+    public Meter(String uuid, String name) {
+        this.uuid = uuid;
+        this.name = name;
+    }
+
     public static Meter generate(String id) {
         Meter m = new Meter();
         m.uuid = id;
