@@ -52,7 +52,7 @@
                 <plugin>
                     <groupId>net.alchim31.maven</groupId>
                     <artifactId>scala-maven-plugin</artifactId>
-                    <version>3.2.1</version>
+                    <version>3.3.1</version>
                 </plugin>
             </plugins>
         </pluginManagement>
@@ -76,7 +76,7 @@
             <plugin>
                 <groupId>net.alchim31.maven</groupId>
                 <artifactId>scala-maven-plugin</artifactId>
-                <version>3.2.1</version>
+                <version>3.3.1</version>
                 <configuration>
                     <recompileMode>incremental</recompileMode>
                     <analysisCacheFile>${project.build.directory}/cache/compile</analysisCacheFile>
@@ -97,14 +97,6 @@
                         </configuration>
                     </execution>
 
-                    <execution>
-                        <id>scala-testCompile</id>
-                        <phase>process-test-resources</phase>
-                        <goals>
-                            <goal>testCompile</goal>
-                        </goals>
-                        <inherited>true</inherited>
-                    </execution>
                 </executions>
             </plugin>
             <plugin>
