@@ -3,6 +3,7 @@ package tech.onder.consumer.services;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import tech.onder.consumer.ChunkConverter;
 import tech.onder.consumer.models.ConsumptionChunkReport;
 import tech.onder.consumer.models.PeriodReport;
 import tech.onder.reports.models.MeterReportDTO;
@@ -10,6 +11,7 @@ import tech.onder.reports.models.WebsocketDTO;
 
 import javax.inject.Inject;
 import javax.inject.Singleton;
+import java.math.BigInteger;
 import java.util.*;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
@@ -24,20 +26,17 @@ public class ChunkReportManagementService {
 
     Logger logger = LoggerFactory.getLogger(ChunkReportManagementService.class);
 
-    AtomicLong calculateTime = new AtomicLong(0);
+    AtomicLong calculationTime = new AtomicLong(0);
 
     private final Integer itemsLimit = 17280;
 
     private final Integer intervalLenght = 600;
-    /**
-     * 12*60*24
-     */
+
     private final ConcurrentHashMap<String, ConcurrentLinkedDeque<ConsumptionChunkReport>> storage = new ConcurrentHashMap<>();
 
     private final ConcurrentLinkedDeque<PeriodReport> calculatedSegmentsStorage = new ConcurrentLinkedDeque<>();
 
-    private ConcurrentLinkedDeque<ConsumptionChunkReport> lastPart = new ConcurrentLinkedDeque<>();
-
+    private final ConcurrentLinkedDeque<ConsumptionChunkReport> lastPart = new ConcurrentLinkedDeque<>();
 
     private ConcurrentHashMap<String, BlockingQueue<ConsumptionChunkReport>> registeredQueues = new ConcurrentHashMap<>();
 
@@ -49,12 +48,15 @@ public class ChunkReportManagementService {
 
     private AtomicLong tempBegin = new AtomicLong(0);
 
+    private final ChunkConverter chunkConverter;
+
     @Inject
-    public ChunkReportManagementService() {
+    public ChunkReportManagementService(ChunkConverter chunkConverter) {
+        this.chunkConverter = chunkConverter;
     }
 
     public void subscribe(String uuid) {
-        BlockingQueue<ConsumptionChunkReport> map =  new ArrayBlockingQueue<>(120);
+        BlockingQueue<ConsumptionChunkReport> map = new ArrayBlockingQueue<>(120);
         map.addAll(lastPart);
         this.registeredQueues.put(uuid, map);
     }
@@ -100,16 +102,25 @@ public class ChunkReportManagementService {
             calculatedSegmentsStorage.poll();
         }
         List<ConsumptionChunkReport> rep = new ArrayList<>(queue);
-        Double consumption = rep.stream().mapToDouble(ConsumptionChunkReport::getPurchaseKwh).sum();
-        Double tokens = rep.stream().mapToDouble(ConsumptionChunkReport::getPurchaseCost).sum();
+        PeriodReport pr = summarize(rep);
+
+        calculatedSegmentsStorage.push(pr);
+    }
+
+    private PeriodReport summarize(List<ConsumptionChunkReport> rep) {
+        Double consumption = rep.stream().mapToDouble(ConsumptionChunkReport::getPurchaseWh).sum();
+        BigInteger tokens = rep.stream()
+                .map(ConsumptionChunkReport::getPurchaseCost)
+                .reduce((a, b) -> a.add(b))
+                .orElse(BigInteger.ZERO);
         Long time = tempBegin.get();
 
         PeriodReport pr = new PeriodReport();
-        pr.setPrice(tokens / consumption);
+
+        pr.setPrice(ChunkConverter.calculatePrice(tokens, consumption));
         pr.setConsumption(consumption);
         pr.setTime(time);
-
-        calculatedSegmentsStorage.push(pr);
+        return pr;
     }
 
     public List<MeterReportDTO> meterReportDTOS() {
@@ -124,7 +135,7 @@ public class ChunkReportManagementService {
                         return cr;
                     });
                 })
-                .map(this::toMeterDTO)
+                .map(chunkConverter::toMeterDTO)
                 .collect(Collectors.toList());
     }
 
@@ -138,48 +149,17 @@ public class ChunkReportManagementService {
         } catch (InterruptedException ex) {
 
         }
-        Double consumption = parts.stream().mapToDouble(ConsumptionChunkReport::getPurchaseKwh).sum();
-        Double tokens = parts.stream().mapToDouble(ConsumptionChunkReport::getPurchaseCost).sum();
-        Long time = tempBegin.get();
-        PeriodReport pr = new PeriodReport();
-        pr.setPrice(tokens / consumption);
-        pr.setConsumption(consumption);
-        pr.setTime(time);
 
-        WebsocketDTO websocketDTO = new WebsocketDTO();
-        websocketDTO.setInstantPrice(pr.getPrice());
-        websocketDTO.setInstantConsumption(pr.getConsumption());
-        websocketDTO.setTime(pr.getTime());
-
-
-        websocketDTO.setMeters(this.meterReportDTOS());
-        return websocketDTO;
+        PeriodReport pr = summarize(parts);
+        return chunkConverter.toWebsocketDTO(pr, this.meterReportDTOS());
     }
 
-    public MeterReportDTO toMeterDTO(ConsumptionChunkReport chunkReport) {
-        MeterReportDTO mrd = new MeterReportDTO();
-        mrd.setUuid(chunkReport.getUuid());
-        mrd.setUpdateTime(chunkReport.getTime());
-        mrd.setPurchaseKwh(chunkReport.getPurchaseKwh());
-        mrd.setPurchaseTokens(chunkReport.getPurchaseCost());
-        mrd.setSaleKwh(chunkReport.getSaleKwh());
-        mrd.setSaleTokens(chunkReport.getSaleCost());
-        Double price = 0.0;
-        if (chunkReport.getPurchaseKwh() > 0) {
-            price = chunkReport.getPurchaseCost() / chunkReport.getPurchaseKwh();
-        }
-        if (chunkReport.getSaleKwh() > 0) {
-            price = chunkReport.getSaleCost() / chunkReport.getSaleKwh();
-        }
-        mrd.setPrice(price);
-        return mrd;
-    }
 
     public ConsumptionChunkReport sum(ConsumptionChunkReport to, ConsumptionChunkReport add) {
-        to.setSaleCost(to.getSaleCost() + add.getSaleCost());
-        to.setPurchaseCost(to.getPurchaseCost() + add.getPurchaseCost());
-        to.setSaleKwh(to.getSaleKwh() + add.getSaleKwh());
-        to.setPurchaseKwh(to.getPurchaseKwh() + add.getPurchaseKwh());
+        to.setSaleCost(to.getSaleCost().add(add.getSaleCost()));
+        to.setPurchaseCost(to.getPurchaseCost().add(add.getPurchaseCost()));
+        to.setSaleWh(to.getSaleWh() + add.getSaleWh());
+        to.setPurchaseWh(to.getPurchaseWh() + add.getPurchaseWh());
 
         if (to.getTime() < add.getTime()) {
             to.setTime(add.getTime());
@@ -226,13 +206,13 @@ public class ChunkReportManagementService {
     }
 
     public Map<Long, PeriodReport> partChunks() {
-        if (this.calculateTime.get() < reportEnd.get()) {
+        if (this.calculationTime.get() < reportEnd.get()) {
             synchronized (consumptionChunkReportMap) {
-                if (this.calculateTime.get() < reportEnd.get()) {
+                if (this.calculationTime.get() < reportEnd.get()) {
                     this.consumptionChunkReportMap = new ArrayList<>(this.calculatedSegmentsStorage)
                             .stream()
                             .collect(Collectors.groupingBy(PeriodReport::getTime, this.singletonCollector()));
-                    this.calculateTime.set(reportEnd.get());
+                    this.calculationTime.set(reportEnd.get());
                 }
             }
         }

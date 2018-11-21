@@ -4,7 +4,7 @@ public class ReportDTO {
 
     private Long time;
 
-    private Double value;
+    private String value;
 
     public Long getTime() {
         return time;
@@ -14,11 +14,11 @@ public class ReportDTO {
         this.time = time;
     }
 
-    public Double getValue() {
+    public String getValue() {
         return value;
     }
 
-    public void setValue(Double value) {
+    public void setValue(String value) {
         this.value = value;
     }
 }

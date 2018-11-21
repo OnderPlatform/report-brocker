@@ -1,9 +1,10 @@
 package tech.onder.consumer.models;
 
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
+
+import java.math.BigInteger;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JsonInclude(JsonInclude.Include.NON_NULL)
@@ -13,15 +14,15 @@ public class ConsumptionChunkReport {
 
     private Long time;
 
-    private Double price;
+    private BigInteger price;
 
-    private Double saleKwh;
+    private Double saleWh = 0.0;
 
-    private Double saleCost;
+    private BigInteger saleCost;
 
-    private Double purchaseKwh;
+    private Double purchaseWh = 0.0;
 
-    private Double purchaseCost;
+    private BigInteger purchaseCost;
 
     public String getUuid() {
         return uuid;
@@ -39,43 +40,43 @@ public class ConsumptionChunkReport {
         this.time = time;
     }
 
-    public Double getPrice() {
+    public BigInteger getPrice() {
         return price;
     }
 
-    public void setPrice(Double price) {
+    public void setPrice(BigInteger price) {
         this.price = price;
     }
 
-    public Double getSaleKwh() {
-        return saleKwh;
+    public Double getPurchaseWh() {
+        return purchaseWh;
     }
 
-    public void setSaleKwh(Double soleKwh) {
-        this.saleKwh = soleKwh;
+    public void setPurchaseWh(Double purchaseWh) {
+        this.purchaseWh = purchaseWh;
     }
 
-    public Double getSaleCost() {
+    public Double getSaleWh() {
+        return saleWh;
+    }
+
+    public void setSaleWh(Double soleKwh) {
+        this.saleWh = soleKwh;
+    }
+
+    public BigInteger getSaleCost() {
         return saleCost;
     }
 
-    public void setSaleCost(Double saleCost) {
+    public void setSaleCost(BigInteger saleCost) {
         this.saleCost = saleCost;
     }
 
-    public Double getPurchaseKwh() {
-        return purchaseKwh;
-    }
-
-    public void setPurchaseKwh(Double purchaseKwh) {
-        this.purchaseKwh = purchaseKwh;
-    }
-
-    public Double getPurchaseCost() {
+    public BigInteger getPurchaseCost() {
         return purchaseCost;
     }
 
-    public void setPurchaseCost(Double purchaseCost) {
+    public void setPurchaseCost(BigInteger purchaseCost) {
         this.purchaseCost = purchaseCost;
     }
 }

@@ -38,9 +38,8 @@ public class Meter {
     }
 
     public static Meter generate(String id) {
-        Meter m = new Meter();
-        m.uuid = id;
-        m.name = "name_" + id;
+        Meter m = new Meter(id, "name");
+
         m.comment = "comment_" + id;
         return m;
     }

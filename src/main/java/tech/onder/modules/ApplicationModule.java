@@ -1,6 +1,7 @@
 package tech.onder.modules;
 
 import com.google.inject.AbstractModule;
+import com.google.inject.Provides;
 import com.typesafe.config.Config;
 import org.apache.log4j.xml.DOMConfigurator;
 import play.Environment;
@@ -36,10 +37,11 @@ public class ApplicationModule extends AbstractModule implements AkkaGuiceSuppor
         System.out.println(appConfig.loggerConfigFile());
         URL u = getClass().getClassLoader().getResource("log4j.xml");
         DOMConfigurator.configure(appConfig.loggerConfigFile());
-        bind(ChunkReportManagementService.class).toInstance(new ChunkReportManagementService());
-
+        bind(ChunkReportManagementService.class).toProvider(ChunkServiceProvider.class).asEagerSingleton();
         bindActor(UserParentActor.class, "userParentActor");
         bindActorFactory(UserActor.class, UserActor.Factory.class);
         LOGGER.info("Application initialization ");
     }
+
+
 }

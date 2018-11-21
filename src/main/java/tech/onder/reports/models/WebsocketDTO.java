@@ -4,8 +4,8 @@ import java.util.List;
 
 public class WebsocketDTO {
     Long time;
-    Double instantConsumption;
-    Double instantPrice;
+    String instantConsumption;
+    String instantPrice;
     List<MeterReportDTO> meters;
 
     public Long getTime() {
@@ -16,19 +16,19 @@ public class WebsocketDTO {
         this.time = time;
     }
 
-    public Double getInstantConsumption() {
+    public String getInstantConsumption() {
         return instantConsumption;
     }
 
-    public void setInstantConsumption(Double instantConsumption) {
+    public void setInstantConsumption(String instantConsumption) {
         this.instantConsumption = instantConsumption;
     }
 
-    public Double getInstantPrice() {
+    public String getInstantPrice() {
         return instantPrice;
     }
 
-    public void setInstantPrice(Double instantPrice) {
+    public void setInstantPrice(String instantPrice) {
         this.instantPrice = instantPrice;
     }
 

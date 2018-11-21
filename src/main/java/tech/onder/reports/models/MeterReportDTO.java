@@ -7,15 +7,15 @@ public class MeterReportDTO {
 
     private Long updateTime;
 
-    private Double price;
+    private String price;
 
-    private Double saleKwh;
+    private String saleKwh;
 
-    private Double saleTokens;
+    private String saleTokens;
 
-    private Double purchaseKwh;
+    private String purchaseKwh;
 
-    private Double purchaseTokens;
+    private String purchaseTokens;
 
     public String getUuid() {
         return uuid;
@@ -33,43 +33,43 @@ public class MeterReportDTO {
         this.updateTime = updateTime;
     }
 
-    public Double getPrice() {
+    public String getPrice() {
         return price;
     }
 
-    public void setPrice(Double price) {
+    public void setPrice(String price) {
         this.price = price;
     }
 
-    public Double getSaleKwh() {
+    public String getSaleKwh() {
         return saleKwh;
     }
 
-    public void setSaleKwh(Double saleKwh) {
+    public void setSaleKwh(String saleKwh) {
         this.saleKwh = saleKwh;
     }
 
-    public Double getSaleTokens() {
+    public String getSaleTokens() {
         return saleTokens;
     }
 
-    public void setSaleTokens(Double saleTokens) {
+    public void setSaleTokens(String saleTokens) {
         this.saleTokens = saleTokens;
     }
 
-    public Double getPurchaseKwh() {
+    public String getPurchaseKwh() {
         return purchaseKwh;
     }
 
-    public void setPurchaseKwh(Double purchaseKwh) {
+    public void setPurchaseKwh(String purchaseKwh) {
         this.purchaseKwh = purchaseKwh;
     }
 
-    public Double getPurchaseTokens() {
+    public String getPurchaseTokens() {
         return purchaseTokens;
     }
 
-    public void setPurchaseTokens(Double purchaseTokens) {
+    public void setPurchaseTokens(String purchaseTokens) {
         this.purchaseTokens = purchaseTokens;
     }
 }

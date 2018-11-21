@@ -1,44 +1,9 @@
-[INFO] [12:20:07.969] Application initialization 
-[INFO] [12:20:08.692] Slf4jLogger started
-[WARN] [12:20:08.958] application.conf @ file:/C:/work/report-brocker/target/classes/application.conf: 1: play.crypto.secret is deprecated, use play.http.secret.key instead
-[INFO] [12:20:09.100] Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+[INFO] [22:51:43.723] Application initialization 
+[INFO] [22:51:44.536] Slf4jLogger started
+[WARN] [22:51:45.123] application.conf @ file:/C:/work/report-brocker/target/classes/application.conf: 1: play.crypto.secret is deprecated, use play.http.secret.key instead
+[INFO] [22:51:45.332] Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
 
-[WARN] [12:20:09.105] application.langs is deprecated, use play.i18n.langs instead
-[INFO] [12:20:09.354] Application started (Dev)
-[ERROR] [12:20:10.550] Cannot create websocket
-java.util.concurrent.CompletionException: akka.pattern.AskTimeoutException: Ask timed out on [Actor[akka://application/user/userParentActor#1596018011]] after [1000 ms]. Sender[null] sent message of type "tech.onder.reports.actors.UserParentActor$Create".
-	at java.util.concurrent.CompletableFuture.encodeThrowable(Unknown Source)
-	at java.util.concurrent.CompletableFuture.completeThrowable(Unknown Source)
-	at java.util.concurrent.CompletableFuture.uniApply(Unknown Source)
-	at java.util.concurrent.CompletableFuture$UniApply.tryFire(Unknown Source)
-	at java.util.concurrent.CompletableFuture.postComplete(Unknown Source)
-	at java.util.concurrent.CompletableFuture.completeExceptionally(Unknown Source)
-	at scala.concurrent.java8.FuturesConvertersImpl$CF.apply(FutureConvertersImpl.scala:21)
-	at scala.concurrent.java8.FuturesConvertersImpl$CF.apply(FutureConvertersImpl.scala:18)
-	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:36)
-	at scala.concurrent.BatchingExecutor$Batch$$anonfun$run$1.processBatch$1(BatchingExecutor.scala:63)
-	at scala.concurrent.BatchingExecutor$Batch$$anonfun$run$1.apply$mcV$sp(BatchingExecutor.scala:78)
-	at scala.concurrent.BatchingExecutor$Batch$$anonfun$run$1.apply(BatchingExecutor.scala:55)
-	at scala.concurrent.BatchingExecutor$Batch$$anonfun$run$1.apply(BatchingExecutor.scala:55)
-	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:72)
-	at scala.concurrent.BatchingExecutor$Batch.run(BatchingExecutor.scala:54)
-	at scala.concurrent.Future$InternalCallbackExecutor$.unbatchedExecute(Future.scala:601)
-	at scala.concurrent.BatchingExecutor$class.execute(BatchingExecutor.scala:106)
-	at scala.concurrent.Future$InternalCallbackExecutor$.execute(Future.scala:599)
-	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:44)
-	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:252)
-	at akka.pattern.PromiseActorRef$$anonfun$1.apply$mcV$sp(AskSupport.scala:600)
-	at akka.actor.Scheduler$$anon$4.run(Scheduler.scala:140)
-	at scala.concurrent.Future$InternalCallbackExecutor$.unbatchedExecute(Future.scala:601)
-	at scala.concurrent.BatchingExecutor$class.execute(BatchingExecutor.scala:109)
-	at scala.concurrent.Future$InternalCallbackExecutor$.execute(Future.scala:599)
-	at akka.actor.LightArrayRevolverScheduler$TaskHolder.executeTask(LightArrayRevolverScheduler.scala:328)
-	at akka.actor.LightArrayRevolverScheduler$$anon$4.executeBucket$1(LightArrayRevolverScheduler.scala:279)
-	at akka.actor.LightArrayRevolverScheduler$$anon$4.nextTick(LightArrayRevolverScheduler.scala:283)
-	at akka.actor.LightArrayRevolverScheduler$$anon$4.run(LightArrayRevolverScheduler.scala:235)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: akka.pattern.AskTimeoutException: Ask timed out on [Actor[akka://application/user/userParentActor#1596018011]] after [1000 ms]. Sender[null] sent message of type "tech.onder.reports.actors.UserParentActor$Create".
-	at akka.pattern.PromiseActorRef$$anonfun$1.apply$mcV$sp(AskSupport.scala:601)
-	... 9 more
-[INFO] [12:20:14.556] Message [akka.actor.Status$Failure] without sender to Actor[akka://application/deadLetters] was not delivered. [1] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+[WARN] [22:51:45.342] application.langs is deprecated, use play.i18n.langs instead
+[INFO] [22:51:45.719] Application started (Dev)
+[INFO] [22:56:20.153] Stopping server...

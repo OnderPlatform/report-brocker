@@ -1,9 +1,11 @@
 package tech.onder.consumer.models;
 
+import java.math.BigInteger;
+
 public class PeriodReport {
     Long time;
     Double consumption;
-    Double price;
+    BigInteger price;
 
     public Long getTime() {
         return time;
@@ -21,11 +23,11 @@ public class PeriodReport {
         this.consumption = consumption;
     }
 
-    public Double getPrice() {
+    public BigInteger getPrice() {
         return price;
     }
 
-    public void setPrice(Double price) {
+    public void setPrice(BigInteger price) {
         this.price = price;
     }
 }

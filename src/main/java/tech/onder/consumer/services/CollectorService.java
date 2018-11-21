@@ -1,6 +1,7 @@
 package tech.onder.consumer.services;
 
 import com.google.inject.Inject;
+import tech.onder.consumer.ChunkConverter;
 import tech.onder.consumer.models.ConsumptionChunkReport;
 
 import java.time.LocalDateTime;
@@ -21,15 +22,14 @@ public class CollectorService {
         List<ConsumptionChunkReport> r = reportRepo.getForUUID(meterUuid);
         ConsumptionChunkReport agrrReport = r.stream()
                 .reduce((a, b) -> {
-                    a.setPrice(a.getPrice() + b.getPrice());
-                    a.setPurchaseKwh(a.getPurchaseKwh() + b.getPurchaseKwh());
-                    a.setPurchaseCost(a.getPurchaseCost() + b.getPurchaseCost());
-                    a.setSaleKwh(a.getSaleKwh() + b.getSaleKwh());
-                    a.setSaleCost(a.getPurchaseCost() + b.getPurchaseCost());
+                    a.setPurchaseWh(a.getPurchaseWh() + b.getPurchaseWh());
+                    a.setPurchaseCost(a.getPurchaseCost().add(b.getPurchaseCost()));
+                    a.setSaleWh(a.getSaleWh() + b.getSaleWh());
+                    a.setSaleCost(a.getSaleCost().add(b.getSaleCost()));
                     return a;
                 })
                 .orElse(new ConsumptionChunkReport());
-
+        agrrReport.setPrice(ChunkConverter.calculatePrice(agrrReport));
         Long timeMark = r.stream()
                 .mapToLong(ConsumptionChunkReport::getTime)
                 .max()

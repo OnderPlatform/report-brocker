@@ -3,12 +3,11 @@ package tech.onder.consumer;
 import com.fasterxml.jackson.databind.JsonNode;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import play.libs.Json;
 import play.libs.concurrent.HttpExecutionContext;
 import play.mvc.Controller;
 import play.mvc.Result;
-import tech.onder.consumer.models.ConsumptionChunkReport;
+import tech.onder.consumer.models.MeterInputDTO;
 import tech.onder.consumer.services.ChunkReportManagementService;
 
 import javax.inject.Inject;
@@ -24,11 +23,13 @@ public class CollectorController extends Controller {
     private HttpExecutionContext ec;
 
     private final ChunkReportManagementService chunkReportManagementService;
+    private final ChunkConverter chunkConverter;
 
     @Inject
-    public CollectorController(HttpExecutionContext ec, ChunkReportManagementService chunkReportManagementService) {
+    public CollectorController(HttpExecutionContext ec, ChunkReportManagementService chunkReportManagementService, ChunkConverter chunkConverter) {
         this.ec = ec;
         this.chunkReportManagementService = chunkReportManagementService;
+        this.chunkConverter = chunkConverter;
     }
 
     public CompletionStage<Result> push(String uuid) {
@@ -37,18 +38,17 @@ public class CollectorController extends Controller {
                     try {
                         JsonNode amount = ctx().request().body().asJson();
 
-                        ConsumptionChunkReport chunk = Json.fromJson(amount, ConsumptionChunkReport.class);
-                        if(chunk.getSaleKwh()==null&&chunk.getPurchaseKwh()==null){
-                            return badRequest();
-                        }
-                        chunkReportManagementService.add(chunk);
+                        MeterInputDTO dto = Json.fromJson(amount, MeterInputDTO.class);
+
+                        chunkConverter.toChunks(dto).forEach(chunkReportManagementService::add);
                         return ok();
                     } catch (NumberFormatException e) {
                         return badRequest(toJson(e.getMessage()));
-                    }catch (NullPointerException e){
-                        return badRequest("input data are incorrect: "+ctx().request().body().asJson().textValue());
+                    } catch (NullPointerException e) {
+                        return badRequest("input data are incorrect: " + ctx().request().body().asJson().textValue());
                     }
                 }, ec.current()
         );
     }
+
 }
