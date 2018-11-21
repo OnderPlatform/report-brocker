@@ -84,18 +84,8 @@
                     <target>${java.lang}</target>
                 </configuration>
                 <executions>
-                    <execution>
-                        <id>scala-compile</id>
-                        <phase>process-resources</phase>
-                        <goals>
-                            <goal>compile</goal>
-                        </goals>
-                        <inherited>true</inherited>
-                        <configuration>
-                            <sourceDir>${project.build.directory}/routes/main</sourceDir>
-                            <sourceDir>${project.build.directory}/twirl/main</sourceDir>
-                        </configuration>
-                    </execution>
+
+                    
 
                 </executions>
             </plugin>
@@ -202,7 +192,6 @@
             <groupId>com.typesafe.play</groupId>
             <artifactId>play-netty-server_2.11</artifactId>
             <version>${play2.version}</version>
-            <scope>runtime</scope>
         </dependency>
 
 
