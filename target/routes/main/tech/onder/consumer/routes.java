@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/work/report-brocker/conf/routes
-// @DATE:Wed Nov 21 03:59:54 CET 2018
+// @DATE:Wed Nov 21 12:19:10 CET 2018
 
 package tech.onder.consumer;
 

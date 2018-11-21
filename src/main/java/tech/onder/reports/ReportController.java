@@ -3,8 +3,6 @@ package tech.onder.reports;
 import akka.NotUsed;
 import akka.actor.ActorRef;
 import akka.stream.javadsl.Flow;
-import akka.stream.javadsl.Sink;
-import akka.stream.javadsl.Source;
 import akka.util.Timeout;
 import com.fasterxml.jackson.databind.JsonNode;
 import org.slf4j.Logger;
@@ -63,12 +61,6 @@ public class ReportController extends Controller {
     }
 
     public WebSocket ws() {
-        return WebSocket.Text.accept(requestHeader -> {
-            Sink<String, ?> sink = Sink.ignore();
-            Source<String, ?> source = Par.publisher.register();
-            Flow<String, String, ?> flow = Flow.fromSinkAndSource(sink, source);
-            return flow;
-        });
         return WebSocket.Json.acceptOrResult(request -> {
             final CompletionStage<Flow<JsonNode, JsonNode, NotUsed>> future = wsFutureFlow(request);
             final CompletionStage<F.Either<Result, Flow<JsonNode, JsonNode, ?>>> stage = future.thenApply(F.Either::Right);
