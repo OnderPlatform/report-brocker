@@ -1,17 +1,19 @@
 package tech.onder.core.repositories;
 
 
-
 import tech.onder.core.models.Meter;
 
+import javax.inject.Inject;
+import javax.inject.Singleton;
 import java.util.HashMap;
 import java.util.Map;
 
+@Singleton
 public class MeterRepo extends AbstractInMemoryRepo<String, Meter> {
 
     private final Map<String, Meter> meters;
 
-
+    @Inject
     public MeterRepo() {
         Map<String, Meter> map = new HashMap<>();
         map.put("0x230", Meter.generate("0x230"));
@@ -27,7 +29,7 @@ public class MeterRepo extends AbstractInMemoryRepo<String, Meter> {
     }
 
     @Override
-    public Map< String, Meter> getValues() {
+    public Map<String, Meter> getValues() {
         return this.meters;
     }
 }

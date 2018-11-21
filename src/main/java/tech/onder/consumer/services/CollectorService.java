@@ -2,7 +2,6 @@ package tech.onder.consumer.services;
 
 import com.google.inject.Inject;
 import tech.onder.consumer.models.ConsumptionChunkReport;
-import tech.onder.consumer.repository.ChunkReportRepo;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -11,15 +10,15 @@ import static java.time.ZoneOffset.UTC;
 
 public class CollectorService {
 
-    private final ChunkReportRepo reportRepo;
+    private final ChunkReportManagementService reportRepo;
 
     @Inject
-    public CollectorService(ChunkReportRepo reportRepo) {
+    public CollectorService(ChunkReportManagementService reportRepo) {
         this.reportRepo = reportRepo;
     }
 
     public ConsumptionChunkReport getAggregatedValues(String meterUuid) {
-        List<ConsumptionChunkReport> r = reportRepo.get(meterUuid);
+        List<ConsumptionChunkReport> r = reportRepo.getForUUID(meterUuid);
         ConsumptionChunkReport agrrReport = r.stream()
                 .reduce((a, b) -> {
                     a.setPrice(a.getPrice() + b.getPrice());

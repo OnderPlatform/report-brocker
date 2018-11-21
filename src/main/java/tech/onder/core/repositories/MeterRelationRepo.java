@@ -2,13 +2,15 @@ package tech.onder.core.repositories;
 
 import tech.onder.core.models.BuyerSeller;
 
+import javax.inject.Inject;
+import javax.inject.Singleton;
 import java.util.HashMap;
 import java.util.Map;
-
+@Singleton
 public class MeterRelationRepo extends AbstractInMemoryRepo<String, BuyerSeller> {
 
     private final Map<String, BuyerSeller> values;
-
+@Inject
     public MeterRelationRepo() {
         Map<String, BuyerSeller> relMap = new HashMap<>();
         relMap.put("0x234", new BuyerSeller("0x234", "0x230"));
@@ -21,4 +23,8 @@ public class MeterRelationRepo extends AbstractInMemoryRepo<String, BuyerSeller>
         this.values = relMap;
     }
 
+    @Override
+    public Map<String, BuyerSeller> getValues() {
+        return values;
+    }
 }

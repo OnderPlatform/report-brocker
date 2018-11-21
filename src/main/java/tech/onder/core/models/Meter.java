@@ -8,14 +8,6 @@ public class Meter {
 
     private String comment;
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
     public String getUuid() {
         return uuid;
     }
@@ -42,9 +34,9 @@ public class Meter {
 
     public static Meter generate(String id) {
         Meter m = new Meter();
-        m.uuid = uuid;
+        m.uuid = id;
         m.name = "name_" + id;
-        m.name = "comment_" + id;
+        m.comment = "comment_" + id;
         return m;
     }
 }

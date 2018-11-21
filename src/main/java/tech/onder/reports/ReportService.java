@@ -1,6 +1,6 @@
 package tech.onder.reports;
 
-import tech.onder.consumer.repository.ChunkReportRepo;
+import tech.onder.consumer.services.ChunkReportManagementService;
 import tech.onder.core.repositories.MeterRepo;
 import tech.onder.reports.models.MeterReportDTO;
 import tech.onder.reports.models.ReportDTO;
@@ -15,30 +15,31 @@ public class ReportService {
     /**
      * 10 min /5 sec = 120 ;
      */
-    private final ChunkReportRepo chunkReportRepo;
+    private final ChunkReportManagementService chunkReportManagementService;
 
     private final MeterRepo meterRepo;
 
     private final ReportConverter reportConverter;
 
     @Inject
-    public ReportService(ChunkReportRepo chunkReportRepo, MeterRepo meterRepo, ReportConverter reportConverter) {
-        this.chunkReportRepo = chunkReportRepo;
+    public ReportService(ChunkReportManagementService chunkReportManagementService, MeterRepo meterRepo, ReportConverter reportConverter) {
+        this.chunkReportManagementService = chunkReportManagementService;
         this.meterRepo = meterRepo;
         this.reportConverter = reportConverter;
     }
 
     public List<ReportDTO> getComsumptionReport() {
 
-        return chunkReportRepo
+        return chunkReportManagementService
                 .partChunks()
                 .values()
                 .stream()
-                .map(reportConverter::toDTO).collect(Collectors.toList());
+                .map(reportConverter::toDTO)
+                .collect(Collectors.toList());
     }
 
     public List<ReportDTO> getPriceReport() {
-        return chunkReportRepo
+        return chunkReportManagementService
                 .partChunks()
                 .values()
                 .stream()
@@ -46,9 +47,9 @@ public class ReportService {
                 .collect(Collectors.toList());
     }
 
-    public List<MeterReportDTO> websocketUpdate(){
-
-Set<String> meterUUIDs = meterRepo.getValues().keySet();
-        chunkReportRepo.get()
+    public List<MeterReportDTO> getMeters() {
+        return chunkReportManagementService.meterReportDTOS();
     }
+
+
 }

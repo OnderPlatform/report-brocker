@@ -15,9 +15,126 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <play.server.provider>play.core.server.NettyServerProvider</play.server.provider>
+
         <!--<play2.version>2.5.14</play2.version>-->
         <!--<scala.version>2.11.11</scala.version>-->
     </properties>
+    <build>
+        <sourceDirectory>${basedir}/src/main/java</sourceDirectory>
+        <resources>
+            <resource>
+                <directory>${basedir}/conf</directory>
+            </resource>
+            <resource>
+                <!-- this required to get public inside of jar to serve assets in submodules like oek -->
+                <directory>${basedir}/public</directory>
+                <targetPath>public</targetPath>
+            </resource>
+            <resource>
+                <directory>${basedir}/src/main/resources</directory>
+            </resource>
+        </resources>
+        <pluginManagement>
+            <plugins>
+
+                <plugin>
+                    <groupId>com.google.code.play2-maven-plugin</groupId>
+                    <artifactId>play2-maven-plugin</artifactId>
+                    <version>1.0.0-rc4</version>
+                    <extensions>true</extensions>
+                    <configuration>
+                        <playVersion>${play2.version}</playVersion>
+                        <mainLang>java</mainLang>
+                        <routesGenerator>injected</routesGenerator>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>net.alchim31.maven</groupId>
+                    <artifactId>scala-maven-plugin</artifactId>
+                    <version>3.2.1</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.6.1</version>
+                <executions>
+                    <execution>
+                        <inherited>true</inherited>
+                        <id>default-compile</id>
+                        <phase>none</phase>
+                    </execution>
+                    <execution>
+                        <inherited>true</inherited>
+                        <id>default-testCompile</id>
+                        <phase>none</phase>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>net.alchim31.maven</groupId>
+                <artifactId>scala-maven-plugin</artifactId>
+                <version>3.2.1</version>
+                <configuration>
+                    <recompileMode>incremental</recompileMode>
+                    <analysisCacheFile>${project.build.directory}/cache/compile</analysisCacheFile>
+                    <source>${java.lang}</source>
+                    <target>${java.lang}</target>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>scala-compile</id>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>compile</goal>
+                        </goals>
+                        <inherited>true</inherited>
+                        <configuration>
+                            <sourceDir>${project.build.directory}/routes/main</sourceDir>
+                            <sourceDir>${project.build.directory}/twirl/main</sourceDir>
+                        </configuration>
+                    </execution>
+
+                    <execution>
+                        <id>scala-testCompile</id>
+                        <phase>process-test-resources</phase>
+                        <goals>
+                            <goal>testCompile</goal>
+                        </goals>
+                        <inherited>true</inherited>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>com.google.code.play2-maven-plugin</groupId>
+                <artifactId>play2-maven-plugin</artifactId>
+                <version>1.0.0-rc4</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <!-- if using controllers without dependency injection; default value is "injected" -->
+                    <routesGenerator>injected</routesGenerator>
+
+                    <sourceEncoding>UTF-8</sourceEncoding>
+                    <closureCompilerOptions>rjs ecmascript5</closureCompilerOptions>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>compile-routes</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>closure-compile</goal>
+                            <goal>less-compile</goal>
+                            <goal>routes-compile</goal>
+                            <goal>template-compile</goal>
+                        </goals>
+                        <inherited>false</inherited>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 
     <dependencies>
         <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
@@ -26,29 +143,68 @@
             <artifactId>guava</artifactId>
             <version>19.0</version>
         </dependency>
-        <!-- Message queue-->
+        <!-- https://mvnrepository.com/artifact/com.typesafe.play/play-akka-http-server -->
         <dependency>
-            <groupId>com.rabbitmq</groupId>
-            <artifactId>amqp-client</artifactId>
-            <version>5.5.0</version>
+            <groupId>com.typesafe.play</groupId>
+            <artifactId>play-guice_2.11</artifactId>
+            <version>${play2.version}</version>
         </dependency>
+
+
         <dependency>
             <groupId>com.google.inject</groupId>
             <artifactId>guice</artifactId>
             <version>4.0</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.google.inject.extensions/guice-assistedinject -->
+        <dependency>
+            <groupId>com.google.inject.extensions</groupId>
+            <artifactId>guice-assistedinject</artifactId>
+            <version>4.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.typesafe.play</groupId>
+            <artifactId>play-json_2.11</artifactId>
+            <version>${play2.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>2.7.8</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.7</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.7.7</version>
+        </dependency>
+
         <dependency>
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
             <version>1.2.17</version>
         </dependency>
-        <!-- jackson-->
-        <!-- play -->
         <dependency>
             <groupId>javax.inject</groupId>
             <artifactId>javax.inject</artifactId>
             <version>1</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.typesafe.play/play-akka-http-server-experimental -->
+        <!-- https://mvnrepository.com/artifact/com.typesafe.play/play-akka-http-server -->
+        <!-- https://mvnrepository.com/artifact/com.typesafe.play/play-server -->
+        <!-- https://mvnrepository.com/artifact/com.typesafe.play/play-akka-http-server -->
+        <dependency>
+            <groupId>com.typesafe.play</groupId>
+            <artifactId>play-netty-server_2.11</artifactId>
+            <version>${play2.version}</version>
+            <scope>runtime</scope>
+        </dependency>
+
+
         <dependency>
             <groupId>com.typesafe.play</groupId>
             <artifactId>play_2.11</artifactId>
@@ -59,6 +215,12 @@
                     <artifactId>slf4j-simple</artifactId>
                 </exclusion>
             </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>com.typesafe.play</groupId>
+            <artifactId>play-java_2.11</artifactId>
+            <version>${play2.version}</version>
+
         </dependency>
     </dependencies>
 
