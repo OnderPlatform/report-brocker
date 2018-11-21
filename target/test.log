@@ -1,9 +1,0 @@
-[INFO] [22:51:43.723] Application initialization 
-[INFO] [22:51:44.536] Slf4jLogger started
-[WARN] [22:51:45.123] application.conf @ file:/C:/work/report-brocker/target/classes/application.conf: 1: play.crypto.secret is deprecated, use play.http.secret.key instead
-[INFO] [22:51:45.332] Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-
-[WARN] [22:51:45.342] application.langs is deprecated, use play.i18n.langs instead
-[INFO] [22:51:45.719] Application started (Dev)
-[INFO] [22:56:20.153] Stopping server...

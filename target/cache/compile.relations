@@ -122,7 +122,6 @@ binary dependencies:
    C:\work\report-brocker\src\main\java\tech\onder\reports\ReportService.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
    C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
    C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\Users\User\.m2\repository\com\typesafe\play\play_2.11\2.6.10\play_2.11-2.6.10.jar
-   C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\Users\User\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar
    C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\Users\User\.m2\repository\org\scala-lang\scala-library\2.11.11\scala-library-2.11.11.jar
    C:\work\report-brocker\target\routes\main\router\RoutesPrefix.scala -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
    C:\work\report-brocker\target\routes\main\router\RoutesPrefix.scala -> C:\Users\User\.m2\repository\org\scala-lang\scala-library\2.11.11\scala-library-2.11.11.jar
