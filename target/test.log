@@ -1,0 +1,81 @@
+[INFO] [04:22:42.084] Application initialization 
+[INFO] [04:22:42.729] Slf4jLogger started
+[DEBUG] [04:22:42.758] Starting application default Akka system: application
+[DEBUG] [04:22:42.766] logger log1-Slf4jLogger started
+[DEBUG] [04:22:42.772] Default Loggers started
+[WARN] [04:22:43.236] application.conf @ file:/C:/work/report-brocker/target/classes/application.conf: 1: play.crypto.secret is deprecated, use play.http.secret.key instead
+[INFO] [04:22:43.385] Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+
+[WARN] [04:22:43.389] application.langs is deprecated, use play.i18n.langs instead
+[INFO] [04:22:43.627] Application started (Dev)
+[TRACE] [04:22:43.740] Serving this request with: play.api.mvc.WebSocket$$anon$1@3f553fd5
+[TRACE] [04:22:43.832] channelReadComplete: ctx = ChannelHandlerContext(request-handler, [id: 0xf9aecdaf, L:/127.0.0.1:9000 - R:/127.0.0.1:57147])
+[DEBUG] [04:22:43.978] [id: 0xf9aecdaf, L:/127.0.0.1:9000 - R:/127.0.0.1:57147] WebSocket version V13 server handshake
+[DEBUG] [04:22:43.991] WebSocket version 13 server handshake key: q5yALY9ERz/qsTXXOLszog==, response: pRgjpJdsVsAr/zYLcypu3DHaihc=
+[DEBUG] [04:22:49.235] Encoding WebSocket Frame opCode=1 length=89
+[DEBUG] [04:22:53.984] Encoding WebSocket Frame opCode=1 length=89
+[DEBUG] [04:22:58.995] Encoding WebSocket Frame opCode=1 length=89
+[DEBUG] [04:23:03.995] Encoding WebSocket Frame opCode=1 length=89
+[DEBUG] [04:23:08.982] Encoding WebSocket Frame opCode=1 length=89
+[DEBUG] [04:23:13.994] Encoding WebSocket Frame opCode=1 length=89
+[DEBUG] [04:23:18.984] Encoding WebSocket Frame opCode=1 length=89
+[DEBUG] [04:23:23.981] Encoding WebSocket Frame opCode=1 length=89
+[DEBUG] [04:23:28.986] Encoding WebSocket Frame opCode=1 length=89
+[DEBUG] [04:23:33.978] Encoding WebSocket Frame opCode=1 length=89
+[DEBUG] [04:23:38.991] Encoding WebSocket Frame opCode=1 length=89
+[DEBUG] [04:23:43.990] Encoding WebSocket Frame opCode=1 length=89
+[DEBUG] [04:23:48.996] Encoding WebSocket Frame opCode=1 length=89
+[DEBUG] [04:23:53.975] Encoding WebSocket Frame opCode=1 length=89
+[DEBUG] [04:23:59.037] Encoding WebSocket Frame opCode=1 length=89
+[DEBUG] [04:24:03.985] Encoding WebSocket Frame opCode=1 length=89
+[DEBUG] [04:24:08.981] Encoding WebSocket Frame opCode=1 length=89
+[DEBUG] [04:24:13.996] Encoding WebSocket Frame opCode=1 length=89
+[DEBUG] [04:24:18.969] Encoding WebSocket Frame opCode=1 length=89
+[DEBUG] [04:24:23.982] Encoding WebSocket Frame opCode=1 length=89
+[DEBUG] [04:24:28.985] Encoding WebSocket Frame opCode=1 length=89
+[DEBUG] [04:24:33.981] Encoding WebSocket Frame opCode=1 length=89
+[DEBUG] [04:24:38.994] Encoding WebSocket Frame opCode=1 length=89
+[DEBUG] [04:24:43.981] Encoding WebSocket Frame opCode=1 length=89
+[DEBUG] [04:24:48.991] Encoding WebSocket Frame opCode=1 length=89
+[DEBUG] [04:24:53.991] Encoding WebSocket Frame opCode=1 length=89
+[DEBUG] [04:24:58.997] Encoding WebSocket Frame opCode=1 length=89
+[DEBUG] [04:25:03.975] Encoding WebSocket Frame opCode=1 length=89
+[DEBUG] [04:25:08.981] Encoding WebSocket Frame opCode=1 length=89
+[DEBUG] [04:25:13.989] Encoding WebSocket Frame opCode=1 length=89
+[DEBUG] [04:25:18.992] Encoding WebSocket Frame opCode=1 length=89
+[DEBUG] [04:25:23.988] Encoding WebSocket Frame opCode=1 length=89
+[DEBUG] [04:25:28.985] Encoding WebSocket Frame opCode=1 length=89
+[DEBUG] [04:25:33.979] Encoding WebSocket Frame opCode=1 length=89
+[DEBUG] [04:25:38.994] Encoding WebSocket Frame opCode=1 length=89
+[DEBUG] [04:25:43.981] Encoding WebSocket Frame opCode=1 length=89
+[DEBUG] [04:25:48.992] Encoding WebSocket Frame opCode=1 length=89
+[DEBUG] [04:25:53.985] Encoding WebSocket Frame opCode=1 length=89
+[DEBUG] [04:25:58.984] Encoding WebSocket Frame opCode=1 length=89
+[DEBUG] [04:26:03.980] Encoding WebSocket Frame opCode=1 length=89
+[DEBUG] [04:26:08.981] Encoding WebSocket Frame opCode=1 length=89
+[DEBUG] [04:26:13.982] Encoding WebSocket Frame opCode=1 length=89
+[DEBUG] [04:26:18.997] Encoding WebSocket Frame opCode=1 length=89
+[DEBUG] [04:26:23.989] Encoding WebSocket Frame opCode=1 length=89
+[DEBUG] [04:26:28.996] Encoding WebSocket Frame opCode=1 length=89
+[DEBUG] [04:26:33.973] Encoding WebSocket Frame opCode=1 length=89
+[DEBUG] [04:26:38.984] Encoding WebSocket Frame opCode=1 length=89
+[DEBUG] [04:26:43.981] Encoding WebSocket Frame opCode=1 length=89
+[DEBUG] [04:26:48.996] Encoding WebSocket Frame opCode=1 length=89
+[DEBUG] [04:26:53.971] Encoding WebSocket Frame opCode=1 length=89
+[DEBUG] [04:26:58.995] Encoding WebSocket Frame opCode=1 length=89
+[DEBUG] [04:27:03.980] Encoding WebSocket Frame opCode=1 length=89
+[DEBUG] [04:27:08.993] Encoding WebSocket Frame opCode=1 length=89
+[DEBUG] [04:27:13.980] Encoding WebSocket Frame opCode=1 length=89
+[DEBUG] [04:27:18.982] Encoding WebSocket Frame opCode=1 length=89
+[DEBUG] [04:27:23.981] Encoding WebSocket Frame opCode=1 length=89
+[DEBUG] [04:27:28.993] Encoding WebSocket Frame opCode=1 length=89
+[DEBUG] [04:27:33.984] Encoding WebSocket Frame opCode=1 length=89
+[DEBUG] [04:27:38.983] Encoding WebSocket Frame opCode=1 length=89
+[DEBUG] [04:27:43.987] Encoding WebSocket Frame opCode=1 length=89
+[DEBUG] [04:27:48.975] Encoding WebSocket Frame opCode=1 length=89
+[DEBUG] [04:27:53.974] Encoding WebSocket Frame opCode=1 length=89
+[DEBUG] [04:27:56.609] Shutdown application default Akka system: application
+[DEBUG] [04:27:56.625] Performing phase [actor-system-terminate] with [1] tasks: [terminate-system]
+[DEBUG] [04:27:56.627] Cancel all timers
+[DEBUG] [04:27:56.632] shutting down: StandardOutLogger started

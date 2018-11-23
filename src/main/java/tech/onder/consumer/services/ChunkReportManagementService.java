@@ -13,10 +13,9 @@ import javax.inject.Inject;
 import javax.inject.Singleton;
 import java.math.BigInteger;
 import java.util.*;
-import java.util.concurrent.ArrayBlockingQueue;
-import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentLinkedDeque;
+import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.concurrent.atomic.AtomicLong;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
@@ -38,7 +37,7 @@ public class ChunkReportManagementService {
 
     private final ConcurrentLinkedDeque<ConsumptionChunkReport> lastPart = new ConcurrentLinkedDeque<>();
 
-    private ConcurrentHashMap<String, BlockingQueue<ConsumptionChunkReport>> registeredQueues = new ConcurrentHashMap<>();
+    private ConcurrentHashMap<String, ConcurrentLinkedQueue<ConsumptionChunkReport>> registeredQueues = new ConcurrentHashMap<>();
 
     private Map<Long, PeriodReport> consumptionChunkReportMap = new HashMap<>();
 
@@ -56,7 +55,7 @@ public class ChunkReportManagementService {
     }
 
     public void subscribe(String uuid) {
-        BlockingQueue<ConsumptionChunkReport> map = new ArrayBlockingQueue<>(120);
+        ConcurrentLinkedQueue<ConsumptionChunkReport> map = new ConcurrentLinkedQueue<>();
         map.addAll(lastPart);
         this.registeredQueues.put(uuid, map);
     }
@@ -140,14 +139,11 @@ public class ChunkReportManagementService {
     }
 
     public WebsocketDTO calculate(String uuid) {
-        BlockingQueue<ConsumptionChunkReport> queue = this.registeredQueues.get(uuid);
-        List<ConsumptionChunkReport> parts = new ArrayList<>();
-        try {
-            while (true) {
-                parts.add(queue.take());
-            }
-        } catch (InterruptedException ex) {
 
+        List<ConsumptionChunkReport> parts;
+        synchronized (this.registeredQueues) {
+            parts = new ArrayList<>(this.registeredQueues.get(uuid));
+            this.registeredQueues.get(uuid).clear();
         }
 
         PeriodReport pr = summarize(parts);

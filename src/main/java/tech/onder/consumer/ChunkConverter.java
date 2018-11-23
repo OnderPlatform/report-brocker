@@ -30,20 +30,23 @@ public class ChunkConverter {
         return calculatePrice(new BigInteger(inputDTO.getCost()),inputDTO.getSaleWh());
     }
     public static BigInteger calculatePrice(BigInteger cost, Double kw){
+        if(new BigDecimal(kw).equals(BigDecimal.ZERO)){
+            return BigInteger.ZERO;
+        }
         return new BigDecimal(cost).divide(new BigDecimal(kw),2, RoundingMode.HALF_UP).toBigInteger();
     }
 
     public static BigInteger calculatePrice(ConsumptionChunkReport chunkReport) {
-        BigDecimal castUp;
-        BigDecimal castWh;
+        BigInteger castUp;
+        Double castWh;
         if (!chunkReport.getPurchaseCost().equals(BigInteger.ZERO)) {
-            castUp = new BigDecimal(chunkReport.getPurchaseCost());
-            castWh = new BigDecimal(chunkReport.getPurchaseWh());
+            castUp = chunkReport.getPurchaseCost();
+            castWh = chunkReport.getPurchaseWh();
         } else {
-            castUp = new BigDecimal(chunkReport.getPurchaseCost());
-            castWh = new BigDecimal(chunkReport.getPurchaseWh());
+            castUp = chunkReport.getPurchaseCost();
+            castWh = chunkReport.getPurchaseWh();
         }
-        return castUp.divide(castWh,2, RoundingMode.HALF_UP).toBigInteger();
+        return calculatePrice(castUp, castWh);
     }
 
     public ConsumptionChunkReport createSale(MeterInputDTO dto) {

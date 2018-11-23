@@ -1,20 +1,17 @@
 package tech.onder.modules;
 
 import com.google.inject.AbstractModule;
-import com.google.inject.Provides;
 import com.typesafe.config.Config;
 import org.apache.log4j.xml.DOMConfigurator;
 import play.Environment;
 import play.Logger;
+import play.libs.akka.AkkaGuiceSupport;
 import tech.onder.consumer.services.ChunkReportManagementService;
+import tech.onder.reports.Publisher;
 import tech.onder.reports.actors.UserActor;
 import tech.onder.reports.actors.UserParentActor;
 
-import play.libs.akka.AkkaGuiceSupport;
-
-import java.net.URL;
-
-public class ApplicationModule extends AbstractModule implements AkkaGuiceSupport{
+public class ApplicationModule extends AbstractModule implements AkkaGuiceSupport {
 
     /**
      * Логгер
@@ -35,10 +32,12 @@ public class ApplicationModule extends AbstractModule implements AkkaGuiceSuppor
     protected void configure() {
 
         System.out.println(appConfig.loggerConfigFile());
-        URL u = getClass().getClassLoader().getResource("log4j.xml");
         DOMConfigurator.configure(appConfig.loggerConfigFile());
         bind(ChunkReportManagementService.class).toProvider(ChunkServiceProvider.class).asEagerSingleton();
+        //bind(Publisher.class).toInstance(new Publisher());
         bindActor(UserParentActor.class, "userParentActor");
+        bindActor(UserActor.class, "userActor");
+
         bindActorFactory(UserActor.class, UserActor.Factory.class);
         LOGGER.info("Application initialization ");
     }

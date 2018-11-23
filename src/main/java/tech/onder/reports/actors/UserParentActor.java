@@ -5,6 +5,7 @@ import akka.actor.ActorRef;
 import akka.util.Timeout;
 import com.typesafe.config.Config;
 import play.libs.akka.InjectedActorSupport;
+import tech.onder.consumer.services.ChunkReportManagementService;
 
 import javax.inject.Inject;
 import java.util.Set;
@@ -28,9 +29,11 @@ public class UserParentActor extends AbstractActor implements InjectedActorSuppo
 
     private final UserActor.Factory childFactory;
 
+    private final ChunkReportManagementService chunkReportManagementService;
     @Inject
-    public UserParentActor(UserActor.Factory childFactory, Config config) {
+    public UserParentActor(UserActor.Factory childFactory, ChunkReportManagementService chunkReportManagementService) {
         this.childFactory = childFactory;
+        this.chunkReportManagementService = chunkReportManagementService;
 
     }
 
@@ -38,7 +41,7 @@ public class UserParentActor extends AbstractActor implements InjectedActorSuppo
     public Receive createReceive() {
         return receiveBuilder()
                 .match(UserParentActor.Create.class, create -> {
-                    ActorRef child = injectedChild(() -> childFactory.create(create.id), "userActor-" + create.id);
+                    ActorRef child = injectedChild(() -> childFactory.create(chunkReportManagementService), "userActor-" + create.id);
                     CompletionStage<Object> future = ask(child, "time", timeout);
                     pipe(future, context().dispatcher()).to(sender());
                 }).build();

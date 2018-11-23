@@ -19,12 +19,15 @@ products:
    C:\work\report-brocker\src\main\java\tech\onder\modules\ApplicationModule.java -> C:\work\report-brocker\target\classes\tech\onder\modules\ApplicationModule.class
    C:\work\report-brocker\src\main\java\tech\onder\modules\ChunkServiceProvider.java -> C:\work\report-brocker\target\classes\tech\onder\modules\ChunkServiceProvider.class
    C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserActor.java -> C:\work\report-brocker\target\classes\tech\onder\reports\actors\UserActor$Factory.class
+   C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserActor.java -> C:\work\report-brocker\target\classes\tech\onder\reports\actors\UserActor$FirstTick.class
+   C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserActor.java -> C:\work\report-brocker\target\classes\tech\onder\reports\actors\UserActor$Tick.class
    C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserActor.java -> C:\work\report-brocker\target\classes\tech\onder\reports\actors\UserActor.class
    C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserParentActor.java -> C:\work\report-brocker\target\classes\tech\onder\reports\actors\UserParentActor$Create.class
    C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserParentActor.java -> C:\work\report-brocker\target\classes\tech\onder\reports\actors\UserParentActor.class
    C:\work\report-brocker\src\main\java\tech\onder\reports\models\MeterReportDTO.java -> C:\work\report-brocker\target\classes\tech\onder\reports\models\MeterReportDTO.class
    C:\work\report-brocker\src\main\java\tech\onder\reports\models\ReportDTO.java -> C:\work\report-brocker\target\classes\tech\onder\reports\models\ReportDTO.class
    C:\work\report-brocker\src\main\java\tech\onder\reports\models\WebsocketDTO.java -> C:\work\report-brocker\target\classes\tech\onder\reports\models\WebsocketDTO.class
+   C:\work\report-brocker\src\main\java\tech\onder\reports\Publisher.java -> C:\work\report-brocker\target\classes\tech\onder\reports\Publisher.class
    C:\work\report-brocker\src\main\java\tech\onder\reports\ReportController.java -> C:\work\report-brocker\target\classes\tech\onder\reports\ReportController.class
    C:\work\report-brocker\src\main\java\tech\onder\reports\ReportConverter.java -> C:\work\report-brocker\target\classes\tech\onder\reports\ReportConverter.class
    C:\work\report-brocker\src\main\java\tech\onder\reports\ReportRepository.java -> C:\work\report-brocker\target\classes\tech\onder\reports\ReportRepository.class
@@ -100,22 +103,27 @@ binary dependencies:
    C:\work\report-brocker\src\main\java\tech\onder\modules\ChunkServiceProvider.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
    C:\work\report-brocker\src\main\java\tech\onder\modules\ChunkServiceProvider.java -> C:\Users\User\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar
    C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserActor.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
-   C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserActor.java -> C:\Users\User\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.8.11.1\jackson-databind-2.8.11.1.jar
    C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserActor.java -> C:\Users\User\.m2\repository\com\typesafe\akka\akka-actor_2.11\2.5.8\akka-actor_2.11-2.5.8.jar
    C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserActor.java -> C:\Users\User\.m2\repository\com\typesafe\akka\akka-stream_2.11\2.5.8\akka-stream_2.11-2.5.8.jar
    C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserActor.java -> C:\Users\User\.m2\repository\com\typesafe\play\play_2.11\2.6.10\play_2.11-2.6.10.jar
    C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserActor.java -> C:\Users\User\.m2\repository\org\scala-lang\scala-library\2.11.11\scala-library-2.11.11.jar
    C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserParentActor.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
    C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserParentActor.java -> C:\Users\User\.m2\repository\com\typesafe\akka\akka-actor_2.11\2.5.8\akka-actor_2.11-2.5.8.jar
-   C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserParentActor.java -> C:\Users\User\.m2\repository\com\typesafe\config\1.3.2\config-1.3.2.jar
    C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserParentActor.java -> C:\Users\User\.m2\repository\com\typesafe\play\play_2.11\2.6.10\play_2.11-2.6.10.jar
    C:\work\report-brocker\src\main\java\tech\onder\reports\models\MeterReportDTO.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
    C:\work\report-brocker\src\main\java\tech\onder\reports\models\ReportDTO.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
    C:\work\report-brocker\src\main\java\tech\onder\reports\models\WebsocketDTO.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
+   C:\work\report-brocker\src\main\java\tech\onder\reports\Publisher.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
+   C:\work\report-brocker\src\main\java\tech\onder\reports\Publisher.java -> C:\Users\User\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.8.11.1\jackson-databind-2.8.11.1.jar
+   C:\work\report-brocker\src\main\java\tech\onder\reports\Publisher.java -> C:\Users\User\.m2\repository\com\typesafe\akka\akka-actor_2.11\2.5.8\akka-actor_2.11-2.5.8.jar
+   C:\work\report-brocker\src\main\java\tech\onder\reports\Publisher.java -> C:\Users\User\.m2\repository\com\typesafe\akka\akka-stream_2.11\2.5.8\akka-stream_2.11-2.5.8.jar
    C:\work\report-brocker\src\main\java\tech\onder\reports\ReportController.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
+   C:\work\report-brocker\src\main\java\tech\onder\reports\ReportController.java -> C:\Users\User\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.8.11.1\jackson-databind-2.8.11.1.jar
    C:\work\report-brocker\src\main\java\tech\onder\reports\ReportController.java -> C:\Users\User\.m2\repository\com\typesafe\akka\akka-actor_2.11\2.5.8\akka-actor_2.11-2.5.8.jar
    C:\work\report-brocker\src\main\java\tech\onder\reports\ReportController.java -> C:\Users\User\.m2\repository\com\typesafe\akka\akka-stream_2.11\2.5.8\akka-stream_2.11-2.5.8.jar
    C:\work\report-brocker\src\main\java\tech\onder\reports\ReportController.java -> C:\Users\User\.m2\repository\com\typesafe\play\play_2.11\2.6.10\play_2.11-2.6.10.jar
+   C:\work\report-brocker\src\main\java\tech\onder\reports\ReportController.java -> C:\Users\User\.m2\repository\org\scala-lang\modules\scala-java8-compat_2.11\0.8.0\scala-java8-compat_2.11-0.8.0.jar
+   C:\work\report-brocker\src\main\java\tech\onder\reports\ReportController.java -> C:\Users\User\.m2\repository\org\scala-lang\scala-library\2.11.11\scala-library-2.11.11.jar
    C:\work\report-brocker\src\main\java\tech\onder\reports\ReportController.java -> C:\Users\User\.m2\repository\org\slf4j\slf4j-api\1.7.7\slf4j-api-1.7.7.jar
    C:\work\report-brocker\src\main\java\tech\onder\reports\ReportConverter.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
    C:\work\report-brocker\src\main\java\tech\onder\reports\ReportRepository.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
@@ -198,14 +206,19 @@ source dependencies:
    C:\work\report-brocker\src\main\java\tech\onder\modules\ChunkServiceProvider.java -> C:\work\report-brocker\src\main\java\tech\onder\modules\ChunkServiceProvider.java
    C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserActor.java -> C:\work\report-brocker\src\main\java\tech\onder\consumer\services\ChunkReportManagementService.java
    C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserActor.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserActor.java
+   C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserParentActor.java -> C:\work\report-brocker\src\main\java\tech\onder\consumer\services\ChunkReportManagementService.java
    C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserParentActor.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserActor.java
    C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserParentActor.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserParentActor.java
    C:\work\report-brocker\src\main\java\tech\onder\reports\models\MeterReportDTO.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\models\MeterReportDTO.java
    C:\work\report-brocker\src\main\java\tech\onder\reports\models\ReportDTO.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\models\ReportDTO.java
    C:\work\report-brocker\src\main\java\tech\onder\reports\models\WebsocketDTO.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\models\WebsocketDTO.java
+   C:\work\report-brocker\src\main\java\tech\onder\reports\Publisher.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\Publisher.java
+   C:\work\report-brocker\src\main\java\tech\onder\reports\Publisher.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserActor.java
+   C:\work\report-brocker\src\main\java\tech\onder\reports\ReportController.java -> C:\work\report-brocker\src\main\java\tech\onder\consumer\services\ChunkReportManagementService.java
+   C:\work\report-brocker\src\main\java\tech\onder\reports\ReportController.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\Publisher.java
    C:\work\report-brocker\src\main\java\tech\onder\reports\ReportController.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\ReportController.java
    C:\work\report-brocker\src\main\java\tech\onder\reports\ReportController.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\ReportService.java
-   C:\work\report-brocker\src\main\java\tech\onder\reports\ReportController.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserParentActor.java
+   C:\work\report-brocker\src\main\java\tech\onder\reports\ReportController.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserActor.java
    C:\work\report-brocker\src\main\java\tech\onder\reports\ReportConverter.java -> C:\work\report-brocker\src\main\java\tech\onder\consumer\models\PeriodReport.java
    C:\work\report-brocker\src\main\java\tech\onder\reports\ReportConverter.java -> C:\work\report-brocker\src\main\java\tech\onder\core\OutputUtils.java
    C:\work\report-brocker\src\main\java\tech\onder\reports\ReportConverter.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\ReportConverter.java
@@ -254,11 +267,14 @@ class names:
    C:\work\report-brocker\src\main\java\tech\onder\modules\ChunkServiceProvider.java -> tech.onder.modules.ChunkServiceProvider
    C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserActor.java -> tech.onder.reports.actors.UserActor
    C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserActor.java -> tech.onder.reports.actors.UserActor$Factory
+   C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserActor.java -> tech.onder.reports.actors.UserActor$FirstTick
+   C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserActor.java -> tech.onder.reports.actors.UserActor$Tick
    C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserParentActor.java -> tech.onder.reports.actors.UserParentActor
    C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserParentActor.java -> tech.onder.reports.actors.UserParentActor$Create
    C:\work\report-brocker\src\main\java\tech\onder\reports\models\MeterReportDTO.java -> tech.onder.reports.models.MeterReportDTO
    C:\work\report-brocker\src\main\java\tech\onder\reports\models\ReportDTO.java -> tech.onder.reports.models.ReportDTO
    C:\work\report-brocker\src\main\java\tech\onder\reports\models\WebsocketDTO.java -> tech.onder.reports.models.WebsocketDTO
+   C:\work\report-brocker\src\main\java\tech\onder\reports\Publisher.java -> tech.onder.reports.Publisher
    C:\work\report-brocker\src\main\java\tech\onder\reports\ReportController.java -> tech.onder.reports.ReportController
    C:\work\report-brocker\src\main\java\tech\onder\reports\ReportConverter.java -> tech.onder.reports.ReportConverter
    C:\work\report-brocker\src\main\java\tech\onder\reports\ReportRepository.java -> tech.onder.reports.ReportRepository

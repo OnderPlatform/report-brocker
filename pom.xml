@@ -84,8 +84,19 @@
                     <target>${java.lang}</target>
                 </configuration>
                 <executions>
+                    <execution>
+                        <id>scala-compile</id>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>compile</goal>
+                        </goals>
+                        <inherited>true</inherited>
+                        <configuration>
+                            <sourceDir>${project.build.directory}/routes/main</sourceDir>
+                            <sourceDir>${project.build.directory}/twirl/main</sourceDir>
+                        </configuration>
+                    </execution>
 
-                    
 
                 </executions>
             </plugin>
