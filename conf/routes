@@ -10,4 +10,6 @@ GET        /reports/consumption  tech.onder.reports.ReportController.consumption
 
 GET        /reports/price        tech.onder.reports.ReportController.prices()
 
+GET        /reports/meters        tech.onder.reports.ReportController.meters()
+
 GET     /ws                         tech.onder.reports.ReportController.ws()

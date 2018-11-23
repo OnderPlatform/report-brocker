@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/work/report-brocker/conf/routes
-// @DATE:Fri Nov 23 04:38:15 CET 2018
+// @DATE:Fri Nov 23 04:54:37 CET 2018
 
 package router
 
@@ -48,6 +48,7 @@ class Routes(
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """meters/relations""", """tech.onder.core.CommonController.meterRelations()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """reports/consumption""", """tech.onder.reports.ReportController.consumption()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """reports/price""", """tech.onder.reports.ReportController.prices()"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """reports/meters""", """tech.onder.reports.ReportController.meters()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """ws""", """tech.onder.reports.ReportController.ws()"""),
     Nil
   ).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
@@ -147,10 +148,28 @@ class Routes(
   )
 
   // @LINE:13
-  private[this] lazy val tech_onder_reports_ReportController_ws5_route = Route("GET",
+  private[this] lazy val tech_onder_reports_ReportController_meters5_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("reports/meters")))
+  )
+  private[this] lazy val tech_onder_reports_ReportController_meters5_invoker = createInvoker(
+    ReportController_1.meters(),
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "tech.onder.reports.ReportController",
+      "meters",
+      Nil,
+      "GET",
+      this.prefix + """reports/meters""",
+      """""",
+      Seq()
+    )
+  )
+
+  // @LINE:15
+  private[this] lazy val tech_onder_reports_ReportController_ws6_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("ws")))
   )
-  private[this] lazy val tech_onder_reports_ReportController_ws5_invoker = createInvoker(
+  private[this] lazy val tech_onder_reports_ReportController_ws6_invoker = createInvoker(
     ReportController_1.ws(),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -198,9 +217,15 @@ class Routes(
       }
   
     // @LINE:13
-    case tech_onder_reports_ReportController_ws5_route(params@_) =>
+    case tech_onder_reports_ReportController_meters5_route(params@_) =>
       call { 
-        tech_onder_reports_ReportController_ws5_invoker.call(ReportController_1.ws())
+        tech_onder_reports_ReportController_meters5_invoker.call(ReportController_1.meters())
+      }
+  
+    // @LINE:15
+    case tech_onder_reports_ReportController_ws6_route(params@_) =>
+      call { 
+        tech_onder_reports_ReportController_ws6_invoker.call(ReportController_1.ws())
       }
   }
 }

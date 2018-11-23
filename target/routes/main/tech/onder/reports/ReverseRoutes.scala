@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/work/report-brocker/conf/routes
-// @DATE:Fri Nov 23 04:38:15 CET 2018
+// @DATE:Fri Nov 23 04:54:37 CET 2018
 
 import play.api.mvc.Call
 
@@ -18,6 +18,12 @@ package tech.onder.reports {
     }
 
   
+    // @LINE:13
+    def meters(): Call = {
+      
+      Call("GET", _prefix + { _defaultPrefix } + "reports/meters")
+    }
+  
     // @LINE:9
     def consumption(): Call = {
       
@@ -30,7 +36,7 @@ package tech.onder.reports {
       Call("GET", _prefix + { _defaultPrefix } + "reports/price")
     }
   
-    // @LINE:13
+    // @LINE:15
     def ws(): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "ws")

@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/work/report-brocker/conf/routes
-// @DATE:Fri Nov 23 04:38:15 CET 2018
+// @DATE:Fri Nov 23 04:54:37 CET 2018
 
 import play.api.routing.JavaScriptReverseRoute
 
@@ -18,6 +18,16 @@ package tech.onder.reports.javascript {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
+  
+    // @LINE:13
+    def meters: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "tech.onder.reports.ReportController.meters",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "reports/meters"})
+        }
+      """
+    )
   
     // @LINE:9
     def consumption: JavaScriptReverseRoute = JavaScriptReverseRoute(
@@ -39,7 +49,7 @@ package tech.onder.reports.javascript {
       """
     )
   
-    // @LINE:13
+    // @LINE:15
     def ws: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "tech.onder.reports.ReportController.ws",
       """

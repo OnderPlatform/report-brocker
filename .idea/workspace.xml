@@ -2,43 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca0bed78-d55e-4902-9812-04ef7f98837e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/application.conf" beforeDir="false" afterPath="$PROJECT_DIR$/conf/application.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log4j.xml" beforeDir="false" afterPath="$PROJECT_DIR$/log4j.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/onder/consumer/ChunkConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/onder/consumer/ChunkConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/onder/consumer/services/ChunkReportManagementService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/onder/consumer/services/ChunkReportManagementService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/onder/modules/ApplicationModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/onder/modules/ApplicationModule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/onder/reports/Publisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/onder/reports/Publisher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/onder/reports/ReportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/onder/reports/ReportController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/onder/reports/actors/UserActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/onder/reports/actors/UserActor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/onder/reports/actors/UserParentActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/onder/reports/actors/UserParentActor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cache/compile" beforeDir="false" afterPath="$PROJECT_DIR$/target/cache/compile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cache/compile.relations" beforeDir="false" afterPath="$PROJECT_DIR$/target/cache/compile.relations" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.conf" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/consumer/ChunkConverter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/modules/ApplicationModule.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tech/onder/modules/ApplicationModule.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/reports/ReportController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/reports/actors/UserActor$Factory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/reports/actors/UserActor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/reports/actors/UserParentActor$Create.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tech/onder/reports/actors/UserParentActor$Create.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/reports/actors/UserParentActor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tech/onder/reports/actors/UserParentActor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/report-broker-1.0-SNAPSHOT-dist.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/report-broker-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/report-broker-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/routes/main/router/Routes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/routes/main/router/Routes.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/routes/main/router/RoutesPrefix.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/routes/main/router/RoutesPrefix.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/routes/main/tech/onder/consumer/ReverseRoutes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/routes/main/tech/onder/consumer/ReverseRoutes.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/routes/main/tech/onder/consumer/javascript/JavaScriptReverseRoutes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/routes/main/tech/onder/consumer/javascript/JavaScriptReverseRoutes.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/routes/main/tech/onder/consumer/routes.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/routes/main/tech/onder/consumer/routes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/routes/main/tech/onder/core/ReverseRoutes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/routes/main/tech/onder/core/ReverseRoutes.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/routes/main/tech/onder/core/javascript/JavaScriptReverseRoutes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/routes/main/tech/onder/core/javascript/JavaScriptReverseRoutes.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/routes/main/tech/onder/core/routes.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/routes/main/tech/onder/core/routes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/routes/main/tech/onder/reports/ReverseRoutes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/routes/main/tech/onder/reports/ReverseRoutes.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/routes/main/tech/onder/reports/javascript/JavaScriptReverseRoutes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/routes/main/tech/onder/reports/javascript/JavaScriptReverseRoutes.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/routes/main/tech/onder/reports/routes.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/routes/main/tech/onder/reports/routes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/start" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/start.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/routes" beforeDir="false" afterPath="$PROJECT_DIR$/conf/routes" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -64,7 +28,7 @@
           <entry key="conf" value="3" />
           <entry key="java" value="106" />
           <entry key="md" value="2" />
-          <entry key="routes" value="4" />
+          <entry key="routes" value="5" />
           <entry key="xml" value="7" />
         </counts>
       </usages-collector>
@@ -73,7 +37,7 @@
           <entry key="CLASS" value="18" />
           <entry key="JAVA" value="106" />
           <entry key="Markdown" value="2" />
-          <entry key="PLAIN_TEXT" value="7" />
+          <entry key="PLAIN_TEXT" value="8" />
           <entry key="XML" value="7" />
         </counts>
       </usages-collector>
@@ -82,7 +46,7 @@
           <entry key="conf" value="36" />
           <entry key="dummy" value="122" />
           <entry key="java" value="12151" />
-          <entry key="routes" value="166" />
+          <entry key="routes" value="180" />
           <entry key="txt" value="7" />
           <entry key="xml" value="62" />
         </counts>
@@ -90,7 +54,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="12151" />
-          <entry key="PLAIN_TEXT" value="331" />
+          <entry key="PLAIN_TEXT" value="345" />
           <entry key="XML" value="62" />
         </counts>
       </usages-collector>
@@ -128,14 +92,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/consumer/ChunkConverter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
-              <caret line="41" column="69" lean-forward="true" selection-start-line="41" selection-start-column="69" selection-end-line="41" selection-end-column="69" />
+            <state relative-caret-position="79">
+              <caret line="39" column="26" lean-forward="true" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/conf/routes">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="76" lean-forward="true" selection-start-line="12" selection-start-column="76" selection-end-line="12" selection-end-column="76" />
             </state>
           </provider>
         </entry>
@@ -152,8 +125,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/reports/ReportController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="93" column="78" lean-forward="true" selection-start-line="93" selection-start-column="78" selection-end-line="93" selection-end-column="78" />
+            <state relative-caret-position="126">
+              <caret line="75" column="43" selection-start-line="75" selection-start-column="37" selection-end-line="75" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <marker date="1542926805332" expanded="true" signature="2974:3325" ph="..." />
@@ -167,19 +140,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="422">
               <caret line="67" column="33" selection-start-line="67" selection-start-column="33" selection-end-line="67" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/reports/Publisher.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="35" column="18" lean-forward="true" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#697#707#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -244,8 +204,9 @@
       <find>scala</find>
       <find>ack</find>
       <find>ApplicationModule</find>
-      <find>ask</find>
       <find>FirstTick</find>
+      <find>calc</find>
+      <find>ask</find>
     </findStrings>
     <replaceStrings>
       <replace>_2.11</replace>
@@ -270,7 +231,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/log4j.prod.xml" />
         <option value="$PROJECT_DIR$/src/main/java/tech/onder/core/CommonController.java" />
         <option value="$PROJECT_DIR$/src/main/java/tech/onder/core/models/BuyerSeller.java" />
-        <option value="$PROJECT_DIR$/conf/routes" />
         <option value="$PROJECT_DIR$/src/main/java/tech/onder/reports/actors/MapAnime.java" />
         <option value="$PROJECT_DIR$/src/main/java/tech/onder/core/repositories/AbstractInMemoryRepo.java" />
         <option value="$PROJECT_DIR$/src/main/java/tech/onder/core/repositories/IInMemoryRepo.java" />
@@ -299,6 +259,7 @@
         <option value="$PROJECT_DIR$/src/main/java/tech/onder/reports/ReportController.java" />
         <option value="$PROJECT_DIR$/src/main/java/tech/onder/consumer/services/ChunkReportManagementService.java" />
         <option value="$PROJECT_DIR$/src/main/java/tech/onder/consumer/ChunkConverter.java" />
+        <option value="$PROJECT_DIR$/conf/routes" />
       </list>
     </option>
   </component>
@@ -525,7 +486,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542943514124" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542945263765" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../onder" />
   </component>
@@ -584,12 +545,12 @@
       <updated>1542635347282</updated>
       <workItem from="1542635351795" duration="37500000" />
       <workItem from="1542738266650" duration="40232000" />
-      <workItem from="1542847099489" duration="19183000" />
+      <workItem from="1542847099489" duration="20137000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96915000" />
+    <option name="totallyTimeSpent" value="97869000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -605,7 +566,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.49566162" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3295082" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39508197" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39508197" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -627,7 +588,7 @@
       <window_info anchor="right" id="Bean Validation" order="9" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27231467" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.27231467" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -637,7 +598,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.49566162" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3295082" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.39836067" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39508197" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -846,13 +807,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/routes">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
@@ -1177,17 +1131,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/reports/ReportController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="93" column="78" lean-forward="true" selection-start-line="93" selection-start-column="78" selection-end-line="93" selection-end-column="78" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1542926805332" expanded="true" signature="2974:3325" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/reports/actors/UserActor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -1214,11 +1157,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/consumer/ChunkConverter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="41" column="69" lean-forward="true" selection-start-line="41" selection-start-column="69" selection-end-line="41" selection-end-column="69" />
+        <state relative-caret-position="79">
+          <caret line="39" column="26" lean-forward="true" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/reports/ReportController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="75" column="43" selection-start-line="75" selection-start-column="37" selection-end-line="75" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1542926805332" expanded="true" signature="2974:3325" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/routes">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="76" lean-forward="true" selection-start-line="12" selection-start-column="76" selection-end-line="12" selection-end-column="76" />
         </state>
       </provider>
     </entry>
