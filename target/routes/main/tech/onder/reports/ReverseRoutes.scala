@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/work/report-brocker/conf/routes
-// @DATE:Thu Nov 22 16:41:37 CET 2018
+// @DATE:Fri Nov 23 04:38:15 CET 2018
 
 import play.api.mvc.Call
 
