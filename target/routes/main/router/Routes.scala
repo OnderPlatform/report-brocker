@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/work/report-brocker/conf/routes
-// @DATE:Fri Nov 23 04:54:37 CET 2018
+// @DATE:Mon Nov 26 00:39:00 CET 2018
 
 package router
 
@@ -17,7 +17,7 @@ class Routes(
   // @LINE:2
   CollectorController_2: tech.onder.consumer.CollectorController,
   // @LINE:4
-  CommonController_0: tech.onder.core.CommonController,
+  CommonController_0: tech.onder.meters.CommonController,
   // @LINE:9
   ReportController_1: tech.onder.reports.ReportController,
   val prefix: String
@@ -28,7 +28,7 @@ class Routes(
     // @LINE:2
     CollectorController_2: tech.onder.consumer.CollectorController,
     // @LINE:4
-    CommonController_0: tech.onder.core.CommonController,
+    CommonController_0: tech.onder.meters.CommonController,
     // @LINE:9
     ReportController_1: tech.onder.reports.ReportController
   ) = this(errorHandler, CollectorController_2, CommonController_0, ReportController_1, "/")
@@ -44,8 +44,8 @@ class Routes(
 
   def documentation = List(
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """api/meters/""" + "$" + """id<[^/]+>""", """tech.onder.consumer.CollectorController.push(id:String)"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """meters""", """tech.onder.core.CommonController.meters()"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """meters/relations""", """tech.onder.core.CommonController.meterRelations()"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """meters""", """tech.onder.meters.CommonController.meters()"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """meters/relations""", """tech.onder.meters.CommonController.meterRelations()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """reports/consumption""", """tech.onder.reports.ReportController.consumption()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """reports/price""", """tech.onder.reports.ReportController.prices()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """reports/meters""", """tech.onder.reports.ReportController.meters()"""),
@@ -76,14 +76,14 @@ class Routes(
   )
 
   // @LINE:4
-  private[this] lazy val tech_onder_core_CommonController_meters1_route = Route("GET",
+  private[this] lazy val tech_onder_meters_CommonController_meters1_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("meters")))
   )
-  private[this] lazy val tech_onder_core_CommonController_meters1_invoker = createInvoker(
+  private[this] lazy val tech_onder_meters_CommonController_meters1_invoker = createInvoker(
     CommonController_0.meters(),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
-      "tech.onder.core.CommonController",
+      "tech.onder.meters.CommonController",
       "meters",
       Nil,
       "GET",
@@ -94,14 +94,14 @@ class Routes(
   )
 
   // @LINE:6
-  private[this] lazy val tech_onder_core_CommonController_meterRelations2_route = Route("GET",
+  private[this] lazy val tech_onder_meters_CommonController_meterRelations2_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("meters/relations")))
   )
-  private[this] lazy val tech_onder_core_CommonController_meterRelations2_invoker = createInvoker(
+  private[this] lazy val tech_onder_meters_CommonController_meterRelations2_invoker = createInvoker(
     CommonController_0.meterRelations(),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
-      "tech.onder.core.CommonController",
+      "tech.onder.meters.CommonController",
       "meterRelations",
       Nil,
       "GET",
@@ -193,15 +193,15 @@ class Routes(
       }
   
     // @LINE:4
-    case tech_onder_core_CommonController_meters1_route(params@_) =>
+    case tech_onder_meters_CommonController_meters1_route(params@_) =>
       call { 
-        tech_onder_core_CommonController_meters1_invoker.call(CommonController_0.meters())
+        tech_onder_meters_CommonController_meters1_invoker.call(CommonController_0.meters())
       }
   
     // @LINE:6
-    case tech_onder_core_CommonController_meterRelations2_route(params@_) =>
+    case tech_onder_meters_CommonController_meterRelations2_route(params@_) =>
       call { 
-        tech_onder_core_CommonController_meterRelations2_invoker.call(CommonController_0.meterRelations())
+        tech_onder_meters_CommonController_meterRelations2_invoker.call(CommonController_0.meterRelations())
       }
   
     // @LINE:9

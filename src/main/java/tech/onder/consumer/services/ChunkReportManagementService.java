@@ -1,8 +1,11 @@
 package tech.onder.consumer.services;
 
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import org.apache.commons.io.FileUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import play.libs.Json;
 import tech.onder.consumer.ChunkConverter;
 import tech.onder.consumer.models.ConsumptionChunkReport;
 import tech.onder.consumer.models.PeriodReport;
@@ -11,11 +14,11 @@ import tech.onder.reports.models.WebsocketDTO;
 
 import javax.inject.Inject;
 import javax.inject.Singleton;
+import java.io.File;
+import java.io.IOException;
 import java.math.BigInteger;
 import java.util.*;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ConcurrentLinkedDeque;
-import java.util.concurrent.ConcurrentLinkedQueue;
+import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicLong;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
@@ -29,10 +32,15 @@ public class ChunkReportManagementService {
 
     private final Integer itemsLimit = 17280;
 
+    private final Integer timeStorageItems = 144;
+
     private final Integer intervalLenght = 600;
 
-    private final ConcurrentHashMap<String, ConcurrentLinkedDeque<ConsumptionChunkReport>> storage = new ConcurrentHashMap<>();
+    private final ConcurrentHashMap<String, ConcurrentLinkedDeque<ConsumptionChunkReport>> storageByMeters = new ConcurrentHashMap<>();
 
+    /**
+     * 144 elem queue
+     */
     private final ConcurrentLinkedDeque<PeriodReport> calculatedSegmentsStorage = new ConcurrentLinkedDeque<>();
 
     private final ConcurrentLinkedDeque<ConsumptionChunkReport> lastPart = new ConcurrentLinkedDeque<>();
@@ -64,19 +72,19 @@ public class ChunkReportManagementService {
     // отрезки
     private void addToSuplierQueue(ConsumptionChunkReport chunkReport) {
         String uuid = chunkReport.getUuid();
-        if (!storage.containsKey(uuid)) {
-            synchronized (storage) {
-                if (!storage.containsKey(uuid)) {
+        if (!storageByMeters.containsKey(uuid)) {
+            synchronized (storageByMeters) {
+                if (!storageByMeters.containsKey(uuid)) {
                     ConcurrentLinkedDeque<ConsumptionChunkReport> queue = new ConcurrentLinkedDeque<>();
-                    storage.put(uuid, queue);
+                    storageByMeters.put(uuid, queue);
                     if (chunkReport.getTime() > queueBegin.get()) {
                         queueBegin.set(chunkReport.getTime());
                     }
                 }
             }
         }
-        ConcurrentLinkedDeque<ConsumptionChunkReport> queue = storage.get(uuid);
-        if (queue.size() > 0) {
+        ConcurrentLinkedDeque<ConsumptionChunkReport> queue = storageByMeters.get(uuid);
+        if (queue.size() > 0 && queue.size() < 5) {
             while (queue.peek().getTime() < queueBegin.get()) {
                 logger.debug("removed " + queue.poll().toString());
             }
@@ -90,19 +98,18 @@ public class ChunkReportManagementService {
     }
 
     public List<ConsumptionChunkReport> getForUUID(String uuid) {
-        return Optional.of(storage.get(uuid))
+        return Optional.of(storageByMeters.get(uuid))
                 .map(q -> (List<ConsumptionChunkReport>) new ArrayList<>(q))
                 .orElse(Collections.emptyList());
     }
 
 
-    private void addToTimeStorage(ConcurrentLinkedDeque<ConsumptionChunkReport> queue) {
-        if (calculatedSegmentsStorage.size() == itemsLimit) {
+    private void addToSegmentStorage(ConcurrentLinkedDeque<ConsumptionChunkReport> queue) {
+        if (calculatedSegmentsStorage.size() == timeStorageItems) {
             calculatedSegmentsStorage.poll();
         }
         List<ConsumptionChunkReport> rep = new ArrayList<>(queue);
         PeriodReport pr = summarize(rep);
-
         calculatedSegmentsStorage.push(pr);
     }
 
@@ -123,19 +130,30 @@ public class ChunkReportManagementService {
     }
 
     public List<MeterReportDTO> meterReportDTOS() {
-        return this.storage
+        return this.storageByMeters
                 .entrySet()
                 .stream()
-                .map(q -> {
-                    List<ConsumptionChunkReport> r = new ArrayList<>(q.getValue());
-                    return r.stream().reduce((a, b) -> this.sum(a, b)).orElseGet(() -> {
-                        ConsumptionChunkReport cr = new ConsumptionChunkReport();
-                        cr.setUuid(q.getKey());
-                        return cr;
-                    });
-                })
+                .map(q -> calculateConsumptionReports(q.getKey(), q.getValue()))
                 .map(chunkConverter::toMeterDTO)
                 .collect(Collectors.toList());
+    }
+
+    private ConsumptionChunkReport calculateConsumptionReports(String uuid, ConcurrentLinkedDeque<ConsumptionChunkReport> cQueue) {
+        return new ArrayList<>(cQueue).stream()
+                .reduce(createEmpty(uuid), this::sum);
+
+    }
+
+    private ConsumptionChunkReport createEmpty(String mId) {
+        ConsumptionChunkReport cr = new ConsumptionChunkReport();
+        cr.setUuid(mId);
+        cr.setPurchaseCost(BigInteger.ZERO);
+        cr.setSaleCost(BigInteger.ZERO);
+        cr.setPrice(BigInteger.ZERO);
+        cr.setPurchaseWh(0.0);
+        cr.setSaleWh(0.0);
+        return cr;
+
     }
 
     public WebsocketDTO calculate(String uuid) {
@@ -143,9 +161,8 @@ public class ChunkReportManagementService {
         List<ConsumptionChunkReport> parts;
         synchronized (this.registeredQueues) {
             parts = new ArrayList<>(this.registeredQueues.get(uuid));
-            this.registeredQueues.get(uuid).clear();
+           // this.registeredQueues.get(uuid).clear();
         }
-
         PeriodReport pr = summarize(parts);
         return chunkConverter.toWebsocketDTO(pr, this.meterReportDTOS());
     }
@@ -157,7 +174,7 @@ public class ChunkReportManagementService {
         to.setSaleWh(to.getSaleWh() + add.getSaleWh());
         to.setPurchaseWh(to.getPurchaseWh() + add.getPurchaseWh());
 
-        if (to.getTime() < add.getTime()) {
+        if (to.getTime()==null || to.getTime() < add.getTime()) {
             to.setTime(add.getTime());
         }
         return to;
@@ -167,25 +184,21 @@ public class ChunkReportManagementService {
         registeredQueues.forEach((k, v) -> v.add(chunk));
         if (tempBegin.get() == 0) {
             synchronized (tempBegin) {
-
                 tempBegin.set(chunk.getTime());
             }
         }
-        if (tempBegin.get() != 0 && chunk.getTime() > tempBegin.get() + intervalLenght) {
+        if (tempBegin.get() != 0 && chunk.getTime() >= tempBegin.get() + intervalLenght) {
             synchronized (lastPart) {
-                if (tempBegin.get() != 0 && chunk.getTime() > tempBegin.get() + intervalLenght) {
-                    addToTimeStorage(lastPart);
-                    Iterator<ConsumptionChunkReport> iterator = lastPart.iterator();
-                    while (iterator.hasNext()) {
-                        ConsumptionChunkReport chunkReport = iterator.next();
-                        addToSuplierQueue(chunkReport);
-                    }
+                if (tempBegin.get() != 0 && chunk.getTime() >= tempBegin.get() + intervalLenght) {
+                    addToSegmentStorage(lastPart);
                     lastPart.clear();
                     reportEnd.set(tempBegin.get() + intervalLenght);
                     tempBegin.set(tempBegin.get() + intervalLenght);
+                    this.registeredQueues.forEach((k, v) -> v.clear());
                 }
             }
         }
+        addToSuplierQueue(chunk);
         lastPart.push(chunk);
     }
 
@@ -223,5 +236,75 @@ public class ChunkReportManagementService {
             }
         }
 
+    }
+
+
+    public CompletionStage<Void> backup() {
+        return CompletableFuture.runAsync(this::backupMeters)
+                .thenRunAsync(this::backupSegments);
+
+    }
+
+    private void backupSegments() {
+        try {
+            File fw2 = new File("conf/segments-storage-back.json");
+            List<PeriodReport> periodReports = new ArrayList<>(this.calculatedSegmentsStorage);
+            String json = Json.toJson(periodReports).asText();
+            FileUtils.writeStringToFile(fw2, json);
+        } catch (IOException ioe) {
+            throw new RuntimeException(ioe);
+        }
+
+    }
+
+    private void backupMeters() {
+        try {
+            File fw = new File("conf/meters-storage-back.json");
+            List<ConsumptionChunkReport> chunkToStore =
+                    this.storageByMeters.values().stream().flatMap(Collection::stream).collect(Collectors.toList());
+            String json = Json.toJson(chunkToStore).asText();
+            FileUtils.writeStringToFile(fw, json);
+        } catch (IOException ioe) {
+            throw new RuntimeException(ioe);
+        }
+    }
+
+    public CompletableFuture<Void> restore() {
+
+        ObjectMapper mapper = new ObjectMapper();
+        CompletableFuture<Void> meters = CompletableFuture.runAsync(() -> loadMeterStorage(mapper));
+        CompletableFuture<Void> segments = CompletableFuture.runAsync(() -> loadSegments(mapper));
+        return CompletableFuture.allOf(segments, meters);
+
+    }
+
+    private void loadSegments(ObjectMapper mapper) {
+        try {
+            String segmentStorage = FileUtils.readFileToString(new File("conf/segments-storage-back.json"));
+            List<PeriodReport> segments = mapper.readValue(segmentStorage, mapper.getTypeFactory().constructCollectionType(List.class, PeriodReport.class));
+            synchronized (this.calculatedSegmentsStorage) {
+                this.calculatedSegmentsStorage.clear();
+                segments.stream().sorted(Comparator.comparing(PeriodReport::getConsumption))
+                        .forEach(this.calculatedSegmentsStorage::push);
+            }
+        } catch (IOException ioe) {
+            throw new RuntimeException(ioe);
+        }
+
+    }
+
+    private void loadMeterStorage(ObjectMapper mapper) {
+        try {
+            String meterStorage = FileUtils.readFileToString(new File("conf/meters-storage-back.json"));
+            List<ConsumptionChunkReport> chunkReports = mapper.readValue(meterStorage, mapper.getTypeFactory().constructCollectionType(List.class, ConsumptionChunkReport.class));
+
+            synchronized (this.storageByMeters) {
+                this.storageByMeters.clear();
+                chunkReports.stream().collect(Collectors.groupingBy(ConsumptionChunkReport::getUuid))
+                        .forEach((k, v) -> this.storageByMeters.put(k, new ConcurrentLinkedDeque<>(v)));
+            }
+        } catch (IOException ioe) {
+            throw new RuntimeException(ioe);
+        }
     }
 }

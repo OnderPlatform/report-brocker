@@ -1,9 +1,9 @@
 
 POST       /api/meters/:id      tech.onder.consumer.CollectorController.push(id: String)
 
-GET        /meters              tech.onder.core.CommonController.meters()
+GET        /meters              tech.onder.meters.CommonController.meters()
 
-GET        /meters/relations    tech.onder.core.CommonController.meterRelations()
+GET        /meters/relations    tech.onder.meters.CommonController.meterRelations()
 #Reports
 
 GET        /reports/consumption  tech.onder.reports.ReportController.consumption()

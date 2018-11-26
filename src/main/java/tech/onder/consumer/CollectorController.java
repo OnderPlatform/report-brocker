@@ -20,9 +20,10 @@ public class CollectorController extends Controller {
 
     private final Logger logger = LoggerFactory.getLogger(CollectorController.class);
 
-    private HttpExecutionContext ec;
+    private final HttpExecutionContext ec;
 
     private final ChunkReportManagementService chunkReportManagementService;
+
     private final ChunkConverter chunkConverter;
 
     @Inject
@@ -36,11 +37,13 @@ public class CollectorController extends Controller {
         return CompletableFuture.supplyAsync(
                 () -> {
                     try {
-                        JsonNode amount = ctx().request().body().asJson();
-
-                        MeterInputDTO dto = Json.fromJson(amount, MeterInputDTO.class);
-
-                        chunkConverter.toChunks(dto).forEach(chunkReportManagementService::add);
+                        JsonNode jsonNode = ctx().request().body().asJson();
+                        logger.trace(jsonNode.toString());
+                        MeterInputDTO dto = Json.fromJson(jsonNode, MeterInputDTO.class);
+                        chunkConverter.toChunks(dto)
+                                .stream()
+                                .peek(v -> logger.info(toJson(v).toString()))
+                                .forEach(chunkReportManagementService::add);
                         return ok();
                     } catch (NumberFormatException e) {
                         return badRequest(toJson(e.getMessage()));

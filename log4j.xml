@@ -2,7 +2,7 @@
 <!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
 <log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/" debug="false">
   <appender name="file" class="org.apache.log4j.FileAppender">
-    <param name="File" value="target/test.log" />
+    <param name="File" value="target/back.log" />
     <param name="Append" value="false" />
     <layout class="org.apache.log4j.PatternLayout">
        <param name="ConversionPattern" value="[%p] [%d{HH:mm:ss.SSS}] %m%n" />
@@ -16,8 +16,12 @@
       <param name="ConversionPattern" value="[%p] [%d{HH:mm:ss.SSS}] %m%n" />
     </layout>
   </appender>
+  <category name="tech.onder.consumer" additivity="false">
+    <level value="TRACE"/>
+    <appender-ref ref="file"/>
+  </category>
   <root>
-    <priority value="TRACE" />
+    <priority value="INFO" />
     <appender-ref ref="console" />
     <appender-ref ref="file" />
   </root>

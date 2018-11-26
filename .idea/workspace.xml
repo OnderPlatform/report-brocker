@@ -1,8 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/tech/onder/consumer/services/ChunkReportManagementService.java" line="185" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="ca0bed78-d55e-4902-9812-04ef7f98837e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/tech/onder/meters/MeterConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tech/onder/meters/MeterService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tech/onder/meters/models/dto/MeterInputDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conf/routes" beforeDir="false" afterPath="$PROJECT_DIR$/conf/routes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log4j.xml" beforeDir="false" afterPath="$PROJECT_DIR$/log4j.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tech/onder/consumer/ChunkConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/onder/consumer/ChunkConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tech/onder/consumer/CollectorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/onder/consumer/CollectorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tech/onder/consumer/models/ConsumptionChunkReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/onder/consumer/models/ConsumptionChunkReport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tech/onder/consumer/services/ChunkReportManagementService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/onder/consumer/services/ChunkReportManagementService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tech/onder/consumer/services/CollectorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/onder/consumer/services/CollectorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tech/onder/core/CommonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/onder/meters/CommonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tech/onder/core/OutputUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/onder/meters/OutputUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tech/onder/core/models/BuyerSeller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/onder/meters/models/BuyerSeller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tech/onder/core/models/Meter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/onder/meters/models/Meter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tech/onder/core/repositories/AbstractInMemoryRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/onder/meters/repositories/AbstractInMemoryRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tech/onder/core/repositories/IInMemoryRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/onder/meters/repositories/IInMemoryRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tech/onder/core/repositories/MeterRelationRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/onder/meters/repositories/MeterRelationRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tech/onder/core/repositories/MeterRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/onder/meters/repositories/MeterRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tech/onder/reports/ReportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/onder/reports/ReportController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tech/onder/reports/ReportConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/onder/reports/ReportConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tech/onder/reports/ReportService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/onder/reports/ReportService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tech/onder/reports/actors/UserActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/onder/reports/actors/UserActor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cache/compile" beforeDir="false" afterPath="$PROJECT_DIR$/target/cache/compile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cache/compile.relations" beforeDir="false" afterPath="$PROJECT_DIR$/target/cache/compile.relations" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/router/Routes$$anonfun$router$Routes$$tech_onder_core_CommonController_meterRelations2_invoker$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/router/Routes$$anonfun$router$Routes$$tech_onder_core_CommonController_meters1_invoker$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$2$$anonfun$apply$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$2$$anonfun$apply$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$3$$anonfun$apply$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$3$$anonfun$apply$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/router/Routes$$anonfun$routes$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/router/Routes$$anonfun$routes$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/router/Routes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/router/Routes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/routes" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/routes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/consumer/ChunkConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/consumer/CollectorController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/consumer/services/ChunkReportManagementService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/consumer/services/CollectorService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tech/onder/consumer/services/CollectorService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/core/CommonController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/core/OutputUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/core/ReverseCommonController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/core/javascript/ReverseCommonController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/core/models/BuyerSeller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/core/models/Meter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/core/repositories/AbstractInMemoryRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/core/repositories/IInMemoryRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/core/repositories/MeterRelationRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/core/repositories/MeterRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/core/routes$javascript.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/core/routes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/reports/ReportController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tech/onder/reports/ReportController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/reports/ReportConverter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tech/onder/reports/ReportConverter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/reports/ReportService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tech/onder/reports/ReportService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/report-broker-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/report-broker-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/routes/main/router/Routes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/routes/main/router/Routes.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/routes/main/router/RoutesPrefix.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/routes/main/router/RoutesPrefix.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/routes/main/tech/onder/consumer/ReverseRoutes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/routes/main/tech/onder/consumer/ReverseRoutes.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/routes/main/tech/onder/consumer/javascript/JavaScriptReverseRoutes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/routes/main/tech/onder/consumer/javascript/JavaScriptReverseRoutes.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/routes/main/tech/onder/consumer/routes.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/routes/main/tech/onder/consumer/routes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/routes/main/tech/onder/core/ReverseRoutes.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/routes/main/tech/onder/core/javascript/JavaScriptReverseRoutes.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/routes/main/tech/onder/core/routes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/routes/main/tech/onder/reports/ReverseRoutes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/routes/main/tech/onder/reports/ReverseRoutes.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/routes/main/tech/onder/reports/javascript/JavaScriptReverseRoutes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/routes/main/tech/onder/reports/javascript/JavaScriptReverseRoutes.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/routes/main/tech/onder/reports/routes.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/routes/main/tech/onder/reports/routes.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,67 +93,144 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="18" />
-          <entry key="conf" value="3" />
-          <entry key="java" value="106" />
+          <entry key="class" value="30" />
+          <entry key="conf" value="4" />
+          <entry key="java" value="138" />
           <entry key="md" value="2" />
-          <entry key="routes" value="5" />
-          <entry key="xml" value="7" />
+          <entry key="routes" value="6" />
+          <entry key="sh" value="1" />
+          <entry key="xml" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="18" />
-          <entry key="JAVA" value="106" />
+          <entry key="CLASS" value="30" />
+          <entry key="JAVA" value="138" />
           <entry key="Markdown" value="2" />
-          <entry key="PLAIN_TEXT" value="8" />
-          <entry key="XML" value="7" />
+          <entry key="PLAIN_TEXT" value="11" />
+          <entry key="XML" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="conf" value="36" />
-          <entry key="dummy" value="122" />
-          <entry key="java" value="12151" />
-          <entry key="routes" value="180" />
+          <entry key="dummy" value="159" />
+          <entry key="java" value="29808" />
+          <entry key="routes" value="186" />
           <entry key="txt" value="7" />
-          <entry key="xml" value="62" />
+          <entry key="xml" value="83" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="12151" />
-          <entry key="PLAIN_TEXT" value="345" />
-          <entry key="XML" value="62" />
+          <entry key="JAVA" value="29808" />
+          <entry key="PLAIN_TEXT" value="388" />
+          <entry key="XML" value="83" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/consumer/services/ChunkReportManagementService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="148" column="43" lean-forward="true" selection-start-line="148" selection-start-column="43" selection-end-line="148" selection-end-column="43" />
+            <state relative-caret-position="98">
+              <caret line="227" selection-start-line="227" selection-end-line="227" />
+              <folding>
+                <element signature="docComment;field#calculatedSegmentsStorage#0;class#ChunkReportManagementService#0" />
+                <element signature="method#getForUUID#0;class#ChunkReportManagementService#0" />
+                <element signature="method#singletonCollector#0;class#ChunkReportManagementService#0" />
+                <element signature="e#7273#7465#0" />
+                <element signature="method#unsubscribe#0;class#ChunkReportManagementService#0" />
+                <element signature="method#backup#0;class#ChunkReportManagementService#0" />
+                <element signature="method#backupSegments#0;class#ChunkReportManagementService#0" />
+                <element signature="method#backupMeters#0;class#ChunkReportManagementService#0" />
+                <element signature="method#restore#0;class#ChunkReportManagementService#0" />
+                <element signature="method#loadSegments#0;class#ChunkReportManagementService#0" />
+                <element signature="method#loadMeterStorage#0;class#ChunkReportManagementService#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/concurrent/ConcurrentHashMap.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/reports/ReportController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="933" column="13" selection-start-line="933" selection-start-column="13" selection-end-line="933" selection-end-column="13" />
+            <state relative-caret-position="57">
+              <caret line="53" column="56" lean-forward="true" selection-start-line="53" selection-start-column="56" selection-end-line="53" selection-end-column="56" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/modules/ApplicationModule.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/reports/ReportService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="132">
+              <caret line="49" column="25" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#getComsumptionReport#0;class#ReportService#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/reports/actors/UserParentActor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="42" column="64" lean-forward="true" selection-start-line="42" selection-start-column="64" selection-end-line="42" selection-end-column="64" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/Long.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="1232" column="15" selection-start-line="1232" selection-start-column="15" selection-end-line="1232" selection-end-column="15" />
+              <folding>
+                <element signature="e#46463#46464#0" expanded="true" />
+                <element signature="e#46524#46525#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/consumer/models/ConsumptionChunkReport.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="30" column="25" lean-forward="true" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+              <folding>
+                <element signature="e#582#583#0" expanded="true" />
+                <element signature="e#614#615#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/stream/Stream.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-13">
+              <caret line="595" column="7" lean-forward="true" selection-start-line="595" selection-start-column="7" selection-end-line="595" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/reports/actors/UserActor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="98">
+              <caret line="61" selection-start-line="61" selection-end-line="61" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -95,60 +241,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/consumer/ChunkConverter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="79">
-              <caret line="39" column="26" lean-forward="true" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/conf/routes">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="76" lean-forward="true" selection-start-line="12" selection-start-column="76" selection-end-line="12" selection-end-column="76" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/typesafe/play/play-guice_2.11/2.6.10/play-guice_2.11-2.6.10.jar!/play/libs/akka/AkkaGuiceSupport.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/reports/ReportController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="75" column="43" selection-start-line="75" selection-start-column="37" selection-end-line="75" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1542926805332" expanded="true" signature="2974:3325" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-actor_2.11/2.5.8/akka-actor_2.11-2.5.8.jar!/akka/pattern/Patterns.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
-              <caret line="67" column="33" selection-start-line="67" selection-start-column="33" selection-end-line="67" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/reports/actors/UserParentActor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="29" column="21" lean-forward="true" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+            <state relative-caret-position="120">
+              <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -157,10 +251,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/reports/actors/UserActor.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/consumer/CollectorController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="102" column="73" selection-start-line="102" selection-start-column="73" selection-end-line="102" selection-end-column="73" />
+            <state relative-caret-position="256">
+              <caret line="46" selection-start-line="46" selection-end-line="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -180,7 +274,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>calculatedSegmentsStorage</find>
       <find>stop</find>
       <find>guice</find>
       <find>stock</find>
@@ -207,6 +300,9 @@
       <find>FirstTick</find>
       <find>calc</find>
       <find>ask</find>
+      <find>add</find>
+      <find>calculatedSegmentsStorage</find>
+      <find>storageByMeters</find>
     </findStrings>
     <replaceStrings>
       <replace>_2.11</replace>
@@ -218,18 +314,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/tech/onder/repositories/MeterRepo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tech/onder/core/repositories/AbstartInMemoryRepo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tech/onder/reports/models/ConsumptionChunkReport.java" />
         <option value="$PROJECT_DIR$/src/main/java/tech/onder/reports/actors/UpdateReportActor.java" />
         <option value="$PROJECT_DIR$/src/main/java/tech/onder/reports/actors/ParentActor.java" />
         <option value="$PROJECT_DIR$/src/main/java/tech/onder/consumer/repository/ChunkReportRepo.java" />
         <option value="$PROJECT_DIR$/src/main/java/tech/onder/consumer/services/ChunkReportManagenetService.java" />
         <option value="$PROJECT_DIR$/src/main/java/tech/onder/consumer/services/ChunkReportRepo.java" />
         <option value="$PROJECT_DIR$/src/main/java/tech/onder/consumer/services/ChunkService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tech/onder/reports/ReportService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j.prod.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/tech/onder/core/CommonController.java" />
         <option value="$PROJECT_DIR$/src/main/java/tech/onder/core/models/BuyerSeller.java" />
         <option value="$PROJECT_DIR$/src/main/java/tech/onder/reports/actors/MapAnime.java" />
         <option value="$PROJECT_DIR$/src/main/java/tech/onder/core/repositories/AbstractInMemoryRepo.java" />
@@ -239,27 +330,41 @@
         <option value="$PROJECT_DIR$/src/main/java/tech/onder/core/models/Meter.java" />
         <option value="$PROJECT_DIR$/src/main/java/tech/onder/consumer/models/ReportDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/tech/onder/consumer/models/MeterReportDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tech/onder/consumer/CollectorController.java" />
         <option value="$PROJECT_DIR$/src/main/java/tech/onder/reports/models/MeterReportDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/tech/onder/consumer/models/MeterInputDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tech/onder/consumer/models/ConsumptionChunkReport.java" />
         <option value="$PROJECT_DIR$/src/main/java/tech/onder/consumer/models/PeriodReport.java" />
         <option value="$PROJECT_DIR$/src/main/java/tech/onder/reports/models/WebsocketDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/tech/onder/reports/models/ReportDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/tech/onder/core/OutputUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tech/onder/reports/ReportConverter.java" />
         <option value="$PROJECT_DIR$/src/main/java/tech/onder/modules/ChunkServiceProvider.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tech/onder/consumer/services/CollectorService.java" />
         <option value="$PROJECT_DIR$/conf/application.conf" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/tech/onder/reports/actors/UserParentActor.java" />
         <option value="$PROJECT_DIR$/src/main/java/tech/onder/reports/Publisher.java" />
         <option value="$PROJECT_DIR$/src/main/java/tech/onder/modules/ApplicationModule.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tech/onder/reports/actors/UserActor.java" />
         <option value="$PROJECT_DIR$/src/main/java/tech/onder/reports/ReportController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tech/onder/consumer/services/ChunkReportManagementService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tech/onder/consumer/ChunkConverter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tech/onder/core/CommonController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tech/onder/meter/CommonController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tech/onder/meters/models/MeterDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tech/onder/meters/models/dto/MeterDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tech/onder/meters/models/dto/MeterInputDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tech/onder/meters/models/Meter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tech/onder/meters/repositories/AbstractInMemoryRepo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tech/onder/meters/repositories/MeterRepo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tech/onder/meters/MeterConverter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tech/onder/meters/repositories/MeterRelationRepo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tech/onder/meters/MeterService.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/tech/onder/consumer/services/CollectorService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tech/onder/reports/ReportService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tech/onder/meters/CommonController.java" />
         <option value="$PROJECT_DIR$/conf/routes" />
+        <option value="$PROJECT_DIR$/log4j.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/tech/onder/consumer/CollectorController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tech/onder/reports/ReportConverter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tech/onder/consumer/ChunkConverter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tech/onder/reports/actors/UserActor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tech/onder/consumer/models/ConsumptionChunkReport.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tech/onder/consumer/services/ChunkReportManagementService.java" />
       </list>
     </option>
   </component>
@@ -354,16 +459,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="onder" type="462c0819:PsiDirectoryNode" />
               <item name="consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="report-broker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="report-brocker" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="onder" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer" type="462c0819:PsiDirectoryNode" />
               <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -373,36 +468,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="onder" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="report-broker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="report-brocker" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="onder" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="report-broker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="report-brocker" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="onder" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="repositories" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="report-broker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="report-brocker" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="onder" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="meters" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="report-broker" type="b2602c69:ProjectViewProjectNode" />
@@ -425,55 +491,25 @@
             </path>
             <path>
               <item name="report-broker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="report-brocker" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="onder" type="462c0819:PsiDirectoryNode" />
-              <item name="reports" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="report-broker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="report-brocker" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="report-broker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="report-brocker" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="report-broker" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
             <path>
               <item name="report-broker" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: com.typesafe.akka:akka-stream_2.11:2.5.8" type="70bed36:NamedLibraryElementNode" />
+              <item name="Maven: com.fasterxml.jackson.core:jackson-databind:2.8.11.1" type="70bed36:NamedLibraryElementNode" />
             </path>
             <path>
               <item name="report-broker" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: com.typesafe.akka:akka-stream_2.11:2.5.8" type="70bed36:NamedLibraryElementNode" />
-              <item name="akka-stream_2.11-2.5.8.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="Maven: com.fasterxml.jackson.core:jackson-databind:2.8.11.1" type="70bed36:NamedLibraryElementNode" />
+              <item name="jackson-databind-2.8.11.1.jar" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="report-broker" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: com.typesafe.akka:akka-stream_2.11:2.5.8" type="70bed36:NamedLibraryElementNode" />
-              <item name="akka-stream_2.11-2.5.8.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="stream" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="report-broker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: com.typesafe.akka:akka-stream_2.11:2.5.8" type="70bed36:NamedLibraryElementNode" />
-              <item name="akka-stream_2.11-2.5.8.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="stream" type="462c0819:PsiDirectoryNode" />
-              <item name="javadsl" type="462c0819:PsiDirectoryNode" />
+              <item name="Maven: com.fasterxml.jackson.core:jackson-databind:2.8.11.1" type="70bed36:NamedLibraryElementNode" />
+              <item name="jackson-databind-2.8.11.1.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="databind" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -486,7 +522,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542945263765" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543204610675" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../onder" />
   </component>
@@ -545,18 +581,17 @@
       <updated>1542635347282</updated>
       <workItem from="1542635351795" duration="37500000" />
       <workItem from="1542738266650" duration="40232000" />
-      <workItem from="1542847099489" duration="20137000" />
+      <workItem from="1542847099489" duration="45521000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97869000" />
+    <option name="totallyTimeSpent" value="123253000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.27231467" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17700455" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -564,9 +599,9 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.49566162" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.49508196" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3295082" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39508197" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.43770492" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -588,7 +623,7 @@
       <window_info anchor="right" id="Bean Validation" order="9" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.27231467" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27231467" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -596,9 +631,9 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.49566162" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.49508196" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3295082" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39508197" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39508197" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -641,15 +676,65 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/tech/onder/reports/actors/UserActor.java</url>
-          <line>103</line>
+          <line>85</line>
           <properties />
           <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/tech/onder/consumer/services/ChunkReportManagementService.java</url>
-          <line>144</line>
+          <line>162</line>
           <properties />
           <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/tech/onder/consumer/services/ChunkReportManagementService.java</url>
+          <line>116</line>
+          <properties />
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/tech/onder/consumer/services/ChunkReportManagementService.java</url>
+          <line>125</line>
+          <properties />
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/tech/onder/consumer/services/ChunkReportManagementService.java</url>
+          <line>67</line>
+          <properties />
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/tech/onder/reports/actors/UserActor.java</url>
+          <line>61</line>
+          <properties />
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/tech/onder/consumer/services/ChunkReportManagementService.java</url>
+          <line>171</line>
+          <properties />
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/tech/onder/consumer/services/ChunkReportManagementService.java</url>
+          <line>135</line>
+          <properties>
+            <option name="lambda-ordinal" value="0" />
+          </properties>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/tech/onder/consumer/services/ChunkReportManagementService.java</url>
+          <line>217</line>
+          <properties />
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/tech/onder/consumer/services/ChunkReportManagementService.java</url>
+          <line>220</line>
+          <properties />
+          <option name="timeStamp" value="43" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -659,11 +744,23 @@
     <watches-manager>
       <configuration name="Remote">
         <watch expression="ChunkConverter.calculatePrice(tokens, consumption)" language="JAVA" />
+        <watch expression="chunkReportManagementService" language="JAVA" />
+        <watch expression="rep.stream().mapToDouble(ConsumptionChunkReport::getPurchaseWh).sum()" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>rep.stream().mapToDouble(ConsumptionChunkReport::getPurchaseWh).sum()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>chunkReportManagementService</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>queue.take()</expression-string>
         <language-id>JAVA</language-id>
@@ -705,308 +802,13 @@
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>castUp.divide(new BigDecimal(1.5))</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>castUp.divide(new BigDecimal(1))</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-stream_2.11/2.5.8/akka-stream_2.11-2.5.8.jar!/akka/stream/UniqueKillSwitch.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/typesafe/play/play-server_2.12/2.6.20/play-server_2.12-2.6.20.jar!/play/core/server/DevServerStart.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-actor_2.11/2.4.17/akka-actor_2.11-2.4.17.jar!/akka/actor/AbstractActor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="78" column="5" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/reports/ReportRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/typesafe/config/1.3.2/config-1.3.2.jar!/com/typesafe/config/Config.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="54" column="11" selection-start-line="54" selection-start-column="11" selection-end-line="54" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log4j.prod.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/modules/AppConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="e#365#366#0" expanded="true" />
-            <element signature="e#415#416#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.17/log4j-1.2.17.jar!/org/apache/log4j/xml/DOMConfigurator.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="646" column="23" selection-start-line="646" selection-start-column="23" selection-end-line="646" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/typesafe/play/play_2.11/2.6.10/play_2.11-2.6.10.jar!/play/mvc/Http.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1386">
-          <caret line="513" column="30" selection-start-line="513" selection-start-column="30" selection-end-line="513" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-annotations/2.8.11/jackson-annotations-2.8.11.jar!/com/fasterxml/jackson/annotation/JsonInclude.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
-          <caret line="127" column="29" selection-start-line="127" selection-start-column="29" selection-end-line="127" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/concurrent/ConcurrentLinkedDeque.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="1024" column="13" selection-start-line="1024" selection-start-column="13" selection-end-line="1024" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/Deque.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="454" column="6" selection-start-line="454" selection-start-column="6" selection-end-line="454" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/core/CommonController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="28" column="71" selection-start-line="28" selection-start-column="71" selection-end-line="28" selection-end-column="71" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-actor_2.11/2.5.8/akka-actor_2.11-2.5.8.jar!/akka/actor/UntypedActor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/reports/actors/MapAnime.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/core/repositories/AbstractInMemoryRepo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#225#226#0" expanded="true" />
-            <element signature="e#273#274#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/core/models/BuyerSeller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/core/repositories/IInMemoryRepo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/core/repositories/MeterRepo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/core/models/Meter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="41" column="8" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/core/repositories/MeterRelationRepo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="72" selection-start-line="9" selection-start-column="72" selection-end-line="9" selection-end-column="72" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/reports/models/MeterReportDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/consumer/models/MeterInputDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="42" column="29" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
-          <folding>
-            <element signature="e#226#227#0" expanded="true" />
-            <element signature="e#257#258#0" expanded="true" />
-            <element signature="e#825#826#0" expanded="true" />
-            <element signature="e#865#866#0" expanded="true" />
-            <element signature="e#897#898#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/consumer/models/ConsumptionChunkReport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#853#854#0" expanded="true" />
-            <element signature="e#881#882#0" expanded="true" />
-            <element signature="e#927#928#0" expanded="true" />
-            <element signature="e#961#962#0" expanded="true" />
-            <element signature="e#952#953#0" expanded="true" />
-            <element signature="e#986#987#0" expanded="true" />
-            <element signature="e#1040#1041#0" expanded="true" />
-            <element signature="e#1086#1087#0" expanded="true" />
-            <element signature="e#1267#1268#0" expanded="true" />
-            <element signature="e#1298#1299#0" expanded="true" />
-            <element signature="e#1350#1351#0" expanded="true" />
-            <element signature="e#1390#1391#0" expanded="true" />
-            <element signature="e#1433#1434#0" expanded="true" />
-            <element signature="e#1468#1469#0" expanded="true" />
-            <element signature="e#1528#1529#0" expanded="true" />
-            <element signature="e#1576#1577#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/reports/models/WebsocketDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-          <folding>
-            <element signature="e#219#220#0" expanded="true" />
-            <element signature="e#246#247#0" expanded="true" />
-            <element signature="e#284#285#0" expanded="true" />
-            <element signature="e#316#317#0" expanded="true" />
-            <element signature="e#361#362#0" expanded="true" />
-            <element signature="e#402#403#0" expanded="true" />
-            <element signature="e#470#471#0" expanded="true" />
-            <element signature="e#530#531#0" expanded="true" />
-            <element signature="e#569#570#0" expanded="true" />
-            <element signature="e#604#605#0" expanded="true" />
-            <element signature="e#660#661#0" expanded="true" />
-            <element signature="e#708#709#0" expanded="true" />
-            <element signature="e#755#756#0" expanded="true" />
-            <element signature="e#784#785#0" expanded="true" />
-            <element signature="e#842#843#0" expanded="true" />
-            <element signature="e#878#879#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/reports/models/ReportDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/reports/ReportService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="49" column="20" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1506#1507#0" expanded="true" />
-            <element signature="e#1575#1576#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/consumer/models/PeriodReport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-          <folding>
-            <element signature="e#149#150#0" expanded="true" />
-            <element signature="e#176#177#0" expanded="true" />
-            <element signature="e#214#215#0" expanded="true" />
-            <element signature="e#246#247#0" expanded="true" />
-            <element signature="e#284#285#0" expanded="true" />
-            <element signature="e#318#319#0" expanded="true" />
-            <element signature="e#372#373#0" expanded="true" />
-            <element signature="e#418#419#0" expanded="true" />
-            <element signature="e#488#489#0" expanded="true" />
-            <element signature="e#516#517#0" expanded="true" />
-            <element signature="e#562#563#0" expanded="true" />
-            <element signature="e#596#597#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/consumer/services/CollectorService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/math/BigInteger.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20315">
           <caret line="1238" column="25" selection-start-line="1238" selection-start-column="25" selection-end-line="1238" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/core/OutputUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1020,44 +822,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/reports/ReportConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.prod.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/consumer/CollectorController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/application.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1299">
-          <caret line="97" column="32" selection-start-line="97" selection-start-column="32" selection-end-line="97" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -1086,27 +854,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/reports/Publisher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="35" column="18" lean-forward="true" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#697#707#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/reports/actors/UserParentActor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="29" column="21" lean-forward="true" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/typesafe/play/play-guice_2.11/2.6.10/play-guice_2.11-2.6.10.jar!/play/libs/akka/AkkaGuiceSupport.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1131,16 +878,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/reports/actors/UserActor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="102" column="73" selection-start-line="102" selection-start-column="73" selection-end-line="102" selection-end-column="73" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/concurrent/ConcurrentHashMap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -1148,17 +885,333 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/consumer/services/ChunkReportManagementService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/reports/Publisher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="148" column="43" lean-forward="true" selection-start-line="148" selection-start-column="43" selection-end-line="148" selection-end-column="43" />
+        <state relative-caret-position="170">
+          <caret line="35" column="18" lean-forward="true" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/meters/models/Meter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="39" column="20" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/meters/repositories/AbstractInMemoryRepo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/meters/models/dto/MeterInputDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding>
+            <element signature="e#162#163#0" expanded="true" />
+            <element signature="e#187#188#0" expanded="true" />
+            <element signature="e#223#224#0" expanded="true" />
+            <element signature="e#251#252#0" expanded="true" />
+            <element signature="e#282#283#0" expanded="true" />
+            <element signature="e#309#310#0" expanded="true" />
+            <element signature="e#349#350#0" expanded="true" />
+            <element signature="e#381#382#0" expanded="true" />
+            <element signature="e#415#416#0" expanded="true" />
+            <element signature="e#445#446#0" expanded="true" />
+            <element signature="e#491#492#0" expanded="true" />
+            <element signature="e#529#530#0" expanded="true" />
+            <element signature="e#598#599#0" expanded="true" />
+            <element signature="e#627#628#0" expanded="true" />
+            <element signature="e#671#672#0" expanded="true" />
+            <element signature="e#707#708#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/meters/MeterConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/meters/repositories/MeterRepo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="43" column="5" selection-start-line="41" selection-start-column="3" selection-end-line="43" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#MeterRepo#0;class#MeterRepo#0" />
+            <element signature="e#1831#1832#0" expanded="true" />
+            <element signature="e#1886#1887#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/meters/repositories/MeterRelationRepo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2008#2009#0" expanded="true" />
+            <element signature="e#2063#2064#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/io/InputStreamReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="759">
+          <caret line="166" column="15" selection-start-line="166" selection-start-column="15" selection-end-line="166" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="144" selection-start-line="144" selection-end-line="144" />
+          <folding>
+            <element signature="n#plugin#2;n#plugins#0;n#build#0;n#project#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.8.11.1/jackson-databind-2.8.11.1.jar!/com/fasterxml/jackson/databind/JsonNode.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="311" column="27" selection-start-line="311" selection-start-column="27" selection-end-line="311" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/meters/MeterService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/routes">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="49" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/consumer/services/CollectorService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/start-script.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="4" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/meters/CommonController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.8.11.1/jackson-databind-2.8.11.1-sources.jar!/com/fasterxml/jackson/databind/JsonNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="412" column="18" selection-start-line="412" selection-start-column="18" selection-end-line="412" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/application.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log4j.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="64" selection-start-line="10" selection-start-column="64" selection-end-line="10" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/meters/OutputUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/reports/ReportConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="19" column="65" selection-start-line="19" selection-start-column="65" selection-end-line="19" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.11.11/scala-library-2.11.11.jar!/scala/PartialFunction$class.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-actor_2.11/2.5.8/akka-actor_2.11-2.5.8.jar!/akka/japi/pf/UnitCaseStatement.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="156" selection-start-line="156" selection-end-line="156" />
+          <folding>
+            <element signature="e#5613#5614#0" expanded="true" />
+            <element signature="e#5648#5649#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.11.11/scala-library-2.11.11.jar!/scala/PartialFunction.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="155" selection-start-line="155" selection-end-line="155" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-actor_2.11/2.5.8/akka-actor_2.11-2.5.8.jar!/akka/actor/Actor$class.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-actor_2.11/2.5.8/akka-actor_2.11-2.5.8.jar!/akka/actor/Timers$class.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-actor_2.11/2.5.8/akka-actor_2.11-2.5.8.jar!/akka/actor/AbstractActorWithTimers.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-actor_2.11/2.5.8/akka-actor_2.11-2.5.8.jar!/akka/actor/ActorCell.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="675" selection-start-line="675" selection-end-line="675" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-actor_2.11/2.5.8/akka-actor_2.11-2.5.8.jar!/akka/dispatch/Mailbox.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="317" selection-start-line="317" selection-end-line="317" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/inject/guice/4.0/guice-4.0.jar!/com/google/inject/internal/cglib/reflect/$FastConstructor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/inject/guice/4.0/guice-4.0.jar!/com/google/inject/internal/DefaultConstructionProxyFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/typesafe/play/play_2.11/2.6.10/play_2.11-2.6.10.jar!/play/core/j/HttpExecutionContext.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/consumer/ChunkConverter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="39" column="26" lean-forward="true" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
+        <state relative-caret-position="120">
+          <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/stream/Stream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-13">
+          <caret line="595" column="7" lean-forward="true" selection-start-line="595" selection-start-column="7" selection-end-line="595" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/consumer/models/ConsumptionChunkReport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="30" column="25" lean-forward="true" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+          <folding>
+            <element signature="e#582#583#0" expanded="true" />
+            <element signature="e#614#615#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/Long.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="1232" column="15" selection-start-line="1232" selection-start-column="15" selection-end-line="1232" selection-end-column="15" />
+          <folding>
+            <element signature="e#46463#46464#0" expanded="true" />
+            <element signature="e#46524#46525#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/consumer/CollectorController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/reports/actors/UserParentActor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="42" column="64" lean-forward="true" selection-start-line="42" selection-start-column="64" selection-end-line="42" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1167,19 +1220,52 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/reports/ReportController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="75" column="43" selection-start-line="75" selection-start-column="37" selection-end-line="75" selection-end-column="43" />
+        <state relative-caret-position="57">
+          <caret line="53" column="56" lean-forward="true" selection-start-line="53" selection-start-column="56" selection-end-line="53" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1542926805332" expanded="true" signature="2974:3325" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/conf/routes">
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/reports/ReportService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="76" lean-forward="true" selection-start-line="12" selection-start-column="76" selection-end-line="12" selection-end-column="76" />
+        <state relative-caret-position="132">
+          <caret line="49" column="25" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getComsumptionReport#0;class#ReportService#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/reports/actors/UserActor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/consumer/services/ChunkReportManagementService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="227" selection-start-line="227" selection-end-line="227" />
+          <folding>
+            <element signature="docComment;field#calculatedSegmentsStorage#0;class#ChunkReportManagementService#0" />
+            <element signature="method#getForUUID#0;class#ChunkReportManagementService#0" />
+            <element signature="method#singletonCollector#0;class#ChunkReportManagementService#0" />
+            <element signature="e#7273#7465#0" />
+            <element signature="method#unsubscribe#0;class#ChunkReportManagementService#0" />
+            <element signature="method#backup#0;class#ChunkReportManagementService#0" />
+            <element signature="method#backupSegments#0;class#ChunkReportManagementService#0" />
+            <element signature="method#backupMeters#0;class#ChunkReportManagementService#0" />
+            <element signature="method#restore#0;class#ChunkReportManagementService#0" />
+            <element signature="method#loadSegments#0;class#ChunkReportManagementService#0" />
+            <element signature="method#loadMeterStorage#0;class#ChunkReportManagementService#0" />
+          </folding>
         </state>
       </provider>
     </entry>

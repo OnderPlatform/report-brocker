@@ -18,26 +18,7 @@ public class CollectorService {
         this.reportRepo = reportRepo;
     }
 
-    public ConsumptionChunkReport getAggregatedValues(String meterUuid) {
-        List<ConsumptionChunkReport> r = reportRepo.getForUUID(meterUuid);
-        ConsumptionChunkReport agrrReport = r.stream()
-                .reduce((a, b) -> {
-                    a.setPurchaseWh(a.getPurchaseWh() + b.getPurchaseWh());
-                    a.setPurchaseCost(a.getPurchaseCost().add(b.getPurchaseCost()));
-                    a.setSaleWh(a.getSaleWh() + b.getSaleWh());
-                    a.setSaleCost(a.getSaleCost().add(b.getSaleCost()));
-                    return a;
-                })
-                .orElse(new ConsumptionChunkReport());
-        agrrReport.setPrice(ChunkConverter.calculatePrice(agrrReport));
-        Long timeMark = r.stream()
-                .mapToLong(ConsumptionChunkReport::getTime)
-                .max()
-                .orElse(LocalDateTime.now().minusHours(24).toEpochSecond(UTC));
 
-        agrrReport.setTime(timeMark);
-        return agrrReport;
-    }
 
 
 }

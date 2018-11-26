@@ -1,0 +1,39 @@
+[INFO] [04:50:42.797] Application initialization 
+[INFO] [04:50:43.921] Slf4jLogger started
+[WARN] [04:50:44.451] application.conf @ file:/C:/work/report-brocker/target/classes/application.conf: 1: play.crypto.secret is deprecated, use play.http.secret.key instead
+[INFO] [04:50:44.638] Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+
+[WARN] [04:50:44.646] application.langs is deprecated, use play.i18n.langs instead
+[INFO] [04:50:44.891] Application started (Dev)
+[TRACE] [04:50:45.395] {"sellerId":"0x85176b816BEd182c08DdaAcCF6fD060a152Da175","buyerId":"0x44ac47379573F997098d02714D652abc28629c44","time":1548202810,"saleWh":23.0,"cost":"33434343434343"}
+[INFO] [04:50:45.535] {"uuid":"0x44ac47379573F997098d02714D652abc28629c44","time":1548202810,"price":1453667105841,"saleWh":0.0,"saleCost":0,"purchaseWh":23.0,"purchaseCost":33434343434343}
+[INFO] [04:50:45.538] {"uuid":"0x85176b816BEd182c08DdaAcCF6fD060a152Da175","time":1548202810,"price":1453667105841,"saleWh":23.0,"saleCost":33434343434343,"purchaseWh":0.0,"purchaseCost":0}
+[TRACE] [04:50:48.241] {"sellerId":"0x85176b816BEd182c08DdaAcCF6fD060a152Da175","buyerId":"0x44ac47379573F997098d02714D652abc28629c44","time":1548203410,"saleWh":23.0,"cost":"33434343434343"}
+[INFO] [04:50:48.243] {"uuid":"0x44ac47379573F997098d02714D652abc28629c44","time":1548203410,"price":1453667105841,"saleWh":0.0,"saleCost":0,"purchaseWh":23.0,"purchaseCost":33434343434343}
+[INFO] [04:50:48.256] {"uuid":"0x85176b816BEd182c08DdaAcCF6fD060a152Da175","time":1548203410,"price":1453667105841,"saleWh":23.0,"saleCost":33434343434343,"purchaseWh":0.0,"purchaseCost":0}
+[TRACE] [04:51:05.543] {"sellerId":"0x85176b816BEd182c08DdaAcCF6fD060a152Da175","buyerId":"0x44ac47379573F997098d02714D652abc28629c44","time":1548203510,"saleWh":23.0,"cost":"33434343434343"}
+[INFO] [04:51:05.544] {"uuid":"0x44ac47379573F997098d02714D652abc28629c44","time":1548203510,"price":1453667105841,"saleWh":0.0,"saleCost":0,"purchaseWh":23.0,"purchaseCost":33434343434343}
+[INFO] [04:51:05.544] {"uuid":"0x85176b816BEd182c08DdaAcCF6fD060a152Da175","time":1548203510,"price":1453667105841,"saleWh":23.0,"saleCost":33434343434343,"purchaseWh":0.0,"purchaseCost":0}
+[TRACE] [04:51:11.016] {"sellerId":"0x85176b816BEd182c08DdaAcCF6fD060a152Da175","buyerId":"0x44ac47379573F997098d02714D652abc28629c44","time":1548203610,"saleWh":23.0,"cost":"33434343434343"}
+[INFO] [04:51:11.016] {"uuid":"0x44ac47379573F997098d02714D652abc28629c44","time":1548203610,"price":1453667105841,"saleWh":0.0,"saleCost":0,"purchaseWh":23.0,"purchaseCost":33434343434343}
+[INFO] [04:51:11.017] {"uuid":"0x85176b816BEd182c08DdaAcCF6fD060a152Da175","time":1548203610,"price":1453667105841,"saleWh":23.0,"saleCost":33434343434343,"purchaseWh":0.0,"purchaseCost":0}
+[TRACE] [04:51:15.539] {"sellerId":"0x85176b816BEd182c08DdaAcCF6fD060a152Da175","buyerId":"0x44ac47379573F997098d02714D652abc28629c44","time":1548203710,"saleWh":23.0,"cost":"33434343434343"}
+[INFO] [04:51:15.540] {"uuid":"0x44ac47379573F997098d02714D652abc28629c44","time":1548203710,"price":1453667105841,"saleWh":0.0,"saleCost":0,"purchaseWh":23.0,"purchaseCost":33434343434343}
+[INFO] [04:51:15.540] {"uuid":"0x85176b816BEd182c08DdaAcCF6fD060a152Da175","time":1548203710,"price":1453667105841,"saleWh":23.0,"saleCost":33434343434343,"purchaseWh":0.0,"purchaseCost":0}
+[TRACE] [04:51:33.204] {"sellerId":"0x85176b816BEd182c08DdaAcCF6fD060a152Da175","buyerId":"0x44ac47379573F997098d02714D652abc28629c44","time":1548204010,"saleWh":23.0,"cost":"33434343434343"}
+[INFO] [04:51:33.204] {"uuid":"0x44ac47379573F997098d02714D652abc28629c44","time":1548204010,"price":1453667105841,"saleWh":0.0,"saleCost":0,"purchaseWh":23.0,"purchaseCost":33434343434343}
+[INFO] [04:51:33.205] {"uuid":"0x85176b816BEd182c08DdaAcCF6fD060a152Da175","time":1548204010,"price":1453667105841,"saleWh":23.0,"saleCost":33434343434343,"purchaseWh":0.0,"purchaseCost":0}
+[TRACE] [04:52:08.903] {"sellerId":"0x85176b816BEd182c08DdaAcCF6fD060a152Da175","buyerId":"0x44ac47379573F997098d02714D652abc28629c44","time":1548204110,"saleWh":23.0,"cost":"33434343434343"}
+[INFO] [04:52:08.903] {"uuid":"0x44ac47379573F997098d02714D652abc28629c44","time":1548204110,"price":1453667105841,"saleWh":0.0,"saleCost":0,"purchaseWh":23.0,"purchaseCost":33434343434343}
+[INFO] [04:52:08.904] {"uuid":"0x85176b816BEd182c08DdaAcCF6fD060a152Da175","time":1548204110,"price":1453667105841,"saleWh":23.0,"saleCost":33434343434343,"purchaseWh":0.0,"purchaseCost":0}
+[TRACE] [04:52:52.539] {"sellerId":"0x85176b816BEd182c08DdaAcCF6fD060a152Da175","buyerId":"0x44ac47379573F997098d02714D652abc28629c44","time":1548204110,"saleWh":23.0,"cost":"33434343434343"}
+[INFO] [04:52:52.540] {"uuid":"0x44ac47379573F997098d02714D652abc28629c44","time":1548204110,"price":1453667105841,"saleWh":0.0,"saleCost":0,"purchaseWh":23.0,"purchaseCost":33434343434343}
+[INFO] [04:52:52.543] {"uuid":"0x85176b816BEd182c08DdaAcCF6fD060a152Da175","time":1548204110,"price":1453667105841,"saleWh":23.0,"saleCost":33434343434343,"purchaseWh":0.0,"purchaseCost":0}
+[TRACE] [04:53:30.876] {"sellerId":"0x85176b816BEd182c08DdaAcCF6fD060a152Da175","buyerId":"0x44ac47379573F997098d02714D652abc28629c44","time":1548204810,"saleWh":23.0,"cost":"33434343434343"}
+[INFO] [04:53:30.877] {"uuid":"0x44ac47379573F997098d02714D652abc28629c44","time":1548204810,"price":1453667105841,"saleWh":0.0,"saleCost":0,"purchaseWh":23.0,"purchaseCost":33434343434343}
+[INFO] [04:53:39.219] {"uuid":"0x85176b816BEd182c08DdaAcCF6fD060a152Da175","time":1548204810,"price":1453667105841,"saleWh":23.0,"saleCost":33434343434343,"purchaseWh":0.0,"purchaseCost":0}
+[TRACE] [04:56:38.110] {"sellerId":"0x85176b816BEd182c08DdaAcCF6fD060a152Da175","buyerId":"0x44ac47379573F997098d02714D652abc28629c44","time":1548205210,"saleWh":23.0,"cost":"33434343434343"}
+[INFO] [04:56:38.111] {"uuid":"0x44ac47379573F997098d02714D652abc28629c44","time":1548205210,"price":1453667105841,"saleWh":0.0,"saleCost":0,"purchaseWh":23.0,"purchaseCost":33434343434343}
+[INFO] [04:56:45.863] {"uuid":"0x85176b816BEd182c08DdaAcCF6fD060a152Da175","time":1548205210,"price":1453667105841,"saleWh":23.0,"saleCost":33434343434343,"purchaseWh":0.0,"purchaseCost":0}
+[INFO] [04:57:20.541] Stopping server...

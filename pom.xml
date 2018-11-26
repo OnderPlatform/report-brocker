@@ -136,6 +136,13 @@
             <artifactId>guava</artifactId>
             <version>19.0</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-io -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>1.3.2</version>
+        </dependency>
+
         <!-- https://mvnrepository.com/artifact/com.typesafe.play/play-akka-http-server -->
         <dependency>
             <groupId>com.typesafe.play</groupId>

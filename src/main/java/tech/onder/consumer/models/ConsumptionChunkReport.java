@@ -24,6 +24,13 @@ public class ConsumptionChunkReport {
 
     private BigInteger purchaseCost;
 
+    public ConsumptionChunkReport() {
+    }
+
+    public ConsumptionChunkReport(String uuid) {
+        this.uuid = uuid;
+    }
+
     public String getUuid() {
         return uuid;
     }

@@ -5,8 +5,8 @@ import tech.onder.reports.models.ReportDTO;
 
 import javax.inject.Inject;
 
-import static tech.onder.core.OutputUtils.kwhFormat;
-import static tech.onder.core.OutputUtils.tokenPrice;
+import static tech.onder.meters.OutputUtils.kwhFormat;
+import static tech.onder.meters.OutputUtils.tokenPrice;
 
 public class ReportConverter {
     @Inject
@@ -17,7 +17,7 @@ public class ReportConverter {
 
         ReportDTO reportDTO = new ReportDTO();
         reportDTO.setTime(chunkReport.getTime());
-        reportDTO.setValue(kwhFormat(chunkReport.getConsumption()/1000));
+        reportDTO.setValue(kwhFormat(chunkReport.getConsumption()));
         return reportDTO;
     }
 

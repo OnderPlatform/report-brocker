@@ -63,24 +63,6 @@ public class UserActor extends AbstractActorWithTimers {
         this.chunkReportManagementService = chunkReportManagementService;
         chunkReportManagementService.subscribe(id);
         this.mat = mat;
-
-//        Pair<Sink<JsonNode, NotUsed>, Source<JsonNode, NotUsed>> sinkSourcePair =
-//                MergeHub.of(JsonNode.class, 16)
-//                        .toMat(BroadcastHub.of(JsonNode.class, 256), Keep.both())
-//                        .run(mat);
-//
-//        this.hubSink = sinkSourcePair.first();
-//        Source<JsonNode, NotUsed> hubSource = sinkSourcePair.second();
-//
-//        Sink<JsonNode, CompletionStage<Done>> jsonSink = Sink.ignore();
-//
-//        this.websocketFlow = Flow.fromSinkAndSource(jsonSink, hubSource)
-//                .watchTermination((n, stage) -> {
-//                    // When the flow shuts down, make sure this actor also stops.
-//                    stage.thenAccept(f -> context().stop(self()));
-//                    return NotUsed.getInstance();
-//                });
-        //getTimers().startSingleTimer(TICK_KEY, new FirstTick(), Duration.fromNanos(5000));
     }
 
 
@@ -102,17 +84,6 @@ public class UserActor extends AbstractActorWithTimers {
                 .match(Tick.class, message -> {
                    WebsocketDTO dto = chunkReportManagementService.calculate(this.id);
                     JsonNode js = Json.toJson(dto);
-//                    Source<JsonNode, NotUsed> source =
-//                            Source.single(js);
-                    //return source;
-//                    final Flow<JsonNode, JsonNode, UniqueKillSwitch> killswitchFlow = Flow.of(JsonNode.class)
-//                            .joinMat(KillSwitches.singleBidi(), Keep.right());
-//
-//                    final RunnableGraph<UniqueKillSwitch> graph = source
-//                            .viaMat(killswitchFlow, Keep.right())
-//                            .to(hubSink)
-//                            .named("user"+this.id);
-//                    // Set up a complete runnable graph from the stock source to the hub's sink
                     sender().tell(js, self());
                 }).build();
     }

@@ -9,15 +9,13 @@ import tech.onder.reports.models.WebsocketDTO;
 import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.math.RoundingMode;
-import java.text.DecimalFormat;
-import java.text.NumberFormat;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import static tech.onder.core.OutputUtils.kwhFormat;
-import static tech.onder.core.OutputUtils.token;
-import static tech.onder.core.OutputUtils.tokenPrice;
+import static tech.onder.meters.OutputUtils.kwhFormat;
+import static tech.onder.meters.OutputUtils.token;
+import static tech.onder.meters.OutputUtils.tokenPrice;
 
 public class ChunkConverter {
     List<ConsumptionChunkReport> toChunks(MeterInputDTO inputDTO) {
@@ -43,8 +41,8 @@ public class ChunkConverter {
             castUp = chunkReport.getPurchaseCost();
             castWh = chunkReport.getPurchaseWh();
         } else {
-            castUp = chunkReport.getPurchaseCost();
-            castWh = chunkReport.getPurchaseWh();
+            castUp = chunkReport.getSaleCost();
+            castWh = chunkReport.getSaleWh();
         }
         return calculatePrice(castUp, castWh);
     }
@@ -64,7 +62,7 @@ public class ChunkConverter {
     public ConsumptionChunkReport createPurchase(MeterInputDTO dto) {
 
         ConsumptionChunkReport chunk = new ConsumptionChunkReport();
-        chunk.setUuid(dto.getSellerId());
+        chunk.setUuid(dto.getBuyerId());
         chunk.setPurchaseWh(dto.getSaleWh());
         chunk.setPurchaseCost(new BigInteger(dto.getCost()));
         chunk.setSaleCost(BigInteger.ZERO);
@@ -77,9 +75,9 @@ public class ChunkConverter {
         MeterReportDTO mrd = new MeterReportDTO();
         mrd.setUuid(chunkReport.getUuid());
         mrd.setUpdateTime(chunkReport.getTime());
-        mrd.setPurchaseKwh(kwhFormat(chunkReport.getPurchaseWh() / 1000));
+        mrd.setPurchaseKwh(kwhFormat(chunkReport.getPurchaseWh() ));
         mrd.setPurchaseTokens(token(chunkReport.getPurchaseCost()));
-        mrd.setSaleKwh(kwhFormat(chunkReport.getSaleWh() / 1000));
+        mrd.setSaleKwh(kwhFormat(chunkReport.getSaleWh()));
         mrd.setSaleTokens(token(chunkReport.getSaleCost()));
         mrd.setPrice(tokenPrice(ChunkConverter.calculatePrice(chunkReport)));
         return mrd;
@@ -87,7 +85,7 @@ public class ChunkConverter {
     public WebsocketDTO toWebsocketDTO(PeriodReport pr, List<MeterReportDTO> meters){
         WebsocketDTO websocketDTO = new WebsocketDTO();
         websocketDTO.setInstantPrice(tokenPrice(pr.getPrice()));
-        websocketDTO.setInstantConsumption(kwhFormat(pr.getConsumption() / 1000));
+        websocketDTO.setInstantConsumption(kwhFormat(pr.getConsumption()));
         websocketDTO.setTime(pr.getTime());
         websocketDTO.setMeters(meters);
         return websocketDTO;
