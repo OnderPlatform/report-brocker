@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/work/report-brocker/conf/routes
-// @DATE:Mon Nov 26 00:39:00 CET 2018
+// @DATE:Mon Nov 26 05:03:16 CET 2018
 
 
 package router {
