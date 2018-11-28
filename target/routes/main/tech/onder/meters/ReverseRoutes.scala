@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/work/report-brocker/conf/routes
-// @DATE:Wed Nov 28 19:19:03 CET 2018
+// @DATE:Wed Nov 28 21:40:13 CET 2018
 
 import play.api.mvc.Call
 
@@ -21,19 +21,19 @@ package tech.onder.meters {
     // @LINE:4
     def meters(): Call = {
       
-      Call("GET", _prefix + { _defaultPrefix } + "meters")
+      Call("GET", _prefix + { _defaultPrefix } + "api/meters")
     }
   
     // @LINE:6
     def addMeter(): Call = {
       
-      Call("POST", _prefix + { _defaultPrefix } + "meters")
+      Call("POST", _prefix + { _defaultPrefix } + "api/meters")
     }
   
     // @LINE:8
     def meterRelations(): Call = {
       
-      Call("GET", _prefix + { _defaultPrefix } + "meters/relations")
+      Call("GET", _prefix + { _defaultPrefix } + "api/meters/relations")
     }
   
   }

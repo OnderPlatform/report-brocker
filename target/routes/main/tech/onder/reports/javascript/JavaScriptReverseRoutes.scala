@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/work/report-brocker/conf/routes
-// @DATE:Wed Nov 28 19:19:03 CET 2018
+// @DATE:Wed Nov 28 21:40:13 CET 2018
 
 import play.api.routing.JavaScriptReverseRoute
 
@@ -24,7 +24,7 @@ package tech.onder.reports.javascript {
       "tech.onder.reports.ReportController.meters",
       """
         function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "reports/meters"})
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "api/reports/meters"})
         }
       """
     )
@@ -34,7 +34,7 @@ package tech.onder.reports.javascript {
       "tech.onder.reports.ReportController.consumption",
       """
         function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "reports/consumption"})
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "api/reports/consumption"})
         }
       """
     )
@@ -44,7 +44,7 @@ package tech.onder.reports.javascript {
       "tech.onder.reports.ReportController.prices",
       """
         function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "reports/price"})
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "api/reports/price"})
         }
       """
     )
@@ -54,7 +54,7 @@ package tech.onder.reports.javascript {
       "tech.onder.reports.ReportController.ws",
       """
         function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "ws"})
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "api/ws"})
         }
       """
     )

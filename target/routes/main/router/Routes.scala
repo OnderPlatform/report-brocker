@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/work/report-brocker/conf/routes
-// @DATE:Wed Nov 28 19:19:03 CET 2018
+// @DATE:Wed Nov 28 21:40:13 CET 2018
 
 package router
 
@@ -44,13 +44,13 @@ class Routes(
 
   def documentation = List(
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """api/meters/""" + "$" + """id<[^/]+>""", """tech.onder.consumer.CollectorController.push(id:String)"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """meters""", """tech.onder.meters.CommonController.meters()"""),
-    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """meters""", """tech.onder.meters.CommonController.addMeter()"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """meters/relations""", """tech.onder.meters.CommonController.meterRelations()"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """reports/consumption""", """tech.onder.reports.ReportController.consumption()"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """reports/price""", """tech.onder.reports.ReportController.prices()"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """reports/meters""", """tech.onder.reports.ReportController.meters()"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """ws""", """tech.onder.reports.ReportController.ws()"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """api/meters""", """tech.onder.meters.CommonController.meters()"""),
+    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """api/meters""", """tech.onder.meters.CommonController.addMeter()"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """api/meters/relations""", """tech.onder.meters.CommonController.meterRelations()"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """api/reports/consumption""", """tech.onder.reports.ReportController.consumption()"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """api/reports/price""", """tech.onder.reports.ReportController.prices()"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """api/reports/meters""", """tech.onder.reports.ReportController.meters()"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """api/ws""", """tech.onder.reports.ReportController.ws()"""),
     Nil
   ).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
     case r @ (_,_,_) => s :+ r.asInstanceOf[(String,String,String)]
@@ -78,7 +78,7 @@ class Routes(
 
   // @LINE:4
   private[this] lazy val tech_onder_meters_CommonController_meters1_route = Route("GET",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("meters")))
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("api/meters")))
   )
   private[this] lazy val tech_onder_meters_CommonController_meters1_invoker = createInvoker(
     CommonController_0.meters(),
@@ -88,7 +88,7 @@ class Routes(
       "meters",
       Nil,
       "GET",
-      this.prefix + """meters""",
+      this.prefix + """api/meters""",
       """""",
       Seq()
     )
@@ -96,7 +96,7 @@ class Routes(
 
   // @LINE:6
   private[this] lazy val tech_onder_meters_CommonController_addMeter2_route = Route("POST",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("meters")))
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("api/meters")))
   )
   private[this] lazy val tech_onder_meters_CommonController_addMeter2_invoker = createInvoker(
     CommonController_0.addMeter(),
@@ -106,7 +106,7 @@ class Routes(
       "addMeter",
       Nil,
       "POST",
-      this.prefix + """meters""",
+      this.prefix + """api/meters""",
       """""",
       Seq()
     )
@@ -114,7 +114,7 @@ class Routes(
 
   // @LINE:8
   private[this] lazy val tech_onder_meters_CommonController_meterRelations3_route = Route("GET",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("meters/relations")))
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("api/meters/relations")))
   )
   private[this] lazy val tech_onder_meters_CommonController_meterRelations3_invoker = createInvoker(
     CommonController_0.meterRelations(),
@@ -124,7 +124,7 @@ class Routes(
       "meterRelations",
       Nil,
       "GET",
-      this.prefix + """meters/relations""",
+      this.prefix + """api/meters/relations""",
       """""",
       Seq()
     )
@@ -132,7 +132,7 @@ class Routes(
 
   // @LINE:11
   private[this] lazy val tech_onder_reports_ReportController_consumption4_route = Route("GET",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("reports/consumption")))
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("api/reports/consumption")))
   )
   private[this] lazy val tech_onder_reports_ReportController_consumption4_invoker = createInvoker(
     ReportController_1.consumption(),
@@ -142,7 +142,7 @@ class Routes(
       "consumption",
       Nil,
       "GET",
-      this.prefix + """reports/consumption""",
+      this.prefix + """api/reports/consumption""",
       """""",
       Seq()
     )
@@ -150,7 +150,7 @@ class Routes(
 
   // @LINE:13
   private[this] lazy val tech_onder_reports_ReportController_prices5_route = Route("GET",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("reports/price")))
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("api/reports/price")))
   )
   private[this] lazy val tech_onder_reports_ReportController_prices5_invoker = createInvoker(
     ReportController_1.prices(),
@@ -160,7 +160,7 @@ class Routes(
       "prices",
       Nil,
       "GET",
-      this.prefix + """reports/price""",
+      this.prefix + """api/reports/price""",
       """""",
       Seq()
     )
@@ -168,7 +168,7 @@ class Routes(
 
   // @LINE:15
   private[this] lazy val tech_onder_reports_ReportController_meters6_route = Route("GET",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("reports/meters")))
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("api/reports/meters")))
   )
   private[this] lazy val tech_onder_reports_ReportController_meters6_invoker = createInvoker(
     ReportController_1.meters(),
@@ -178,7 +178,7 @@ class Routes(
       "meters",
       Nil,
       "GET",
-      this.prefix + """reports/meters""",
+      this.prefix + """api/reports/meters""",
       """""",
       Seq()
     )
@@ -186,7 +186,7 @@ class Routes(
 
   // @LINE:19
   private[this] lazy val tech_onder_reports_ReportController_ws7_route = Route("GET",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("ws")))
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("api/ws")))
   )
   private[this] lazy val tech_onder_reports_ReportController_ws7_invoker = createInvoker(
     ReportController_1.ws(),
@@ -196,7 +196,7 @@ class Routes(
       "ws",
       Nil,
       "GET",
-      this.prefix + """ws""",
+      this.prefix + """api/ws""",
       """""",
       Seq()
     )
