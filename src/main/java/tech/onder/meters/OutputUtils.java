@@ -27,7 +27,7 @@ public class OutputUtils {
             Arrays.fill(add, '0');
             return "0." + new String(add) + am;
         } else {
-            return am.substring(0, diff) + "." + am.substring(-diff);
+            return am.substring(0, -diff) + "." + am.substring(-diff);
         }
     }
 }
