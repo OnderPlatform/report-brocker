@@ -3,6 +3,8 @@ POST       /api/meters/:id      tech.onder.consumer.CollectorController.push(id:
 
 GET        /meters              tech.onder.meters.CommonController.meters()
 
+POST /meters    tech.onder.meters.CommonController.addMeter()
+
 GET        /meters/relations    tech.onder.meters.CommonController.meterRelations()
 #Reports
 
@@ -11,5 +13,7 @@ GET        /reports/consumption  tech.onder.reports.ReportController.consumption
 GET        /reports/price        tech.onder.reports.ReportController.prices()
 
 GET        /reports/meters        tech.onder.reports.ReportController.meters()
+
+
 
 GET     /ws                         tech.onder.reports.ReportController.ws()

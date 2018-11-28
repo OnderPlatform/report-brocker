@@ -37,12 +37,13 @@ products:
    C:\work\report-brocker\src\main\java\tech\onder\reports\ReportService.java -> C:\work\report-brocker\target\classes\tech\onder\reports\ReportService.class
    C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\target\classes\router\Routes$$anonfun$documentation$1.class
    C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\target\classes\router\Routes$$anonfun$router$Routes$$tech_onder_consumer_CollectorController_push0_invoker$1.class
-   C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\target\classes\router\Routes$$anonfun$router$Routes$$tech_onder_meters_CommonController_meterRelations2_invoker$1.class
+   C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\target\classes\router\Routes$$anonfun$router$Routes$$tech_onder_meters_CommonController_addMeter2_invoker$1.class
+   C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\target\classes\router\Routes$$anonfun$router$Routes$$tech_onder_meters_CommonController_meterRelations3_invoker$1.class
    C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\target\classes\router\Routes$$anonfun$router$Routes$$tech_onder_meters_CommonController_meters1_invoker$1.class
-   C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\target\classes\router\Routes$$anonfun$router$Routes$$tech_onder_reports_ReportController_consumption3_invoker$1.class
-   C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\target\classes\router\Routes$$anonfun$router$Routes$$tech_onder_reports_ReportController_meters5_invoker$1.class
-   C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\target\classes\router\Routes$$anonfun$router$Routes$$tech_onder_reports_ReportController_prices4_invoker$1.class
-   C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\target\classes\router\Routes$$anonfun$router$Routes$$tech_onder_reports_ReportController_ws6_invoker$1.class
+   C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\target\classes\router\Routes$$anonfun$router$Routes$$tech_onder_reports_ReportController_consumption4_invoker$1.class
+   C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\target\classes\router\Routes$$anonfun$router$Routes$$tech_onder_reports_ReportController_meters6_invoker$1.class
+   C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\target\classes\router\Routes$$anonfun$router$Routes$$tech_onder_reports_ReportController_prices5_invoker$1.class
+   C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\target\classes\router\Routes$$anonfun$router$Routes$$tech_onder_reports_ReportController_ws7_invoker$1.class
    C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\target\classes\router\Routes$$anonfun$routes$1$$anonfun$applyOrElse$1$$anonfun$apply$1.class
    C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\target\classes\router\Routes$$anonfun$routes$1$$anonfun$applyOrElse$1.class
    C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\target\classes\router\Routes$$anonfun$routes$1$$anonfun$applyOrElse$2$$anonfun$apply$2.class
@@ -57,6 +58,8 @@ products:
    C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\target\classes\router\Routes$$anonfun$routes$1$$anonfun$applyOrElse$6.class
    C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\target\classes\router\Routes$$anonfun$routes$1$$anonfun$applyOrElse$7$$anonfun$apply$7.class
    C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\target\classes\router\Routes$$anonfun$routes$1$$anonfun$applyOrElse$7.class
+   C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\target\classes\router\Routes$$anonfun$routes$1$$anonfun$applyOrElse$8$$anonfun$apply$8.class
+   C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\target\classes\router\Routes$$anonfun$routes$1$$anonfun$applyOrElse$8.class
    C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\target\classes\router\Routes$$anonfun$routes$1.class
    C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\target\classes\router\Routes.class
    C:\work\report-brocker\target\routes\main\router\RoutesPrefix.scala -> C:\work\report-brocker\target\classes\router\RoutesPrefix$$anonfun$1.class
@@ -194,6 +197,7 @@ source dependencies:
    C:\work\report-brocker\src\main\java\tech\onder\meters\CommonController.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\CommonController.java
    C:\work\report-brocker\src\main\java\tech\onder\meters\CommonController.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\MeterService.java
    C:\work\report-brocker\src\main\java\tech\onder\meters\CommonController.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\models\dto\MeterInputDTO.java
+   C:\work\report-brocker\src\main\java\tech\onder\meters\CommonController.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\repositories\AbstractInMemoryRepo.java
    C:\work\report-brocker\src\main\java\tech\onder\meters\CommonController.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\repositories\MeterRelationRepo.java
    C:\work\report-brocker\src\main\java\tech\onder\meters\CommonController.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\repositories\MeterRepo.java
    C:\work\report-brocker\src\main\java\tech\onder\meters\MeterConverter.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\MeterConverter.java
@@ -310,12 +314,13 @@ class names:
    C:\work\report-brocker\target\routes\main\router\Routes.scala -> router.Routes
    C:\work\report-brocker\target\routes\main\router\Routes.scala -> router.Routes$$anonfun$documentation$1
    C:\work\report-brocker\target\routes\main\router\Routes.scala -> router.Routes$$anonfun$router$Routes$$tech_onder_consumer_CollectorController_push0_invoker$1
-   C:\work\report-brocker\target\routes\main\router\Routes.scala -> router.Routes$$anonfun$router$Routes$$tech_onder_meters_CommonController_meterRelations2_invoker$1
+   C:\work\report-brocker\target\routes\main\router\Routes.scala -> router.Routes$$anonfun$router$Routes$$tech_onder_meters_CommonController_addMeter2_invoker$1
+   C:\work\report-brocker\target\routes\main\router\Routes.scala -> router.Routes$$anonfun$router$Routes$$tech_onder_meters_CommonController_meterRelations3_invoker$1
    C:\work\report-brocker\target\routes\main\router\Routes.scala -> router.Routes$$anonfun$router$Routes$$tech_onder_meters_CommonController_meters1_invoker$1
-   C:\work\report-brocker\target\routes\main\router\Routes.scala -> router.Routes$$anonfun$router$Routes$$tech_onder_reports_ReportController_consumption3_invoker$1
-   C:\work\report-brocker\target\routes\main\router\Routes.scala -> router.Routes$$anonfun$router$Routes$$tech_onder_reports_ReportController_meters5_invoker$1
-   C:\work\report-brocker\target\routes\main\router\Routes.scala -> router.Routes$$anonfun$router$Routes$$tech_onder_reports_ReportController_prices4_invoker$1
-   C:\work\report-brocker\target\routes\main\router\Routes.scala -> router.Routes$$anonfun$router$Routes$$tech_onder_reports_ReportController_ws6_invoker$1
+   C:\work\report-brocker\target\routes\main\router\Routes.scala -> router.Routes$$anonfun$router$Routes$$tech_onder_reports_ReportController_consumption4_invoker$1
+   C:\work\report-brocker\target\routes\main\router\Routes.scala -> router.Routes$$anonfun$router$Routes$$tech_onder_reports_ReportController_meters6_invoker$1
+   C:\work\report-brocker\target\routes\main\router\Routes.scala -> router.Routes$$anonfun$router$Routes$$tech_onder_reports_ReportController_prices5_invoker$1
+   C:\work\report-brocker\target\routes\main\router\Routes.scala -> router.Routes$$anonfun$router$Routes$$tech_onder_reports_ReportController_ws7_invoker$1
    C:\work\report-brocker\target\routes\main\router\Routes.scala -> router.Routes$$anonfun$routes$1
    C:\work\report-brocker\target\routes\main\router\Routes.scala -> router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$1
    C:\work\report-brocker\target\routes\main\router\Routes.scala -> router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$1$$anonfun$apply$1
@@ -331,6 +336,8 @@ class names:
    C:\work\report-brocker\target\routes\main\router\Routes.scala -> router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$6$$anonfun$apply$6
    C:\work\report-brocker\target\routes\main\router\Routes.scala -> router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$7
    C:\work\report-brocker\target\routes\main\router\Routes.scala -> router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$7$$anonfun$apply$7
+   C:\work\report-brocker\target\routes\main\router\Routes.scala -> router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$8
+   C:\work\report-brocker\target\routes\main\router\Routes.scala -> router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$8$$anonfun$apply$8
    C:\work\report-brocker\target\routes\main\router\RoutesPrefix.scala -> router.RoutesPrefix
    C:\work\report-brocker\target\routes\main\router\RoutesPrefix.scala -> router.RoutesPrefix$
    C:\work\report-brocker\target\routes\main\router\RoutesPrefix.scala -> router.RoutesPrefix$$anonfun$1

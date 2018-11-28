@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/work/report-brocker/conf/routes
-// @DATE:Mon Nov 26 05:03:16 CET 2018
+// @DATE:Wed Nov 28 18:30:04 CET 2018
 
 package router
 
@@ -18,7 +18,7 @@ class Routes(
   CollectorController_2: tech.onder.consumer.CollectorController,
   // @LINE:4
   CommonController_0: tech.onder.meters.CommonController,
-  // @LINE:9
+  // @LINE:11
   ReportController_1: tech.onder.reports.ReportController,
   val prefix: String
 ) extends GeneratedRouter {
@@ -29,7 +29,7 @@ class Routes(
     CollectorController_2: tech.onder.consumer.CollectorController,
     // @LINE:4
     CommonController_0: tech.onder.meters.CommonController,
-    // @LINE:9
+    // @LINE:11
     ReportController_1: tech.onder.reports.ReportController
   ) = this(errorHandler, CollectorController_2, CommonController_0, ReportController_1, "/")
 
@@ -45,6 +45,7 @@ class Routes(
   def documentation = List(
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """api/meters/""" + "$" + """id<[^/]+>""", """tech.onder.consumer.CollectorController.push(id:String)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """meters""", """tech.onder.meters.CommonController.meters()"""),
+    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """meters""", """tech.onder.meters.CommonController.addMeter()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """meters/relations""", """tech.onder.meters.CommonController.meterRelations()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """reports/consumption""", """tech.onder.reports.ReportController.consumption()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """reports/price""", """tech.onder.reports.ReportController.prices()"""),
@@ -94,10 +95,28 @@ class Routes(
   )
 
   // @LINE:6
-  private[this] lazy val tech_onder_meters_CommonController_meterRelations2_route = Route("GET",
+  private[this] lazy val tech_onder_meters_CommonController_addMeter2_route = Route("POST",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("meters")))
+  )
+  private[this] lazy val tech_onder_meters_CommonController_addMeter2_invoker = createInvoker(
+    CommonController_0.addMeter(),
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "tech.onder.meters.CommonController",
+      "addMeter",
+      Nil,
+      "POST",
+      this.prefix + """meters""",
+      """""",
+      Seq()
+    )
+  )
+
+  // @LINE:8
+  private[this] lazy val tech_onder_meters_CommonController_meterRelations3_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("meters/relations")))
   )
-  private[this] lazy val tech_onder_meters_CommonController_meterRelations2_invoker = createInvoker(
+  private[this] lazy val tech_onder_meters_CommonController_meterRelations3_invoker = createInvoker(
     CommonController_0.meterRelations(),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -111,11 +130,11 @@ class Routes(
     )
   )
 
-  // @LINE:9
-  private[this] lazy val tech_onder_reports_ReportController_consumption3_route = Route("GET",
+  // @LINE:11
+  private[this] lazy val tech_onder_reports_ReportController_consumption4_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("reports/consumption")))
   )
-  private[this] lazy val tech_onder_reports_ReportController_consumption3_invoker = createInvoker(
+  private[this] lazy val tech_onder_reports_ReportController_consumption4_invoker = createInvoker(
     ReportController_1.consumption(),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -129,11 +148,11 @@ class Routes(
     )
   )
 
-  // @LINE:11
-  private[this] lazy val tech_onder_reports_ReportController_prices4_route = Route("GET",
+  // @LINE:13
+  private[this] lazy val tech_onder_reports_ReportController_prices5_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("reports/price")))
   )
-  private[this] lazy val tech_onder_reports_ReportController_prices4_invoker = createInvoker(
+  private[this] lazy val tech_onder_reports_ReportController_prices5_invoker = createInvoker(
     ReportController_1.prices(),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -147,11 +166,11 @@ class Routes(
     )
   )
 
-  // @LINE:13
-  private[this] lazy val tech_onder_reports_ReportController_meters5_route = Route("GET",
+  // @LINE:15
+  private[this] lazy val tech_onder_reports_ReportController_meters6_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("reports/meters")))
   )
-  private[this] lazy val tech_onder_reports_ReportController_meters5_invoker = createInvoker(
+  private[this] lazy val tech_onder_reports_ReportController_meters6_invoker = createInvoker(
     ReportController_1.meters(),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -165,11 +184,11 @@ class Routes(
     )
   )
 
-  // @LINE:15
-  private[this] lazy val tech_onder_reports_ReportController_ws6_route = Route("GET",
+  // @LINE:19
+  private[this] lazy val tech_onder_reports_ReportController_ws7_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("ws")))
   )
-  private[this] lazy val tech_onder_reports_ReportController_ws6_invoker = createInvoker(
+  private[this] lazy val tech_onder_reports_ReportController_ws7_invoker = createInvoker(
     ReportController_1.ws(),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -199,33 +218,39 @@ class Routes(
       }
   
     // @LINE:6
-    case tech_onder_meters_CommonController_meterRelations2_route(params@_) =>
+    case tech_onder_meters_CommonController_addMeter2_route(params@_) =>
       call { 
-        tech_onder_meters_CommonController_meterRelations2_invoker.call(CommonController_0.meterRelations())
+        tech_onder_meters_CommonController_addMeter2_invoker.call(CommonController_0.addMeter())
       }
   
-    // @LINE:9
-    case tech_onder_reports_ReportController_consumption3_route(params@_) =>
+    // @LINE:8
+    case tech_onder_meters_CommonController_meterRelations3_route(params@_) =>
       call { 
-        tech_onder_reports_ReportController_consumption3_invoker.call(ReportController_1.consumption())
+        tech_onder_meters_CommonController_meterRelations3_invoker.call(CommonController_0.meterRelations())
       }
   
     // @LINE:11
-    case tech_onder_reports_ReportController_prices4_route(params@_) =>
+    case tech_onder_reports_ReportController_consumption4_route(params@_) =>
       call { 
-        tech_onder_reports_ReportController_prices4_invoker.call(ReportController_1.prices())
+        tech_onder_reports_ReportController_consumption4_invoker.call(ReportController_1.consumption())
       }
   
     // @LINE:13
-    case tech_onder_reports_ReportController_meters5_route(params@_) =>
+    case tech_onder_reports_ReportController_prices5_route(params@_) =>
       call { 
-        tech_onder_reports_ReportController_meters5_invoker.call(ReportController_1.meters())
+        tech_onder_reports_ReportController_prices5_invoker.call(ReportController_1.prices())
       }
   
     // @LINE:15
-    case tech_onder_reports_ReportController_ws6_route(params@_) =>
+    case tech_onder_reports_ReportController_meters6_route(params@_) =>
       call { 
-        tech_onder_reports_ReportController_ws6_invoker.call(ReportController_1.ws())
+        tech_onder_reports_ReportController_meters6_invoker.call(ReportController_1.meters())
+      }
+  
+    // @LINE:19
+    case tech_onder_reports_ReportController_ws7_route(params@_) =>
+      call { 
+        tech_onder_reports_ReportController_ws7_invoker.call(ReportController_1.ws())
       }
   }
 }

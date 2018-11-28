@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/work/report-brocker/conf/routes
-// @DATE:Mon Nov 26 05:03:16 CET 2018
+// @DATE:Wed Nov 28 18:30:04 CET 2018
 
 import play.api.routing.JavaScriptReverseRoute
 
@@ -8,10 +8,10 @@ import play.api.routing.JavaScriptReverseRoute
 import _root_.controllers.Assets.Asset
 import _root_.play.libs.F
 
-// @LINE:9
+// @LINE:11
 package tech.onder.reports.javascript {
 
-  // @LINE:9
+  // @LINE:11
   class ReverseReportController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -19,7 +19,7 @@ package tech.onder.reports.javascript {
     }
 
   
-    // @LINE:13
+    // @LINE:15
     def meters: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "tech.onder.reports.ReportController.meters",
       """
@@ -29,7 +29,7 @@ package tech.onder.reports.javascript {
       """
     )
   
-    // @LINE:9
+    // @LINE:11
     def consumption: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "tech.onder.reports.ReportController.consumption",
       """
@@ -39,7 +39,7 @@ package tech.onder.reports.javascript {
       """
     )
   
-    // @LINE:11
+    // @LINE:13
     def prices: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "tech.onder.reports.ReportController.prices",
       """
@@ -49,7 +49,7 @@ package tech.onder.reports.javascript {
       """
     )
   
-    // @LINE:15
+    // @LINE:19
     def ws: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "tech.onder.reports.ReportController.ws",
       """

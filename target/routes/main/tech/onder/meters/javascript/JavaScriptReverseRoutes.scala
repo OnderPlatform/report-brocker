@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/work/report-brocker/conf/routes
-// @DATE:Mon Nov 26 05:03:16 CET 2018
+// @DATE:Wed Nov 28 18:30:04 CET 2018
 
 import play.api.routing.JavaScriptReverseRoute
 
@@ -30,6 +30,16 @@ package tech.onder.meters.javascript {
     )
   
     // @LINE:6
+    def addMeter: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "tech.onder.meters.CommonController.addMeter",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "meters"})
+        }
+      """
+    )
+  
+    // @LINE:8
     def meterRelations: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "tech.onder.meters.CommonController.meterRelations",
       """
