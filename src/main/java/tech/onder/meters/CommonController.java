@@ -46,7 +46,7 @@ public class CommonController {
     }
 
     public CompletionStage<Result> meterRelations() {
-        return CompletableFuture.supplyAsync(() -> meterRelationRepo.all()).thenApply(Json::toJson).thenApply(Results::ok);
+        return CompletableFuture.supplyAsync(meterRelationRepo::all).thenApply(Json::toJson).thenApply(Results::ok);
 
     }
 
