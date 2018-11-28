@@ -1,19 +1,19 @@
 
 POST       /api/meters/:id      tech.onder.consumer.CollectorController.push(id: String)
 
-GET        /meters              tech.onder.meters.CommonController.meters()
+GET        /api/meters              tech.onder.meters.CommonController.meters()
 
-POST /meters    tech.onder.meters.CommonController.addMeter()
+POST        /api/meters    tech.onder.meters.CommonController.addMeter()
 
-GET        /meters/relations    tech.onder.meters.CommonController.meterRelations()
+GET        /api/meters/relations    tech.onder.meters.CommonController.meterRelations()
 #Reports
 
-GET        /reports/consumption  tech.onder.reports.ReportController.consumption()
+GET        /api/reports/consumption  tech.onder.reports.ReportController.consumption()
 
-GET        /reports/price        tech.onder.reports.ReportController.prices()
+GET        /api/reports/price        tech.onder.reports.ReportController.prices()
 
-GET        /reports/meters        tech.onder.reports.ReportController.meters()
+GET         /api/reports/meters        tech.onder.reports.ReportController.meters()
 
 
 
-GET     /ws                         tech.onder.reports.ReportController.ws()
+GET         /api/ws                         tech.onder.reports.ReportController.ws()
