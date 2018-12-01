@@ -15,7 +15,7 @@ public class MeterRelationRepo extends AbstractInMemoryRepo<String, BuyerSeller>
     public MeterRelationRepo() {
         Map<String, BuyerSeller> relMap = new HashMap<>();
         relMap.put("0x2E9b32581820f613B4B9b7B67308639AaB8C6Ff7", new BuyerSeller("0x2E9b32581820f613B4B9b7B67308639AaB8C6Ff7", "0x85176b816BEd182c08DdaAcCF6fD060a152Da175"));
-        relMap.put("0x44ac47379573F997098d02714D652abc28629c44", new BuyerSeller("0x44ac47379573F997098d02714D652abc28629c44", "0x85176b816BEd182c08DdaAcCF6fD060a152Da175"));
+       // relMap.put("0x44ac47379573F997098d02714D652abc28629c44", new BuyerSeller("0x44ac47379573F997098d02714D652abc28629c44", "0x85176b816BEd182c08DdaAcCF6fD060a152Da175"));
         relMap.put("0xcb32de2b9d1f1efb4abde7d24131ebed6c649ad7", new BuyerSeller("0xcb32de2b9d1f1efb4abde7d24131ebed6c649ad7", "0x85176b816BEd182c08DdaAcCF6fD060a152Da175"));
         relMap.put("0xb1e14037a0C35B81A2ED086D98e4aCe0A5229c96", new BuyerSeller("0xb1e14037a0C35B81A2ED086D98e4aCe0A5229c96", "0x85176b816BEd182c08DdaAcCF6fD060a152Da175"));
         relMap.put("0x74EcbE56958969A0b166DC95Cc0F4Aa6aA035fD7", new BuyerSeller("0x74EcbE56958969A0b166DC95Cc0F4Aa6aA035fD7", "0x85176b816BEd182c08DdaAcCF6fD060a152Da175"));

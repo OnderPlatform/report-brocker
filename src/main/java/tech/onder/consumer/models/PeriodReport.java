@@ -1,6 +1,9 @@
 package tech.onder.consumer.models;
 
 import java.math.BigInteger;
+import java.time.LocalDateTime;
+import java.time.ZoneOffset;
+import java.time.format.DateTimeFormatter;
 
 public class PeriodReport {
     Long time;
@@ -29,5 +32,14 @@ public class PeriodReport {
 
     public void setPrice(BigInteger price) {
         this.price = price;
+    }
+
+    @Override
+    public String toString() {
+        return "PeriodReport{" +
+                "time=" + LocalDateTime.ofEpochSecond(time, 0, ZoneOffset.UTC).format(DateTimeFormatter.ofPattern("HH:mm:ss")) +
+                ", consumption=" + consumption +
+                ", price=" + price +
+                '}';
     }
 }

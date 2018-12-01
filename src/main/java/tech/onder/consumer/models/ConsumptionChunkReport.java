@@ -5,6 +5,9 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 
 import java.math.BigInteger;
+import java.time.LocalDateTime;
+import java.time.ZoneOffset;
+import java.time.format.DateTimeFormatter;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JsonInclude(JsonInclude.Include.NON_NULL)
@@ -85,5 +88,13 @@ public class ConsumptionChunkReport {
 
     public void setPurchaseCost(BigInteger purchaseCost) {
         this.purchaseCost = purchaseCost;
+    }
+
+    @Override
+    public String toString() {
+        return "ConsumptionChunkReport{" +
+                "uuid='" + uuid + '\'' +
+                ", time=" + LocalDateTime.ofEpochSecond(time, 0, ZoneOffset.UTC).format(DateTimeFormatter.ofPattern("HH:mm:ss"))
+                + '}';
     }
 }

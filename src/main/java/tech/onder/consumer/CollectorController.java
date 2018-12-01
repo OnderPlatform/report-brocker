@@ -7,10 +7,12 @@ import play.libs.Json;
 import play.libs.concurrent.HttpExecutionContext;
 import play.mvc.Controller;
 import play.mvc.Result;
+import play.mvc.Results;
 import tech.onder.consumer.models.MeterInputDTO;
 import tech.onder.consumer.services.ChunkReportManagementService;
 
 import javax.inject.Inject;
+import java.util.Arrays;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.CompletionStage;
 
@@ -38,20 +40,38 @@ public class CollectorController extends Controller {
                 () -> {
                     try {
                         JsonNode jsonNode = ctx().request().body().asJson();
-                        logger.trace(jsonNode.toString());
+                        logger.info(jsonNode.toString());
                         MeterInputDTO dto = Json.fromJson(jsonNode, MeterInputDTO.class);
                         chunkConverter.toChunks(dto)
                                 .stream()
-                                .peek(v -> logger.info(toJson(v).toString()))
+                                .peek(v -> logger.trace(toJson(v).toString()))
                                 .forEach(chunkReportManagementService::add);
                         return ok();
                     } catch (NumberFormatException e) {
                         return badRequest(toJson(e.getMessage()));
-                    } catch (NullPointerException e) {
-                        return badRequest("input data are incorrect: " + ctx().request().body().asJson().textValue());
+                    } catch (RuntimeException e) {
+                        return badRequest("input data is incorrect: " + ctx().request().body().asJson().textValue());
                     }
                 }, ec.current()
         );
+    }
+
+    public CompletionStage<Result> pushList() {
+        return CompletableFuture.supplyAsync(() -> {
+                    JsonNode jsonNode = ctx().request().body().asJson();
+                    if (!jsonNode.isArray()) {
+                        return badRequest();
+                    }
+
+                    MeterInputDTO[] inputArray = Json.fromJson(jsonNode, MeterInputDTO[].class);
+                    Arrays.asList(inputArray).forEach(dto ->
+                            chunkConverter.toChunks(dto)
+                                    .stream()
+                                    .peek(v -> logger.trace(toJson(v).toString()))
+                                    .forEach(chunkReportManagementService::add));
+                    return Results.ok();
+                }
+                , ec.current());
     }
 
 }

@@ -1,11 +1,8 @@
 package tech.onder.consumer.services;
 
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import org.apache.commons.io.FileUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import play.libs.Json;
 import tech.onder.consumer.ChunkConverter;
 import tech.onder.consumer.models.ConsumptionChunkReport;
 import tech.onder.consumer.models.PeriodReport;
@@ -14,11 +11,11 @@ import tech.onder.reports.models.WebsocketDTO;
 
 import javax.inject.Inject;
 import javax.inject.Singleton;
-import java.io.File;
-import java.io.IOException;
 import java.math.BigInteger;
 import java.util.*;
-import java.util.concurrent.*;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentLinkedDeque;
+import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.concurrent.atomic.AtomicLong;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
@@ -84,15 +81,20 @@ public class ChunkReportManagementService {
             }
         }
         ConcurrentLinkedDeque<ConsumptionChunkReport> queue = storageByMeters.get(uuid);
-        if (queue.size() > 0 && queue.size() < 5) {
-            while (queue.peek().getTime() < queueBegin.get()) {
-                logger.debug("removed " + queue.poll().toString());
-            }
-        }
+//        if (queue.size() > 0 && queue.size() < 5) {
+//            try{
+//                while (queue.peek().getTime() < queueBegin.get()) {
+//                    logger.debug("removed " + queue.poll().toString());
+//                }
+//            }catch (NullPointerException npe){
+//
+//            }
+//
+//        }
 
         if (queue.size() == itemsLimit) {
             ConsumptionChunkReport chunk = queue.poll();
-            logger.debug("removed " + chunk.toString());
+            logger.debug("removed limit  " + chunk.toString());
         }
         queue.add(chunkReport);
     }
@@ -106,11 +108,12 @@ public class ChunkReportManagementService {
 
     private void addToSegmentStorage(ConcurrentLinkedDeque<ConsumptionChunkReport> queue) {
         if (calculatedSegmentsStorage.size() == timeStorageItems) {
-            calculatedSegmentsStorage.poll();
+            PeriodReport rep = calculatedSegmentsStorage.poll();
+            logger.debug("deleted"+ rep.toString());
         }
-        List<ConsumptionChunkReport> rep = new ArrayList<>(queue);
+            List<ConsumptionChunkReport> rep = new ArrayList<>(queue);
         PeriodReport pr = summarize(rep);
-        calculatedSegmentsStorage.push(pr);
+        calculatedSegmentsStorage.add(pr);
     }
 
     private PeriodReport summarize(List<ConsumptionChunkReport> rep) {
@@ -161,7 +164,7 @@ public class ChunkReportManagementService {
         List<ConsumptionChunkReport> parts;
         synchronized (this.registeredQueues) {
             parts = new ArrayList<>(this.registeredQueues.get(uuid));
-           // this.registeredQueues.get(uuid).clear();
+            // this.registeredQueues.get(uuid).clear();
         }
         PeriodReport pr = summarize(parts);
         return chunkConverter.toWebsocketDTO(pr, this.meterReportDTOS());
@@ -174,7 +177,7 @@ public class ChunkReportManagementService {
         to.setSaleWh(to.getSaleWh() + add.getSaleWh());
         to.setPurchaseWh(to.getPurchaseWh() + add.getPurchaseWh());
 
-        if (to.getTime()==null || to.getTime() < add.getTime()) {
+        if (to.getTime() == null || to.getTime() < add.getTime()) {
             to.setTime(add.getTime());
         }
         return to;
@@ -239,72 +242,28 @@ public class ChunkReportManagementService {
     }
 
 
-    public CompletionStage<Void> backup() {
-        return CompletableFuture.runAsync(this::backupMeters)
-                .thenRunAsync(this::backupSegments);
-
+    public List<PeriodReport> getSegments() {
+        return new ArrayList<>(this.calculatedSegmentsStorage);
     }
 
-    private void backupSegments() {
-        try {
-            File fw2 = new File("conf/segments-storage-back.json");
-            List<PeriodReport> periodReports = new ArrayList<>(this.calculatedSegmentsStorage);
-            String json = Json.toJson(periodReports).asText();
-            FileUtils.writeStringToFile(fw2, json);
-        } catch (IOException ioe) {
-            throw new RuntimeException(ioe);
-        }
 
+    public List<ConsumptionChunkReport> getMeters() {
+        return this.storageByMeters.values().stream().flatMap(Collection::stream).collect(Collectors.toList());
     }
 
-    private void backupMeters() {
-        try {
-            File fw = new File("conf/meters-storage-back.json");
-            List<ConsumptionChunkReport> chunkToStore =
-                    this.storageByMeters.values().stream().flatMap(Collection::stream).collect(Collectors.toList());
-            String json = Json.toJson(chunkToStore).asText();
-            FileUtils.writeStringToFile(fw, json);
-        } catch (IOException ioe) {
-            throw new RuntimeException(ioe);
+    public void loadSegments(List<PeriodReport> segments) {
+        synchronized (this.calculatedSegmentsStorage) {
+            this.calculatedSegmentsStorage.clear();
+            segments.stream().sorted(Comparator.comparing(PeriodReport::getConsumption))
+                    .forEach(this.calculatedSegmentsStorage::push);
         }
     }
 
-    public CompletableFuture<Void> restore() {
-
-        ObjectMapper mapper = new ObjectMapper();
-        CompletableFuture<Void> meters = CompletableFuture.runAsync(() -> loadMeterStorage(mapper));
-        CompletableFuture<Void> segments = CompletableFuture.runAsync(() -> loadSegments(mapper));
-        return CompletableFuture.allOf(segments, meters);
-
-    }
-
-    private void loadSegments(ObjectMapper mapper) {
-        try {
-            String segmentStorage = FileUtils.readFileToString(new File("conf/segments-storage-back.json"));
-            List<PeriodReport> segments = mapper.readValue(segmentStorage, mapper.getTypeFactory().constructCollectionType(List.class, PeriodReport.class));
-            synchronized (this.calculatedSegmentsStorage) {
-                this.calculatedSegmentsStorage.clear();
-                segments.stream().sorted(Comparator.comparing(PeriodReport::getConsumption))
-                        .forEach(this.calculatedSegmentsStorage::push);
-            }
-        } catch (IOException ioe) {
-            throw new RuntimeException(ioe);
-        }
-
-    }
-
-    private void loadMeterStorage(ObjectMapper mapper) {
-        try {
-            String meterStorage = FileUtils.readFileToString(new File("conf/meters-storage-back.json"));
-            List<ConsumptionChunkReport> chunkReports = mapper.readValue(meterStorage, mapper.getTypeFactory().constructCollectionType(List.class, ConsumptionChunkReport.class));
-
-            synchronized (this.storageByMeters) {
-                this.storageByMeters.clear();
-                chunkReports.stream().collect(Collectors.groupingBy(ConsumptionChunkReport::getUuid))
-                        .forEach((k, v) -> this.storageByMeters.put(k, new ConcurrentLinkedDeque<>(v)));
-            }
-        } catch (IOException ioe) {
-            throw new RuntimeException(ioe);
+    public void loadMeters(List<ConsumptionChunkReport> chunkReports) {
+        synchronized (this.storageByMeters) {
+            this.storageByMeters.clear();
+            chunkReports.stream().collect(Collectors.groupingBy(ConsumptionChunkReport::getUuid))
+                    .forEach((k, v) -> this.storageByMeters.put(k, new ConcurrentLinkedDeque<>(v)));
         }
     }
 }

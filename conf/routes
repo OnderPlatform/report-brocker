@@ -1,6 +1,13 @@
 
 POST       /api/meters/:id      tech.onder.consumer.CollectorController.push(id: String)
 
+POST /api/meters tech.onder.consumer.CollectorController.pushList()
+
+
+POST /queue/backup  tech.onder.queue.QueueController.backup()
+POST /queue/restore tech.onder.queue.QueueController.restore()
+
+
 GET        /api/meters              tech.onder.meters.CommonController.meters()
 
 POST        /api/meters    tech.onder.meters.CommonController.addMeter()
@@ -10,10 +17,12 @@ GET        /api/meters/relations    tech.onder.meters.CommonController.meterRela
 
 GET        /api/reports/consumption  tech.onder.reports.ReportController.consumption()
 
+GET        /api/reports/consumption/last  tech.onder.reports.ReportController.lastConsumption(shift: Integer?=null)
+
 GET        /api/reports/price        tech.onder.reports.ReportController.prices()
 
 GET         /api/reports/meters        tech.onder.reports.ReportController.meters()
 
 
-
+POST  /api/queue/back               tech.onder.meters.CommonController.meterRelations()
 GET         /api/ws                         tech.onder.reports.ReportController.ws()

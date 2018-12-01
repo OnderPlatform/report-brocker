@@ -61,6 +61,16 @@ public class ReportController extends Controller {
 
     }
 
+    public CompletableFuture<Result> lastConsumption(Integer ord) {
+        Integer size = reportService.getComsumptionReport().size();
+        Integer shift = (ord != null) ? ord + 1 : 1;
+        ReportDTO reportDTO = new ReportDTO();
+        if(size!=0)  {
+            reportDTO = reportService.getComsumptionReport().get(size - shift);
+        }
+        return CompletableFuture.completedFuture(reportDTO).thenApply(Json::toJson).thenApply(Results::ok);
+    }
+
     public WebSocket ws() {
         return WebSocket.Json.accept(requestHeader -> {
             Sink<JsonNode, ?> sink = Sink.ignore();
