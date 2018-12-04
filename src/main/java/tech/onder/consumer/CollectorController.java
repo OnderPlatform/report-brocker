@@ -1,6 +1,8 @@
 package tech.onder.consumer;
 
 import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import org.apache.commons.io.FileUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import play.libs.Json;
@@ -12,7 +14,10 @@ import tech.onder.consumer.models.MeterInputDTO;
 import tech.onder.consumer.services.ChunkReportManagementService;
 
 import javax.inject.Inject;
-import java.util.Arrays;
+import java.io.File;
+import java.io.IOException;
+import java.util.List;
+import java.util.Objects;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.CompletionStage;
 
@@ -58,18 +63,29 @@ public class CollectorController extends Controller {
 
     public CompletionStage<Result> pushList() {
         return CompletableFuture.supplyAsync(() -> {
-                    JsonNode jsonNode = ctx().request().body().asJson();
-                    if (!jsonNode.isArray()) {
-                        return badRequest();
+                    try {
+                        ObjectMapper mapper = new ObjectMapper();
+                        List<?> meterStorage = FileUtils.readLines(new File("/home/ubuntu/report-broker/conf/meters-storage-back.json"));
+                        //  List<?> meterStorage = FileUtils.readLines(new File("conf/meters-storage-back.json"));
+                        meterStorage.stream()
+                                .map(s -> {
+                                    try {
+                                        return mapper.readValue((String) s, MeterInputDTO.class);
+                                    } catch (IOException ioe) {
+                                        return null;
+                                    }
+
+                                }).filter(Objects::nonNull)
+                                .forEach(dto ->
+                                        chunkConverter.toChunks(dto)
+                                                .stream()
+                                                .peek(v -> logger.trace(toJson(v).toString()))
+                                                .forEach(chunkReportManagementService::add));
+                        return Results.ok();
+                    } catch (IOException ioe) {
+                        return Results.badRequest();
                     }
 
-                    MeterInputDTO[] inputArray = Json.fromJson(jsonNode, MeterInputDTO[].class);
-                    Arrays.asList(inputArray).forEach(dto ->
-                            chunkConverter.toChunks(dto)
-                                    .stream()
-                                    .peek(v -> logger.trace(toJson(v).toString()))
-                                    .forEach(chunkReportManagementService::add));
-                    return Results.ok();
                 }
                 , ec.current());
     }

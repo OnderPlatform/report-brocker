@@ -20,14 +20,15 @@ public class OutputUtils {
 
     public static String token(BigInteger amount) {
         String am = String.valueOf(amount);
-        int diff = 18 - am.length();
-        String addString = "";
-        if (diff >= 0) {
-            char[] add = new char[diff];
-            Arrays.fill(add, '0');
-            return "0." + new String(add) + am;
-        } else {
-            return am.substring(0, -diff) + "." + am.substring(-diff);
-        }
+//        int diff = 18 - am.length();
+//        String addString = "";
+//        if (diff >= 0) {
+//            char[] add = new char[diff];
+//            Arrays.fill(add, '0');
+//            return "0." + new String(add) + am;
+//        } else {
+//            return am.substring(0, -diff) + "." + am.substring(-diff);
+//        }
+        return am;
     }
 }
