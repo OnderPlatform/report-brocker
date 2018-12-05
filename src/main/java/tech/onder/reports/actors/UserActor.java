@@ -1,22 +1,13 @@
 package tech.onder.reports.actors;
 
-import akka.Done;
-import akka.NotUsed;
 import akka.actor.AbstractActorWithTimers;
 import akka.actor.Actor;
-import akka.actor.ActorRef;
-import akka.actor.Props;
 import akka.event.Logging;
 import akka.event.LoggingAdapter;
-import akka.japi.Pair;
-import akka.stream.KillSwitches;
 import akka.stream.Materializer;
 import akka.stream.UniqueKillSwitch;
-import akka.stream.javadsl.*;
 import akka.util.Timeout;
 import com.fasterxml.jackson.databind.JsonNode;
-import com.google.inject.assistedinject.Assisted;
-import com.google.inject.assistedinject.AssistedInject;
 import play.libs.Json;
 import scala.concurrent.duration.Duration;
 import tech.onder.consumer.services.ChunkReportManagementService;
@@ -26,7 +17,6 @@ import javax.inject.Inject;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
-import java.util.concurrent.CompletionStage;
 import java.util.concurrent.TimeUnit;
 
 
@@ -82,7 +72,7 @@ public class UserActor extends AbstractActorWithTimers {
 
                 })
                 .match(Tick.class, message -> {
-                   WebsocketDTO dto = chunkReportManagementService.calculate(this.id);
+                   WebsocketDTO dto = chunkReportManagementService.websocketOutput(this.id);
                     JsonNode js = Json.toJson(dto);
                     sender().tell(js, self());
                 }).build();

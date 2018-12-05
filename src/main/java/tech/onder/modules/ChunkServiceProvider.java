@@ -2,6 +2,7 @@ package tech.onder.modules;
 
 import tech.onder.consumer.ChunkConverter;
 import tech.onder.consumer.services.ChunkReportManagementService;
+import tech.onder.meters.repositories.MeterRepo;
 
 import javax.inject.Inject;
 import javax.inject.Provider;
@@ -13,14 +14,17 @@ public class ChunkServiceProvider implements Provider<ChunkReportManagementServi
 
     private ChunkConverter chunkConverter;
 
-    @Inject
-    public ChunkServiceProvider(ChunkConverter chunkConverter) {
+    private MeterRepo meterRepo;
+
+            @Inject
+    public ChunkServiceProvider(ChunkConverter chunkConverter, MeterRepo meterRepo) {
         this.chunkConverter = chunkConverter;
+        this.meterRepo = meterRepo;
     }
 
     @Override
     public ChunkReportManagementService get() {
-        return new ChunkReportManagementService(this.chunkConverter);
+        return new ChunkReportManagementService(this.chunkConverter, meterRepo);
     }
 }
 

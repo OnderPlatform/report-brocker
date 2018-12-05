@@ -3,6 +3,7 @@ package tech.onder.consumer;
 import tech.onder.consumer.models.ConsumptionChunkReport;
 import tech.onder.consumer.models.MeterInputDTO;
 import tech.onder.consumer.models.PeriodReport;
+import tech.onder.meters.models.Meter;
 import tech.onder.reports.models.MeterReportDTO;
 import tech.onder.reports.models.WebsocketDTO;
 
@@ -70,7 +71,17 @@ public class ChunkConverter {
         chunk.setTime(dto.getTime());
         return chunk;
     }
-
+public MeterReportDTO toMeterDTO(Meter meter){
+    MeterReportDTO mrd = new MeterReportDTO();
+    mrd.setUuid(meter.getUuid());
+    mrd.setUpdateTime(0l);
+    mrd.setPurchaseKwh(kwhFormat(0.0 ));
+    mrd.setPurchaseTokens(token(BigInteger.ZERO));
+    mrd.setSaleKwh(kwhFormat(0.0));
+    mrd.setSaleTokens(token(BigInteger.ZERO));
+    mrd.setPrice(tokenPrice(BigInteger.ZERO));
+    return mrd;
+}
     public MeterReportDTO toMeterDTO(ConsumptionChunkReport chunkReport) {
         MeterReportDTO mrd = new MeterReportDTO();
         mrd.setUuid(chunkReport.getUuid());

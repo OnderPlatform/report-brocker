@@ -208,6 +208,7 @@ source dependencies:
    C:\work\report-brocker\src\main\java\tech\onder\consumer\ChunkConverter.java -> C:\work\report-brocker\src\main\java\tech\onder\consumer\models\MeterInputDTO.java
    C:\work\report-brocker\src\main\java\tech\onder\consumer\ChunkConverter.java -> C:\work\report-brocker\src\main\java\tech\onder\consumer\models\PeriodReport.java
    C:\work\report-brocker\src\main\java\tech\onder\consumer\ChunkConverter.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\OutputUtils.java
+   C:\work\report-brocker\src\main\java\tech\onder\consumer\ChunkConverter.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\models\Meter.java
    C:\work\report-brocker\src\main\java\tech\onder\consumer\ChunkConverter.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\models\MeterReportDTO.java
    C:\work\report-brocker\src\main\java\tech\onder\consumer\ChunkConverter.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\models\WebsocketDTO.java
    C:\work\report-brocker\src\main\java\tech\onder\consumer\CollectorController.java -> C:\work\report-brocker\src\main\java\tech\onder\consumer\ChunkConverter.java
@@ -222,6 +223,9 @@ source dependencies:
    C:\work\report-brocker\src\main\java\tech\onder\consumer\services\ChunkReportManagementService.java -> C:\work\report-brocker\src\main\java\tech\onder\consumer\models\ConsumptionChunkReport.java
    C:\work\report-brocker\src\main\java\tech\onder\consumer\services\ChunkReportManagementService.java -> C:\work\report-brocker\src\main\java\tech\onder\consumer\models\PeriodReport.java
    C:\work\report-brocker\src\main\java\tech\onder\consumer\services\ChunkReportManagementService.java -> C:\work\report-brocker\src\main\java\tech\onder\consumer\services\ChunkReportManagementService.java
+   C:\work\report-brocker\src\main\java\tech\onder\consumer\services\ChunkReportManagementService.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\models\Meter.java
+   C:\work\report-brocker\src\main\java\tech\onder\consumer\services\ChunkReportManagementService.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\repositories\MeterRepo.java
+   C:\work\report-brocker\src\main\java\tech\onder\consumer\services\ChunkReportManagementService.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\models\MeterReportDTO.java
    C:\work\report-brocker\src\main\java\tech\onder\consumer\services\ChunkReportManagementService.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\models\WebsocketDTO.java
    C:\work\report-brocker\src\main\java\tech\onder\consumer\services\ChunkService.java -> C:\work\report-brocker\src\main\java\tech\onder\consumer\services\ChunkService.java
    C:\work\report-brocker\src\main\java\tech\onder\consumer\services\CollectorService.java -> C:\work\report-brocker\src\main\java\tech\onder\consumer\services\ChunkReportManagementService.java
@@ -263,11 +267,11 @@ source dependencies:
    C:\work\report-brocker\src\main\java\tech\onder\modules\ApplicationModule.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserParentActor.java
    C:\work\report-brocker\src\main\java\tech\onder\modules\ChunkServiceProvider.java -> C:\work\report-brocker\src\main\java\tech\onder\consumer\ChunkConverter.java
    C:\work\report-brocker\src\main\java\tech\onder\modules\ChunkServiceProvider.java -> C:\work\report-brocker\src\main\java\tech\onder\consumer\services\ChunkReportManagementService.java
+   C:\work\report-brocker\src\main\java\tech\onder\modules\ChunkServiceProvider.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\repositories\MeterRepo.java
    C:\work\report-brocker\src\main\java\tech\onder\modules\ChunkServiceProvider.java -> C:\work\report-brocker\src\main\java\tech\onder\modules\ChunkServiceProvider.java
    C:\work\report-brocker\src\main\java\tech\onder\queue\QueueController.java -> C:\work\report-brocker\src\main\java\tech\onder\queue\QueueController.java
    C:\work\report-brocker\src\main\java\tech\onder\queue\QueueController.java -> C:\work\report-brocker\src\main\java\tech\onder\queue\QueueService.java
    C:\work\report-brocker\src\main\java\tech\onder\queue\QueueService.java -> C:\work\report-brocker\src\main\java\tech\onder\consumer\models\ConsumptionChunkReport.java
-   C:\work\report-brocker\src\main\java\tech\onder\queue\QueueService.java -> C:\work\report-brocker\src\main\java\tech\onder\consumer\models\PeriodReport.java
    C:\work\report-brocker\src\main\java\tech\onder\queue\QueueService.java -> C:\work\report-brocker\src\main\java\tech\onder\consumer\services\ChunkReportManagementService.java
    C:\work\report-brocker\src\main\java\tech\onder\queue\QueueService.java -> C:\work\report-brocker\src\main\java\tech\onder\queue\QueueService.java
    C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserActor.java -> C:\work\report-brocker\src\main\java\tech\onder\consumer\services\ChunkReportManagementService.java

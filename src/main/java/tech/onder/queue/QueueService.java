@@ -25,23 +25,12 @@ public class QueueService {
     }
 
     public CompletionStage<Void> backup() {
-        return CompletableFuture.runAsync(this::backupMeters)
-                .thenRunAsync(this::backupSegments);
+        return CompletableFuture.runAsync(this::backupMeters);
 
     }
 
 
-    private void backupSegments() {
-        try {
-            File fw2 = new File("conf/segments-storage-back.json");
-            List<PeriodReport> periodReports = chunkReportManagementService.getSegments();
-            String json = Json.toJson(periodReports).asText();
-            FileUtils.writeStringToFile(fw2, json);
-        } catch (IOException ioe) {
-            throw new RuntimeException(ioe);
-        }
 
-    }
 
     private void backupMeters() {
         try {
@@ -57,22 +46,12 @@ public class QueueService {
     public CompletableFuture<Void> restore() {
 
         ObjectMapper mapper = new ObjectMapper();
-        CompletableFuture<Void> meters = CompletableFuture.runAsync(() -> this.loadMeterStorage(mapper));
-        CompletableFuture<Void> segments = CompletableFuture.runAsync(() -> loadSegments(mapper));
-        return CompletableFuture.allOf(segments, meters);
+        return  CompletableFuture.runAsync(() -> this.loadMeterStorage(mapper));
+
 
     }
 
-    private void loadSegments(ObjectMapper mapper) {
-        try {
-            String segmentStorage = FileUtils.readFileToString(new File("conf/segments-storage-back.json"));
-            List<PeriodReport> segments = mapper.readValue(segmentStorage, mapper.getTypeFactory().constructCollectionType(List.class, PeriodReport.class));
-            chunkReportManagementService.loadSegments(segments);
-        } catch (IOException ioe) {
-            throw new RuntimeException(ioe);
-        }
 
-    }
 
     private void loadMeterStorage(ObjectMapper mapper) {
         try {

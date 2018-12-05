@@ -2,7 +2,7 @@
 <!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
 <log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/" debug="false">
   <appender name="file" class="org.apache.log4j.RollingFileAppender">
-    <param name="File" value="/home/ubuntu/report-brocker-stage/log/meters.log" />
+    <param name="File" value="/home/ubuntu/report-broker-stage/log/meters.log" />
     <param name="Append" value="false" />
 <param name="maxFileSize" value="5MB" />
 <param name="maxBackupIndex" value="5" />

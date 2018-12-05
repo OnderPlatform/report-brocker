@@ -64,9 +64,10 @@ public class CollectorController extends Controller {
     public CompletionStage<Result> pushList() {
         return CompletableFuture.supplyAsync(() -> {
                     try {
+                        logger.info("load");
                         ObjectMapper mapper = new ObjectMapper();
                         List<?> meterStorage = FileUtils.readLines(new File("/home/ubuntu/report-broker/conf/meters-storage-back.json"));
-                        //  List<?> meterStorage = FileUtils.readLines(new File("conf/meters-storage-back.json"));
+                         // List<?> meterStorage = FileUtils.readLines(new File("conf/meters-storage-back.json"));
                         meterStorage.stream()
                                 .map(s -> {
                                     try {
