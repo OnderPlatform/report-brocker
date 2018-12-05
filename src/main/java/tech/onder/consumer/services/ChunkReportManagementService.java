@@ -1,7 +1,6 @@
 package tech.onder.consumer.services;
 
 
-import com.google.common.util.concurrent.AtomicDouble;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import tech.onder.consumer.ChunkConverter;
@@ -64,7 +63,8 @@ public class ChunkReportManagementService {
     private final ChunkConverter chunkConverter;
 
     private final MeterRepo meterRepo;
-@Inject
+
+    @Inject
     public ChunkReportManagementService(ChunkConverter chunkConverter, MeterRepo meterRepo) {
         this.chunkConverter = chunkConverter;
         this.meterRepo = meterRepo;
@@ -145,9 +145,9 @@ public class ChunkReportManagementService {
                 .orElse(BigInteger.ZERO);
         PeriodReport pr = new PeriodReport();
         BigInteger price = ChunkConverter.calculatePrice(tokens, consumption);
-        if(!price.equals(BigInteger.ZERO)){
+        if (!price.equals(BigInteger.ZERO)) {
             lastPrice.set(price);
-        }else{
+        } else {
             price = lastPrice.get();
         }
         pr.setPrice(price);
@@ -210,7 +210,7 @@ public class ChunkReportManagementService {
             this.periodStart.put(uuid, expectedMark);
             queue.clear();
         }
-        PeriodReport pr = summarize(expectedMark,ThreadLocal.withInitial(()->BigInteger.ZERO), parts);
+        PeriodReport pr = summarize(expectedMark, ThreadLocal.withInitial(() -> BigInteger.ZERO), parts);
         Long startOfDay = reportBegin(expectedMark);
         return chunkConverter.toWebsocketDTO(pr, this.meterReportDTOS(startOfDay));
     }
@@ -235,7 +235,7 @@ public class ChunkReportManagementService {
                 v.clear();
                 this.periodStart.put(k, this.chunkMark(chunk));
             }
-            if(this.periodStart.get(k)>this.chunkMark(chunk)){
+            if (this.periodStart.get(k).equals(this.chunkMark(chunk))) {
                 v.add(chunk);
             }
         });
@@ -302,7 +302,7 @@ public class ChunkReportManagementService {
 
         List<Long> timeMarks = IntStream.range(0, numberOfSegments).mapToObj(i -> reportEnd - i * reportSegmentLength)
                 .collect(Collectors.toList());
-        ThreadLocal<BigInteger> price = ThreadLocal.withInitial(()->BigInteger.ZERO);
+        ThreadLocal<BigInteger> price = ThreadLocal.withInitial(() -> BigInteger.ZERO);
         Map<Long, PeriodReport> periods = this.storageByMeters
                 .values()
                 .stream()
