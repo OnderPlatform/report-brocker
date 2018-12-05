@@ -300,7 +300,7 @@ public class ChunkReportManagementService {
      */
     public Map<Long, PeriodReport> periodReport(Long reportEnd) {
 
-        List<Long> timeMarks = IntStream.range(0, numberOfSegments).mapToObj(i -> reportEnd - i * reportSegmentLength)
+        List<Long> timeMarks = IntStream.rangeClosed(1, numberOfSegments).mapToObj(i -> reportEnd - i * reportSegmentLength)
                 .collect(Collectors.toList());
         ThreadLocal<BigInteger> price = ThreadLocal.withInitial(() -> BigInteger.ZERO);
         Map<Long, PeriodReport> periods = this.storageByMeters
