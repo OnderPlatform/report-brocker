@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/work/report-brocker/conf/routes
-// @DATE:Wed Dec 05 04:40:50 CET 2018
+// @DATE:Wed Dec 05 04:45:59 CET 2018
 
 import play.api.routing.JavaScriptReverseRoute
 
