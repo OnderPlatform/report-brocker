@@ -32,7 +32,9 @@ public class ChunkReportManagementService {
 
     private final AtomicLong lastTimestamp = new AtomicLong(0);
 
-    /** Limit for meters queue. 17280 items are enough for meter. But for supplier we need much more. Factually 17280*numbers of consumers*/
+    /**
+     * Limit for meters queue. 17280 items are enough for meter. But for supplier we need much more. Factually 17280*numbers of consumers
+     */
     private final Integer itemsLimit = 172800;
 
     private final Integer numberOfSegments = 144;
@@ -66,7 +68,10 @@ public class ChunkReportManagementService {
     public void subscribe(String uuid) {
         ConcurrentLinkedQueue<ConsumptionChunkReport> map = new ConcurrentLinkedQueue<>();
         this.registeredQueues.put(uuid, map);
-        this.periodStart.put(uuid, expectedNextChunkTime());
+        long periodStart = (reportEnd.get() != 0) ? reportEnd.get() : expectedNextChunkTime();
+        this.periodStart.put(uuid, periodStart);
+
+
     }
 
 
@@ -94,13 +99,14 @@ public class ChunkReportManagementService {
                 .orElse(Collections.emptyList());
     }
 
-private PeriodReport empty(Long periodTime){
-    PeriodReport pr = new PeriodReport();
-    pr.setPrice(BigInteger.ZERO);
-    pr.setConsumption(0.0);
-    pr.setTime(periodTime);
-    return pr;
-}
+    private PeriodReport empty(Long periodTime) {
+        PeriodReport pr = new PeriodReport();
+        pr.setPrice(BigInteger.ZERO);
+        pr.setConsumption(0.0);
+        pr.setTime(periodTime);
+        return pr;
+    }
+
     private PeriodReport summarize(Long periodTime, List<ConsumptionChunkReport> rep) {
         Double consumption = rep.stream().mapToDouble(ConsumptionChunkReport::getPurchaseWh).sum();
         BigInteger tokens = rep.stream()
@@ -135,7 +141,6 @@ private PeriodReport empty(Long periodTime){
                 .stream()
                 .filter(c -> c.getTime() >= from)
                 .reduce(this::sum);
-
     }
 
     private ConsumptionChunkReport createEmpty(String mId) {
@@ -152,14 +157,16 @@ private PeriodReport empty(Long periodTime){
 
     public WebsocketDTO calculate(String uuid) {
 
-        List<ConsumptionChunkReport> parts = new ArrayList<>(this.registeredQueues.get(uuid));
+        ConcurrentLinkedQueue<ConsumptionChunkReport> queue = this.registeredQueues.get(uuid);
+        List<ConsumptionChunkReport> parts = new ArrayList<>(queue);
         Long periodTime = this.periodStart.get(uuid);
         if (LocalDateTime.now().toEpochSecond(ZoneOffset.UTC) >= periodTime + reportSegmentLength) {
             periodTime += reportSegmentLength;
             this.periodStart.put(uuid, periodTime);
+            queue.clear();
         }
         PeriodReport pr = summarize(periodTime, parts);
-        Long startOfDay = periodTime - numberOfSegments * reportSegmentLength;
+        Long startOfDay = reportBegin(periodTime);
         return chunkConverter.toWebsocketDTO(pr, this.meterReportDTOS(startOfDay));
     }
 
@@ -266,17 +273,21 @@ private PeriodReport empty(Long periodTime){
                 .map(e -> this.summarize(e.getKey(), e.getValue()))
                 .collect(Collectors.groupingBy(PeriodReport::getTime, this.singletonCollector()));
         periods.remove(0L);
-        timeMarks.forEach(m->{
-            if(!periods.containsKey(m)){
+        timeMarks.forEach(m -> {
+            if (!periods.containsKey(m)) {
                 periods.put(m, empty(m));
             }
         });
-        reportEnd.set(lastPeriodBegin+reportSegmentLength);
+        reportEnd.set(lastPeriodBegin + reportSegmentLength);
         return periods;
     }
 
     private Long reportBegin() {
-        return this.expectedNextChunkTime() - numberOfSegments * reportSegmentLength;
+        return LocalDateTime.now().atZone() - numberOfSegments * reportSegmentLength;
+    }
+
+    private Long reportBegin(Long reportEnd) {
+        return reportEnd - numberOfSegments * reportSegmentLength;
     }
 
     /**

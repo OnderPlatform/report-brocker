@@ -3,23 +3,112 @@
   <component name="ChangeListManager">
     <list default="true" id="ca0bed78-d55e-4902-9812-04ef7f98837e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back1.log" beforeDir="false" afterPath="$PROJECT_DIR$/back1.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/meters-storage-back.json" beforeDir="false" afterPath="$PROJECT_DIR$/conf/meters-storage-back.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/start-script.sh" beforeDir="false" afterPath="$PROJECT_DIR$/conf/start-script.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log4j.xml" beforeDir="false" afterPath="$PROJECT_DIR$/log4j.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/onder/consumer/CollectorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/onder/consumer/CollectorController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tech/onder/consumer/services/ChunkReportManagementService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/onder/consumer/services/ChunkReportManagementService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/onder/meters/OutputUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/onder/meters/OutputUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cache/compile" beforeDir="false" afterPath="$PROJECT_DIR$/target/cache/compile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cache/compile.relations" beforeDir="false" afterPath="$PROJECT_DIR$/target/cache/compile.relations" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cache/compile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cache/compile.relations" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/meters-storage-back.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/meters-storage-back.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/start-script.sh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/start-script.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/consumer/CollectorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tech/onder/consumer/CollectorController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/router/Routes$$anonfun$documentation$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/router/Routes$$anonfun$router$Routes$$tech_onder_consumer_CollectorController_push0_invoker$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/router/Routes$$anonfun$router$Routes$$tech_onder_consumer_CollectorController_pushList1_invoker$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/router/Routes$$anonfun$router$Routes$$tech_onder_meters_CommonController_addMeter5_invoker$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/router/Routes$$anonfun$router$Routes$$tech_onder_meters_CommonController_meterRelations11_invoker$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/router/Routes$$anonfun$router$Routes$$tech_onder_meters_CommonController_meterRelations6_invoker$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/router/Routes$$anonfun$router$Routes$$tech_onder_meters_CommonController_meters4_invoker$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/router/Routes$$anonfun$router$Routes$$tech_onder_queue_QueueController_backup2_invoker$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/router/Routes$$anonfun$router$Routes$$tech_onder_queue_QueueController_restore3_invoker$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/router/Routes$$anonfun$router$Routes$$tech_onder_reports_ReportController_consumption7_invoker$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/router/Routes$$anonfun$router$Routes$$tech_onder_reports_ReportController_lastConsumption8_invoker$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/router/Routes$$anonfun$router$Routes$$tech_onder_reports_ReportController_meters10_invoker$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/router/Routes$$anonfun$router$Routes$$tech_onder_reports_ReportController_prices9_invoker$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/router/Routes$$anonfun$router$Routes$$tech_onder_reports_ReportController_ws12_invoker$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$1$$anonfun$apply$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$10$$anonfun$apply$10.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$10.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$11$$anonfun$apply$11.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$11.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$12$$anonfun$apply$12.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$12.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$13$$anonfun$apply$13.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$13.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$2$$anonfun$apply$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$3$$anonfun$apply$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$4$$anonfun$apply$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$5$$anonfun$apply$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$6$$anonfun$apply$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$7$$anonfun$apply$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$8$$anonfun$apply$8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$9$$anonfun$apply$9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/router/Routes$$anonfun$routes$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/router/Routes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/router/RoutesPrefix$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/router/RoutesPrefix$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/router/RoutesPrefix.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/consumer/ChunkConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/consumer/CollectorController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/consumer/ReverseCollectorController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/consumer/javascript/ReverseCollectorController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/consumer/models/ConsumptionChunkReport.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/consumer/models/MeterInputDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/consumer/models/PeriodReport.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/consumer/routes$javascript.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/consumer/routes.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/consumer/services/ChunkReportManagementService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/meters/OutputUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tech/onder/meters/OutputUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/consumer/services/ChunkService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/consumer/services/CollectorService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/meters/CommonController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/meters/MeterConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/meters/MeterService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/meters/OutputUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/meters/ReverseCommonController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/meters/javascript/ReverseCommonController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/meters/models/BuyerSeller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/meters/models/Meter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/meters/models/dto/MeterInputDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/meters/repositories/AbstractInMemoryRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/meters/repositories/IInMemoryRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/meters/repositories/MeterRelationRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/meters/repositories/MeterRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/meters/routes$javascript.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/meters/routes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/modules/AppConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/modules/ApplicationModule.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/modules/ChunkServiceProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/queue/QueueController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/queue/QueueService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/queue/ReverseQueueController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/queue/javascript/ReverseQueueController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/queue/routes$javascript.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/queue/routes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/reports/Publisher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/reports/ReportController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/reports/ReportConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/reports/ReportRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/reports/ReportService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/reports/ReverseReportController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/reports/actors/UserActor$Factory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/reports/actors/UserActor$FirstTick.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/reports/actors/UserActor$Tick.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/reports/actors/UserActor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/reports/actors/UserParentActor$Create.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/reports/actors/UserParentActor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/reports/javascript/ReverseReportController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/reports/models/MeterReportDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/reports/models/ReportDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/reports/models/WebsocketDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/reports/routes$javascript.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/onder/reports/routes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/report-broker-1.0-SNAPSHOT-dist.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/report-broker-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/report-broker-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/report-broker-1.0-SNAPSHOT.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/routes/main/router/Routes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/routes/main/router/Routes.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/routes/main/router/RoutesPrefix.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/routes/main/router/RoutesPrefix.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/routes/main/tech/onder/consumer/ReverseRoutes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/routes/main/tech/onder/consumer/ReverseRoutes.scala" afterDir="false" />
@@ -83,7 +172,7 @@
         <counts>
           <entry key="conf" value="36" />
           <entry key="dummy" value="180" />
-          <entry key="java" value="34821" />
+          <entry key="java" value="34925" />
           <entry key="routes" value="478" />
           <entry key="txt" value="7" />
           <entry key="xml" value="83" />
@@ -91,63 +180,94 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="34821" />
+          <entry key="JAVA" value="34925" />
           <entry key="PLAIN_TEXT" value="701" />
           <entry key="XML" value="83" />
         </counts>
       </usages-collector>
     </session>
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="report-broker" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/consumer/services/ChunkReportManagementService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="46" column="7" lean-forward="true" selection-start-line="46" selection-start-column="7" selection-end-line="46" selection-end-column="7" />
+            <state relative-caret-position="224">
+              <caret line="142" column="35" selection-start-line="142" selection-start-column="35" selection-end-line="142" selection-end-column="35" />
               <folding>
-                <element signature="e#8862#8863#0" expanded="true" />
-                <element signature="e#8932#8933#0" expanded="true" />
-                <element signature="e#10703#10704#0" expanded="true" />
-                <element signature="e#10773#10774#0" expanded="true" />
-                <element signature="e#10413#10414#0" expanded="true" />
-                <element signature="e#10481#10482#0" expanded="true" />
+                <element signature="e#10208#10209#0" expanded="true" />
+                <element signature="e#10300#10301#0" expanded="true" />
+                <element signature="e#10486#10487#0" expanded="true" />
+                <element signature="e#10559#10560#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/consumer/ChunkConverter.java">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="732">
-              <caret line="80" column="28" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="28" />
+            <state relative-caret-position="211">
+              <caret line="140" column="39" selection-start-line="140" selection-start-column="39" selection-end-line="140" selection-end-column="39" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="n#plugin#2;n#plugins#0;n#build#0;n#project#0;n#!!top" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/meters/OutputUtils.java">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/time/LocalDateTime.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="9" column="51" lean-forward="true" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
+            <state relative-caret-position="5185">
+              <caret line="402" column="12" selection-start-line="402" selection-start-column="7" selection-end-line="402" selection-end-column="12" />
               <folding>
-                <element signature="e#465#466#0" expanded="true" />
-                <element signature="e#536#537#0" expanded="true" />
-                <marker date="1543934196619" expanded="true" signature="598:967" ph="..." />
+                <element signature="e#6863#6864#0" expanded="true" />
+                <element signature="e#6916#6917#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/conf/application.conf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/time/chrono/ChronoLocalDateTime.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="6358">
+              <caret line="462" column="36" selection-start-line="462" selection-start-column="36" selection-end-line="462" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/time/ZoneOffset.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="6817">
+              <caret line="490" column="18" selection-start-line="490" selection-start-column="18" selection-end-line="490" selection-end-column="18" />
+              <folding>
+                <element signature="e#19902#19903#0" expanded="true" />
+                <element signature="e#19927#19928#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/consumer/CollectorController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="478">
-              <caret line="68" column="26" selection-start-line="68" selection-start-column="26" selection-end-line="68" selection-end-column="26" />
+            <state relative-caret-position="799">
+              <caret line="68" column="24" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#CollectorController#0;class#CollectorController#0" />
@@ -157,21 +277,9 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/meters/repositories/MeterRepo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/reports/ReportService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
+            <state relative-caret-position="663">
               <caret line="53" selection-start-line="53" selection-end-line="53" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -186,7 +294,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/queue/QueueController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
+            <state relative-caret-position="289">
               <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -200,29 +308,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/queue/QueueService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="670">
-              <caret line="80" column="66" selection-start-line="78" selection-start-column="11" selection-end-line="80" selection-end-column="66" />
+            <state relative-caret-position="629">
+              <caret line="49" column="44" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/consumer/services/CollectorService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/consumer/models/ConsumptionChunkReport.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
@@ -252,7 +342,6 @@
       <find>regis</find>
       <find>lastPa</find>
       <find>calculate</find>
-      <find>registeredQueues</find>
       <find>Webso</find>
       <find>subs</find>
       <find>last</find>
@@ -269,6 +358,7 @@
       <find>0xf3718908E40B4FCd3ec8656b152C2C67D3357DC3</find>
       <find>5</find>
       <find>PeriodReport</find>
+      <find>registeredQueues</find>
     </findStrings>
     <replaceStrings>
       <replace>_2.11</replace>
@@ -329,8 +419,8 @@
         <option value="$PROJECT_DIR$/src/main/java/tech/onder/meters/repositories/MeterRepo.java" />
         <option value="$PROJECT_DIR$/src/main/java/tech/onder/meters/OutputUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/tech/onder/queue/QueueController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tech/onder/consumer/services/ChunkReportManagementService.java" />
         <option value="$PROJECT_DIR$/src/main/java/tech/onder/consumer/CollectorController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tech/onder/consumer/services/ChunkReportManagementService.java" />
       </list>
     </option>
   </component>
@@ -371,7 +461,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -608,6 +697,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -680,10 +770,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="168174000" />
+    <option name="totallyTimeSpent" value="168953000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21215352" />
@@ -694,7 +784,7 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.49457702" />
+      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.26885247" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3295082" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.5770065" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -777,25 +867,25 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/tech/onder/consumer/services/ChunkReportManagementService.java</url>
-          <line>154</line>
+          <line>160</line>
           <properties />
           <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/tech/onder/consumer/services/ChunkReportManagementService.java</url>
-          <line>201</line>
+          <line>208</line>
           <properties />
           <option name="timeStamp" value="42" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/tech/onder/consumer/services/ChunkReportManagementService.java</url>
-          <line>204</line>
+          <line>211</line>
           <properties />
           <option name="timeStamp" value="43" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/tech/onder/consumer/services/ChunkReportManagementService.java</url>
-          <line>206</line>
+          <line>213</line>
           <properties />
           <option name="timeStamp" value="44" />
         </line-breakpoint>
@@ -813,37 +903,37 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/tech/onder/consumer/services/ChunkReportManagementService.java</url>
-          <line>254</line>
+          <line>261</line>
           <properties />
           <option name="timeStamp" value="52" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/tech/onder/consumer/services/ChunkReportManagementService.java</url>
-          <line>258</line>
+          <line>265</line>
           <properties />
           <option name="timeStamp" value="53" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/tech/onder/consumer/services/ChunkReportManagementService.java</url>
-          <line>273</line>
+          <line>280</line>
           <properties />
           <option name="timeStamp" value="55" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/tech/onder/consumer/services/ChunkReportManagementService.java</url>
-          <line>200</line>
+          <line>207</line>
           <properties />
           <option name="timeStamp" value="57" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/tech/onder/consumer/services/ChunkReportManagementService.java</url>
-          <line>303</line>
+          <line>314</line>
           <properties />
           <option name="timeStamp" value="58" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/tech/onder/consumer/services/ChunkReportManagementService.java</url>
-          <line>270</line>
+          <line>277</line>
           <properties />
           <option name="timeStamp" value="59" />
         </line-breakpoint>
@@ -932,9 +1022,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="35" column="18" lean-forward="true" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -968,8 +1055,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="144" selection-start-line="144" selection-end-line="144" />
+        <state relative-caret-position="211">
+          <caret line="140" column="39" selection-start-line="140" selection-start-column="39" selection-end-line="140" selection-end-column="39" />
           <folding>
             <element signature="n#plugin#2;n#plugins#0;n#build#0;n#project#0;n#!!top" />
           </folding>
@@ -994,9 +1081,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="158">
           <caret line="19" column="65" selection-start-line="19" selection-start-column="65" selection-end-line="19" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1162,16 +1246,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/conf/application.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        <state relative-caret-position="255">
+          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -1189,9 +1270,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1230,10 +1308,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="181">
           <caret line="58" column="59" selection-start-line="58" selection-start-column="59" selection-end-line="58" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#ws#0;class#ReportController#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1248,9 +1322,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="732">
           <caret line="80" column="28" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1258,11 +1329,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="9" column="51" lean-forward="true" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
-          <folding>
-            <element signature="e#465#466#0" expanded="true" />
-            <element signature="e#536#537#0" expanded="true" />
-            <marker date="1543934196619" expanded="true" signature="598:967" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1277,15 +1343,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
           <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/reports/ReportService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
+        <state relative-caret-position="663">
           <caret line="53" selection-start-line="53" selection-end-line="53" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1298,22 +1361,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/consumer/services/ChunkReportManagementService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="46" column="7" lean-forward="true" selection-start-line="46" selection-start-column="7" selection-end-line="46" selection-end-column="7" />
+        <state relative-caret-position="224">
+          <caret line="142" column="35" selection-start-line="142" selection-start-column="35" selection-end-line="142" selection-end-column="35" />
           <folding>
-            <element signature="e#8862#8863#0" expanded="true" />
-            <element signature="e#8932#8933#0" expanded="true" />
-            <element signature="e#10703#10704#0" expanded="true" />
-            <element signature="e#10773#10774#0" expanded="true" />
-            <element signature="e#10413#10414#0" expanded="true" />
-            <element signature="e#10481#10482#0" expanded="true" />
+            <element signature="e#10208#10209#0" expanded="true" />
+            <element signature="e#10300#10301#0" expanded="true" />
+            <element signature="e#10486#10487#0" expanded="true" />
+            <element signature="e#10559#10560#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/queue/QueueController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
+        <state relative-caret-position="289">
           <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1325,8 +1386,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/queue/QueueService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="670">
-          <caret line="80" column="66" selection-start-line="78" selection-start-column="11" selection-end-line="80" selection-end-column="66" />
+        <state relative-caret-position="629">
+          <caret line="49" column="44" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1335,8 +1396,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tech/onder/consumer/CollectorController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="68" column="26" selection-start-line="68" selection-start-column="26" selection-end-line="68" selection-end-column="26" />
+        <state relative-caret-position="799">
+          <caret line="68" column="24" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#CollectorController#0;class#CollectorController#0" />
