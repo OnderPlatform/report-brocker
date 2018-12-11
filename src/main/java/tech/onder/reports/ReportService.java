@@ -1,20 +1,22 @@
 package tech.onder.reports;
 
-import tech.onder.consumer.ChunkConverter;
-import tech.onder.consumer.models.ConsumptionChunkReport;
+import tech.onder.consumer.models.ConsumptionReport;
 import tech.onder.consumer.models.PeriodReport;
+import tech.onder.consumer.models.WebsocketQueueItem;
 import tech.onder.consumer.services.ChunkReportManagementService;
+import tech.onder.meters.MeterService;
 import tech.onder.meters.repositories.MeterRepo;
 import tech.onder.reports.models.MeterReportDTO;
 import tech.onder.reports.models.ReportDTO;
+import tech.onder.reports.models.WebsocketDTO;
 
 import javax.inject.Inject;
-import java.time.LocalDateTime;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Map;
+import java.util.Optional;
+import java.util.function.Supplier;
 import java.util.stream.Collectors;
-
-import static java.time.ZoneOffset.UTC;
 
 public class ReportService {
 
@@ -24,6 +26,8 @@ public class ReportService {
     private final ChunkReportManagementService chunkReportManagementService;
 
     private final MeterRepo meterRepo;
+
+    private final MeterService meterService;
 
     private final ReportConverter reportConverter;
 
@@ -55,30 +59,27 @@ public class ReportService {
                 .collect(Collectors.toList());
     }
 
+
     public List<MeterReportDTO> getMeters() {
-        return chunkReportManagementService.meterReportDTOS();
+        return toMeterReports(chunkReportManagementService::meterReports);
     }
 
+    private List<MeterReportDTO> toMeterReports(Supplier<Map<String, ConsumptionReport>> consumptionReportMapSupplier) {
+        Map<String, ConsumptionReport> consumptionReportMap = consumptionReportMapSupplier.get();
+        return meterService.all()
+                .stream()
+                // .map(reportConverter::createEmptyMeterReportDTO)
+                .map(m ->
+                        Optional.ofNullable(consumptionReportMap.get(m.getId()))
+                                .map(reportConverter::toMeterReportDTO)
+                                .orElseGet(() -> reportConverter.createEmptyMeterReportDTO(m))
+                )
+                .collect(Collectors.toList());
+    }
 
-    public ConsumptionChunkReport getAggregatedValues(String meterUuid) {
-        List<ConsumptionChunkReport> r = chunkReportManagementService.getForUUID(meterUuid);
-        ConsumptionChunkReport agrrReport = r.stream()
-                .reduce((a, b) -> {
-                    a.setPurchaseWh(a.getPurchaseWh() + b.getPurchaseWh());
-                    a.setPurchaseCost(a.getPurchaseCost().add(b.getPurchaseCost()));
-                    a.setSaleWh(a.getSaleWh() + b.getSaleWh());
-                    a.setSaleCost(a.getSaleCost().add(b.getSaleCost()));
-                    return a;
-                })
-                .orElse(new ConsumptionChunkReport());
-        agrrReport.setPrice(ChunkConverter.calculatePrice(agrrReport));
-        Long timeMark = r.stream()
-                .mapToLong(ConsumptionChunkReport::getTime)
-                .max()
-                .orElse(LocalDateTime.now().minusHours(24).toEpochSecond(UTC));
-
-        agrrReport.setTime(timeMark);
-        return agrrReport;
+    public WebsocketDTO websocketOutput(WebsocketQueueItem websocketItem) {
+        List<MeterReportDTO> meters = this.toMeterReports(websocketItem::getMetersConsumption);
+        return reportConverter.toWebsocketDTO(websocketItem.getPeriodReport(), meters);
     }
 
 

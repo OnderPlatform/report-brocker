@@ -1,11 +1,15 @@
 package tech.onder.consumer.models;
 
-public class MeterInputDTO {
+public class TransactionInputDTO {
 
     private String sellerId;
+
     private String buyerId;
+
     private Long time;
+
     private Double saleWh;
+
     private String cost;
 
     public String getSellerId() {

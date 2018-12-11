@@ -1,23 +1,21 @@
 package tech.onder.reports.actors;
 
 import akka.actor.AbstractActorWithTimers;
-import akka.actor.Actor;
 import akka.event.Logging;
 import akka.event.LoggingAdapter;
-import akka.stream.Materializer;
-import akka.stream.UniqueKillSwitch;
-import akka.util.Timeout;
 import com.fasterxml.jackson.databind.JsonNode;
 import play.libs.Json;
-import scala.concurrent.duration.Duration;
-import tech.onder.consumer.services.ChunkReportManagementService;
+import tech.onder.consumer.models.WebsocketQueueItem;
+import tech.onder.consumer.services.IWebsocketQueueManager;
+import tech.onder.reports.ReportService;
 import tech.onder.reports.models.WebsocketDTO;
 
 import javax.inject.Inject;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.Collections;
+import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
-import java.util.concurrent.TimeUnit;
+import java.util.concurrent.ConcurrentLinkedDeque;
 
 
 /**
@@ -26,39 +24,32 @@ import java.util.concurrent.TimeUnit;
  */
 public class UserActor extends AbstractActorWithTimers {
 
-    private final Timeout timeout = new Timeout(Duration.create(5, TimeUnit.SECONDS));
-
     private final LoggingAdapter logger = Logging.getLogger(getContext().system(), this);
 
-    private final Map<String, UniqueKillSwitch> stocksMap = new HashMap<>();
-
     private final String id;
-    private final Materializer mat;
 
-//    private final Sink<JsonNode, NotUsed> hubSink;
-//    private final Flow<JsonNode, JsonNode, NotUsed> websocketFlow;
-    private final ChunkReportManagementService chunkReportManagementService;
-    private static Object TICK_KEY = "TickKey";
 
-    public static final class FirstTick {
-    }
+    private final ConcurrentLinkedDeque<WebsocketQueueItem> wsQueue = new ConcurrentLinkedDeque<>();
+
+    private final ReportService reportService;
+
+    private final IWebsocketQueueManager websocketQueueManager;
 
     public static final class Tick {
     }
 
     @Inject
-    public UserActor(ChunkReportManagementService chunkReportManagementService,
-                     Materializer mat) {
+    public UserActor(IWebsocketQueueManager websocketQueueManager, ReportService reportService) {
         this.id = UUID.randomUUID().toString();
-        this.chunkReportManagementService = chunkReportManagementService;
-        chunkReportManagementService.subscribe(id);
-        this.mat = mat;
+        this.websocketQueueManager = websocketQueueManager;
+        this.reportService = reportService;
+        websocketQueueManager.subscribe(id, this.wsQueue);
     }
 
 
     @Override
     public void postStop() throws Exception {
-        this.chunkReportManagementService.unsubscribe(this.id);
+        this.websocketQueueManager.unsubscribe(this.id);
         super.postStop();
     }
 
@@ -66,22 +57,15 @@ public class UserActor extends AbstractActorWithTimers {
     public Receive createReceive() {
 
         return receiveBuilder()
-                .match(FirstTick.class, message -> {
-                    // do something useful here
-                    getTimers().startPeriodicTimer(TICK_KEY, new Tick(), Duration.create(5, TimeUnit.SECONDS));
-
-                })
                 .match(Tick.class, message -> {
-                   WebsocketDTO dto = chunkReportManagementService.websocketOutput(this.id);
-                    JsonNode js = Json.toJson(dto);
+                    /** temporal solution. Current implementation  is able to handle only last item from collection*/
+                    Optional<WebsocketQueueItem> opItem = Optional.ofNullable(this.wsQueue.getLast());
+                    this.wsQueue.clear();
+                    List<WebsocketDTO> answerList = opItem.map(reportService::websocketOutput)
+                            .map(Collections::singletonList)
+                            .orElseGet(Collections::emptyList);
+                    JsonNode js = Json.toJson(answerList);
                     sender().tell(js, self());
                 }).build();
     }
-
-
-
-    public interface Factory {
-        Actor create(ChunkReportManagementService chunkReportManagementService);
-    }
-
 }

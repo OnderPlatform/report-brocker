@@ -6,6 +6,7 @@ public class BuyerSeller {
 
     @JsonProperty("meterUuid")
     private String from;
+
     @JsonProperty("sellerUuid")
     private String to;
 

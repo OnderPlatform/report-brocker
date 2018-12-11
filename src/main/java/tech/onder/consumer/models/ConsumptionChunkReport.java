@@ -17,8 +17,6 @@ public class ConsumptionChunkReport {
 
     private Long time;
 
-    private BigInteger price;
-
     private Double saleWh = 0.0;
 
     private BigInteger saleCost;
@@ -48,14 +46,6 @@ public class ConsumptionChunkReport {
 
     public void setTime(Long time) {
         this.time = time;
-    }
-
-    public BigInteger getPrice() {
-        return price;
-    }
-
-    public void setPrice(BigInteger price) {
-        this.price = price;
     }
 
     public Double getPurchaseWh() {

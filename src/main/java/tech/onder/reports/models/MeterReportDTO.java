@@ -3,7 +3,7 @@ package tech.onder.reports.models;
 
 public class MeterReportDTO {
 
-    private String uuid;
+    private String id;
 
     private Long updateTime;
 
@@ -17,12 +17,12 @@ public class MeterReportDTO {
 
     private String purchaseTokens;
 
-    public String getUuid() {
-        return uuid;
+    public String getId() {
+        return id;
     }
 
-    public void setUuid(String uuid) {
-        this.uuid = uuid;
+    public void setId(String id) {
+        this.id = id;
     }
 
     public Long getUpdateTime() {

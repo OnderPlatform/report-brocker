@@ -10,8 +10,10 @@ import play.libs.concurrent.HttpExecutionContext;
 import play.mvc.Controller;
 import play.mvc.Result;
 import play.mvc.Results;
-import tech.onder.consumer.models.MeterInputDTO;
+import tech.onder.consumer.models.TransactionInputDTO;
 import tech.onder.consumer.services.ChunkReportManagementService;
+import tech.onder.consumer.services.CollectorService;
+import tech.onder.meters.models.dto.MeterDTO;
 
 import javax.inject.Inject;
 import java.io.File;
@@ -33,11 +35,14 @@ public class CollectorController extends Controller {
 
     private final ChunkConverter chunkConverter;
 
+    private final CollectorService collectorService;
+
     @Inject
-    public CollectorController(HttpExecutionContext ec, ChunkReportManagementService chunkReportManagementService, ChunkConverter chunkConverter) {
+    public CollectorController(HttpExecutionContext ec, ChunkReportManagementService chunkReportManagementService, ChunkConverter chunkConverter, CollectorService collectorService) {
         this.ec = ec;
         this.chunkReportManagementService = chunkReportManagementService;
         this.chunkConverter = chunkConverter;
+        this.collectorService = collectorService;
     }
 
     public CompletionStage<Result> push(String uuid) {
@@ -46,11 +51,8 @@ public class CollectorController extends Controller {
                     try {
                         JsonNode jsonNode = ctx().request().body().asJson();
                         logger.info(jsonNode.toString());
-                        MeterInputDTO dto = Json.fromJson(jsonNode, MeterInputDTO.class);
-                        chunkConverter.toChunks(dto)
-                                .stream()
-                                .peek(v -> logger.trace(toJson(v).toString()))
-                                .forEach(chunkReportManagementService::add);
+                        MeterDTO dto = Json.fromJson(jsonNode, MeterDTO.class);
+                        collectorService.add(uuid, dto);
                         return ok();
                     } catch (NumberFormatException e) {
                         return badRequest(toJson(e.getMessage()));
@@ -71,7 +73,7 @@ public class CollectorController extends Controller {
                         meterStorage.stream()
                                 .map(s -> {
                                     try {
-                                        return mapper.readValue((String) s, MeterInputDTO.class);
+                                        return mapper.readValue((String) s, TransactionInputDTO.class);
                                     } catch (IOException ioe) {
                                         return null;
                                     }

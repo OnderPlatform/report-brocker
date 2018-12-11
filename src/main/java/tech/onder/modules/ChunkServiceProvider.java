@@ -2,6 +2,7 @@ package tech.onder.modules;
 
 import tech.onder.consumer.ChunkConverter;
 import tech.onder.consumer.services.ChunkReportManagementService;
+import tech.onder.consumer.services.IWebsocketQueueManager;
 import tech.onder.meters.repositories.MeterRepo;
 
 import javax.inject.Inject;
@@ -9,7 +10,7 @@ import javax.inject.Provider;
 import javax.inject.Singleton;
 
 @Singleton
-public class ChunkServiceProvider implements Provider<ChunkReportManagementService> {
+public class ChunkServiceProvider implements Provider<IWebsocketQueueManager> {
 
 
     private ChunkConverter chunkConverter;
@@ -23,7 +24,7 @@ public class ChunkServiceProvider implements Provider<ChunkReportManagementServi
     }
 
     @Override
-    public ChunkReportManagementService get() {
+    public IWebsocketQueueManager get() {
         return new ChunkReportManagementService(this.chunkConverter, meterRepo);
     }
 }

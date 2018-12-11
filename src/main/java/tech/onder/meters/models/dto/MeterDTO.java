@@ -1,14 +1,12 @@
 package tech.onder.meters.models.dto;
 
-public class MeterInputDTO {
+public class MeterDTO {
 
     private String id;
 
     private String name;
 
     private String comment;
-
-    private String parent;
 
     public String getId() {
         return id;
@@ -32,13 +30,5 @@ public class MeterInputDTO {
 
     public void setComment(String comment) {
         this.comment = comment;
-    }
-
-    public String getParent() {
-        return parent;
-    }
-
-    public void setParent(String parent) {
-        this.parent = parent;
     }
 }

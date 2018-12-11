@@ -2,7 +2,7 @@
 
 **return**
 `
-[{ uuid: string;
+[{ id: string;
   name: string;
   comment: string;
 }, ...
@@ -46,7 +46,7 @@ amount: double
 
 **return**
 
-`[{uuid: string,
+`[{id: string,
   price: double,
   saleKWh: double,
   saleTokens: double,
@@ -67,7 +67,7 @@ time: long,
 instantConsumption: double,
 instantPrice: double,
 meters:
-[{uuid: string,
+[{id: string,
   price: double,
   saleKWh: double,
   saleTokens: double,
