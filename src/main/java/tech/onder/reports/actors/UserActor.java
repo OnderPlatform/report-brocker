@@ -1,71 +1,75 @@
 package tech.onder.reports.actors;
 
 import akka.actor.AbstractActorWithTimers;
+import akka.actor.Actor;
 import akka.event.Logging;
 import akka.event.LoggingAdapter;
 import com.fasterxml.jackson.databind.JsonNode;
 import play.libs.Json;
-import tech.onder.consumer.models.WebsocketQueueItem;
-import tech.onder.consumer.services.IWebsocketQueueManager;
-import tech.onder.reports.ReportService;
-import tech.onder.reports.models.WebsocketDTO;
+import tech.onder.queue.models.WebsocketQueueItem;
+import tech.onder.reports.models.dto.WebsocketDTO;
+import tech.onder.reports.services.ReportService;
 
 import javax.inject.Inject;
-import java.util.Collections;
-import java.util.List;
-import java.util.Optional;
 import java.util.UUID;
-import java.util.concurrent.ConcurrentLinkedDeque;
+import java.util.concurrent.ArrayBlockingQueue;
 
 
-/**
- * The broker between the WebSocket and the StockActor(s).  The UserActor holds the connection and sends serialized
- * JSON data to the client.
- */
 public class UserActor extends AbstractActorWithTimers {
-
+    
     private final LoggingAdapter logger = Logging.getLogger(getContext().system(), this);
-
+    
     private final String id;
-
-
-    private final ConcurrentLinkedDeque<WebsocketQueueItem> wsQueue = new ConcurrentLinkedDeque<>();
-
+    
+    private final ArrayBlockingQueue<WebsocketQueueItem> wsQueue;
+    
     private final ReportService reportService;
-
-    private final IWebsocketQueueManager websocketQueueManager;
-
+    
+    private final IWebsocketQueuePublisher websocketQueueManager;
+    
     public static final class Tick {
+    
     }
-
+    
     @Inject
-    public UserActor(IWebsocketQueueManager websocketQueueManager, ReportService reportService) {
+    public UserActor(IWebsocketQueuePublisher websocketQueueManager, ReportService reportService) {
         this.id = UUID.randomUUID().toString();
         this.websocketQueueManager = websocketQueueManager;
         this.reportService = reportService;
+        this.wsQueue = new ArrayBlockingQueue<>(20);
         websocketQueueManager.subscribe(id, this.wsQueue);
     }
-
-
+    
+    
     @Override
     public void postStop() throws Exception {
         this.websocketQueueManager.unsubscribe(this.id);
         super.postStop();
     }
-
+    
     @Override
     public Receive createReceive() {
-
+        
         return receiveBuilder()
-                .match(Tick.class, message -> {
-                    /** temporal solution. Current implementation  is able to handle only last item from collection*/
-                    Optional<WebsocketQueueItem> opItem = Optional.ofNullable(this.wsQueue.getLast());
-                    this.wsQueue.clear();
-                    List<WebsocketDTO> answerList = opItem.map(reportService::websocketOutput)
-                            .map(Collections::singletonList)
-                            .orElseGet(Collections::emptyList);
-                    JsonNode js = Json.toJson(answerList);
-                    sender().tell(js, self());
-                }).build();
+                       .match(Tick.class, message -> {
+//                           List<WebsocketDTO> answerList = new ArrayList<>();
+                           WebsocketQueueItem item = this.wsQueue.poll();
+                           while (!this.wsQueue.isEmpty()) {
+                               item = this.wsQueue.poll();
+//                               WebsocketDTO wsDto = reportService.websocketOutput(item);
+//                               answerList.save(wsDto);
+                           }
+                    
+                           /** temporal solution. Current client is not  able to handle collections*/
+                           this.wsQueue.offer(item);
+                           WebsocketDTO wsDto = reportService.websocketOutput(item);
+                           JsonNode js = Json.toJson(wsDto);
+                           sender().tell(js, self());
+                       }).build();
     }
+    public interface Factory {
+        Actor create(String id);
+    }
+    
+    
 }

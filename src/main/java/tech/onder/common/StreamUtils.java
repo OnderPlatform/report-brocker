@@ -4,6 +4,7 @@ import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 public class StreamUtils {
+    
     public static <T> Collector<T, ?, T> singletonCollector() {
         return Collectors.collectingAndThen(
                 Collectors.toList(),
@@ -15,4 +16,5 @@ public class StreamUtils {
                 }
         );
     }
+    
 }

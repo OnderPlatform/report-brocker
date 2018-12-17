@@ -12,6 +12,8 @@ public interface IInMemoryRepo<I, T> {
     Collection<T> all();
 
     Optional<T> find(I id);
+    
+    void save(T item);
 
 
 

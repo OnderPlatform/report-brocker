@@ -1,15 +1,15 @@
-##GET /meters
+##GET /api/meters
 
 **return**
 `
-[{ uuid: string;
+[{ id: string;
   name: string;
   comment: string;
 }, ...
 ]`
 
 
-##GET /meters/relations
+##GET /api/meters/relations
 
 **return**
 
@@ -18,41 +18,41 @@ meterUuid: string,
 sellerUuid: string
 }, ...]`
 
-##GET /reports/consumption
+##GET /api/reports/consumption
 Отчет потребления за 24 часа. Интервалы 10 мин
 
 **return**
 
 `[{
-time: long;
-consumption: double
+time: long,
+value: double
 }, ...]`
 
 
-##GET /reports/price
+##GET /api/reports/price
 Отчет цены за 24 часа. Интервалы 10 мин
 
 **return**
 
 `[{
 time: long;
-amount: double
+value: string
 }, ...]`
 
 
-##GET /reports/meters
+##GET /api/reports/meters
 
 Агрегированные данные за последние 24 часа
 
 **return**
 
-`[{uuid: string,
-  price: double,
-  saleKWh: double,
-  saleTokens: double,
-  purshaseKWh: double,
-  purshaseTokens: double,
+`[{id: string,
   updateTime: long,
+  price: double,
+  saleKWh: string,
+  saleTokens: string,
+  purshaseKWh: string,
+  purshaseTokens: string
 }
 ]`
 
@@ -67,12 +67,12 @@ time: long,
 instantConsumption: double,
 instantPrice: double,
 meters:
-[{uuid: string,
-  price: double,
-  saleKWh: double,
-  saleTokens: double,
-  purshaseKWh: double,
-  purshaseTokens: double,
-  updateTime: long,
+[{id: string,
+    updateTime: long,
+    price: double,
+    saleKWh: string,
+    saleTokens: string,
+    purshaseKWh: string,
+    purshaseTokens: string
 }]
 }`

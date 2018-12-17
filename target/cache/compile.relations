@@ -1,56 +1,64 @@
 products:
-   C:\work\report-brocker\src\main\java\tech\onder\consumer\ChunkConverter.java -> C:\work\report-brocker\target\classes\tech\onder\consumer\ChunkConverter.class
-   C:\work\report-brocker\src\main\java\tech\onder\consumer\CollectorController.java -> C:\work\report-brocker\target\classes\tech\onder\consumer\CollectorController.class
-   C:\work\report-brocker\src\main\java\tech\onder\consumer\models\ConsumptionChunkReport.java -> C:\work\report-brocker\target\classes\tech\onder\consumer\models\ConsumptionChunkReport.class
-   C:\work\report-brocker\src\main\java\tech\onder\consumer\models\MeterInputDTO.java -> C:\work\report-brocker\target\classes\tech\onder\consumer\models\MeterInputDTO.class
-   C:\work\report-brocker\src\main\java\tech\onder\consumer\models\PeriodReport.java -> C:\work\report-brocker\target\classes\tech\onder\consumer\models\PeriodReport.class
-   C:\work\report-brocker\src\main\java\tech\onder\consumer\services\ChunkReportManagementService.java -> C:\work\report-brocker\target\classes\tech\onder\consumer\services\ChunkReportManagementService.class
-   C:\work\report-brocker\src\main\java\tech\onder\consumer\services\ChunkService.java -> C:\work\report-brocker\target\classes\tech\onder\consumer\services\ChunkService.class
-   C:\work\report-brocker\src\main\java\tech\onder\consumer\services\CollectorService.java -> C:\work\report-brocker\target\classes\tech\onder\consumer\services\CollectorService.class
-   C:\work\report-brocker\src\main\java\tech\onder\meters\CommonController.java -> C:\work\report-brocker\target\classes\tech\onder\meters\CommonController.class
-   C:\work\report-brocker\src\main\java\tech\onder\meters\MeterConverter.java -> C:\work\report-brocker\target\classes\tech\onder\meters\MeterConverter.class
-   C:\work\report-brocker\src\main\java\tech\onder\meters\MeterService.java -> C:\work\report-brocker\target\classes\tech\onder\meters\MeterService.class
-   C:\work\report-brocker\src\main\java\tech\onder\meters\models\BuyerSeller.java -> C:\work\report-brocker\target\classes\tech\onder\meters\models\BuyerSeller.class
+   C:\work\report-brocker\src\main\java\tech\onder\collector\controllers\CollectorController.java -> C:\work\report-brocker\target\classes\tech\onder\collector\controllers\CollectorController.class
+   C:\work\report-brocker\src\main\java\tech\onder\collector\IConsumptionStorage.java -> C:\work\report-brocker\target\classes\tech\onder\collector\IConsumptionStorage.class
+   C:\work\report-brocker\src\main\java\tech\onder\collector\models\dto\TransactionInputDTO.java -> C:\work\report-brocker\target\classes\tech\onder\collector\models\dto\TransactionInputDTO.class
+   C:\work\report-brocker\src\main\java\tech\onder\collector\services\converters\ConsumptionConverter.java -> C:\work\report-brocker\target\classes\tech\onder\collector\services\converters\ConsumptionConverter.class
+   C:\work\report-brocker\src\main\java\tech\onder\collector\services\impl\CollectorService.java -> C:\work\report-brocker\target\classes\tech\onder\collector\services\impl\CollectorService.class
+   C:\work\report-brocker\src\main\java\tech\onder\common\exceptions\NotFoundException.java -> C:\work\report-brocker\target\classes\tech\onder\common\exceptions\NotFoundException.class
+   C:\work\report-brocker\src\main\java\tech\onder\common\StreamUtils.java -> C:\work\report-brocker\target\classes\tech\onder\common\StreamUtils.class
+   C:\work\report-brocker\src\main\java\tech\onder\meters\controllers\MeterController.java -> C:\work\report-brocker\target\classes\tech\onder\meters\controllers\MeterController.class
+   C:\work\report-brocker\src\main\java\tech\onder\meters\models\dto\MeterDTO.java -> C:\work\report-brocker\target\classes\tech\onder\meters\models\dto\MeterDTO.class
    C:\work\report-brocker\src\main\java\tech\onder\meters\models\dto\MeterInputDTO.java -> C:\work\report-brocker\target\classes\tech\onder\meters\models\dto\MeterInputDTO.class
+   C:\work\report-brocker\src\main\java\tech\onder\meters\models\dto\RelationDTO.java -> C:\work\report-brocker\target\classes\tech\onder\meters\models\dto\RelationDTO.class
+   C:\work\report-brocker\src\main\java\tech\onder\meters\models\IEntity.java -> C:\work\report-brocker\target\classes\tech\onder\meters\models\IEntity.class
    C:\work\report-brocker\src\main\java\tech\onder\meters\models\Meter.java -> C:\work\report-brocker\target\classes\tech\onder\meters\models\Meter.class
-   C:\work\report-brocker\src\main\java\tech\onder\meters\OutputUtils.java -> C:\work\report-brocker\target\classes\tech\onder\meters\OutputUtils.class
+   C:\work\report-brocker\src\main\java\tech\onder\meters\models\MeterRelation.java -> C:\work\report-brocker\target\classes\tech\onder\meters\models\MeterRelation.class
    C:\work\report-brocker\src\main\java\tech\onder\meters\repositories\AbstractInMemoryRepo.java -> C:\work\report-brocker\target\classes\tech\onder\meters\repositories\AbstractInMemoryRepo.class
    C:\work\report-brocker\src\main\java\tech\onder\meters\repositories\IInMemoryRepo.java -> C:\work\report-brocker\target\classes\tech\onder\meters\repositories\IInMemoryRepo.class
-   C:\work\report-brocker\src\main\java\tech\onder\meters\repositories\MeterRelationRepo.java -> C:\work\report-brocker\target\classes\tech\onder\meters\repositories\MeterRelationRepo.class
    C:\work\report-brocker\src\main\java\tech\onder\meters\repositories\MeterRepo.java -> C:\work\report-brocker\target\classes\tech\onder\meters\repositories\MeterRepo.class
+   C:\work\report-brocker\src\main\java\tech\onder\meters\services\converters\MeterConverter.java -> C:\work\report-brocker\target\classes\tech\onder\meters\services\converters\MeterConverter.class
+   C:\work\report-brocker\src\main\java\tech\onder\meters\services\MeterService.java -> C:\work\report-brocker\target\classes\tech\onder\meters\services\MeterService.class
    C:\work\report-brocker\src\main\java\tech\onder\modules\AppConfig.java -> C:\work\report-brocker\target\classes\tech\onder\modules\AppConfig.class
    C:\work\report-brocker\src\main\java\tech\onder\modules\ApplicationModule.java -> C:\work\report-brocker\target\classes\tech\onder\modules\ApplicationModule.class
-   C:\work\report-brocker\src\main\java\tech\onder\modules\ChunkServiceProvider.java -> C:\work\report-brocker\target\classes\tech\onder\modules\ChunkServiceProvider.class
-   C:\work\report-brocker\src\main\java\tech\onder\queue\QueueController.java -> C:\work\report-brocker\target\classes\tech\onder\queue\QueueController.class
-   C:\work\report-brocker\src\main\java\tech\onder\queue\QueueService.java -> C:\work\report-brocker\target\classes\tech\onder\queue\QueueService.class
+   C:\work\report-brocker\src\main\java\tech\onder\queue\actors\ForceUpdate.java -> C:\work\report-brocker\target\classes\tech\onder\queue\actors\ForceUpdate$FirstTick.class
+   C:\work\report-brocker\src\main\java\tech\onder\queue\actors\ForceUpdate.java -> C:\work\report-brocker\target\classes\tech\onder\queue\actors\ForceUpdate$Tick.class
+   C:\work\report-brocker\src\main\java\tech\onder\queue\actors\ForceUpdate.java -> C:\work\report-brocker\target\classes\tech\onder\queue\actors\ForceUpdate.class
+   C:\work\report-brocker\src\main\java\tech\onder\queue\conf\ConsumptionQueueConf.java -> C:\work\report-brocker\target\classes\tech\onder\queue\conf\ConsumptionQueueConf.class
+   C:\work\report-brocker\src\main\java\tech\onder\queue\controllers\QueueController.java -> C:\work\report-brocker\target\classes\tech\onder\queue\controllers\QueueController.class
+   C:\work\report-brocker\src\main\java\tech\onder\queue\IRestorableStorage.java -> C:\work\report-brocker\target\classes\tech\onder\queue\IRestorableStorage.class
+   C:\work\report-brocker\src\main\java\tech\onder\queue\manager\ConsumptionQueuesManager.java -> C:\work\report-brocker\target\classes\tech\onder\queue\manager\ConsumptionQueuesManager.class
+   C:\work\report-brocker\src\main\java\tech\onder\queue\models\ConsumptionChunk.java -> C:\work\report-brocker\target\classes\tech\onder\queue\models\ConsumptionChunk.class
+   C:\work\report-brocker\src\main\java\tech\onder\queue\models\dto\ConsumptionReportDTO.java -> C:\work\report-brocker\target\classes\tech\onder\queue\models\dto\ConsumptionReportDTO.class
+   C:\work\report-brocker\src\main\java\tech\onder\queue\models\dto\PeriodReportDTO.java -> C:\work\report-brocker\target\classes\tech\onder\queue\models\dto\PeriodReportDTO.class
+   C:\work\report-brocker\src\main\java\tech\onder\queue\models\WebsocketQueueItem.java -> C:\work\report-brocker\target\classes\tech\onder\queue\models\WebsocketQueueItem.class
+   C:\work\report-brocker\src\main\java\tech\onder\queue\service\QueueBackupService.java -> C:\work\report-brocker\target\classes\tech\onder\queue\service\QueueBackupService.class
+   C:\work\report-brocker\src\main\java\tech\onder\reports\actors\IWebsocketQueuePublisher.java -> C:\work\report-brocker\target\classes\tech\onder\reports\actors\IWebsocketQueuePublisher.class
    C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserActor.java -> C:\work\report-brocker\target\classes\tech\onder\reports\actors\UserActor$Factory.class
-   C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserActor.java -> C:\work\report-brocker\target\classes\tech\onder\reports\actors\UserActor$FirstTick.class
    C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserActor.java -> C:\work\report-brocker\target\classes\tech\onder\reports\actors\UserActor$Tick.class
    C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserActor.java -> C:\work\report-brocker\target\classes\tech\onder\reports\actors\UserActor.class
    C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserParentActor.java -> C:\work\report-brocker\target\classes\tech\onder\reports\actors\UserParentActor$Create.class
    C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserParentActor.java -> C:\work\report-brocker\target\classes\tech\onder\reports\actors\UserParentActor.class
-   C:\work\report-brocker\src\main\java\tech\onder\reports\models\MeterReportDTO.java -> C:\work\report-brocker\target\classes\tech\onder\reports\models\MeterReportDTO.class
-   C:\work\report-brocker\src\main\java\tech\onder\reports\models\ReportDTO.java -> C:\work\report-brocker\target\classes\tech\onder\reports\models\ReportDTO.class
-   C:\work\report-brocker\src\main\java\tech\onder\reports\models\WebsocketDTO.java -> C:\work\report-brocker\target\classes\tech\onder\reports\models\WebsocketDTO.class
-   C:\work\report-brocker\src\main\java\tech\onder\reports\Publisher.java -> C:\work\report-brocker\target\classes\tech\onder\reports\Publisher.class
-   C:\work\report-brocker\src\main\java\tech\onder\reports\ReportController.java -> C:\work\report-brocker\target\classes\tech\onder\reports\ReportController.class
-   C:\work\report-brocker\src\main\java\tech\onder\reports\ReportConverter.java -> C:\work\report-brocker\target\classes\tech\onder\reports\ReportConverter.class
-   C:\work\report-brocker\src\main\java\tech\onder\reports\ReportRepository.java -> C:\work\report-brocker\target\classes\tech\onder\reports\ReportRepository.class
-   C:\work\report-brocker\src\main\java\tech\onder\reports\ReportService.java -> C:\work\report-brocker\target\classes\tech\onder\reports\ReportService.class
+   C:\work\report-brocker\src\main\java\tech\onder\reports\controllers\ReportController.java -> C:\work\report-brocker\target\classes\tech\onder\reports\controllers\ReportController.class
+   C:\work\report-brocker\src\main\java\tech\onder\reports\IReportDataSupplier.java -> C:\work\report-brocker\target\classes\tech\onder\reports\IReportDataSupplier.class
+   C:\work\report-brocker\src\main\java\tech\onder\reports\models\dto\MeterReportDTO.java -> C:\work\report-brocker\target\classes\tech\onder\reports\models\dto\MeterReportDTO.class
+   C:\work\report-brocker\src\main\java\tech\onder\reports\models\dto\ReportDTO.java -> C:\work\report-brocker\target\classes\tech\onder\reports\models\dto\ReportDTO.class
+   C:\work\report-brocker\src\main\java\tech\onder\reports\models\dto\WebsocketDTO.java -> C:\work\report-brocker\target\classes\tech\onder\reports\models\dto\WebsocketDTO.class
+   C:\work\report-brocker\src\main\java\tech\onder\reports\services\converters\ReportConverter.java -> C:\work\report-brocker\target\classes\tech\onder\reports\services\converters\ReportConverter.class
+   C:\work\report-brocker\src\main\java\tech\onder\reports\services\ReportService.java -> C:\work\report-brocker\target\classes\tech\onder\reports\services\ReportService.class
+   C:\work\report-brocker\src\main\java\tech\onder\reports\utils\OutputUtils.java -> C:\work\report-brocker\target\classes\tech\onder\reports\utils\OutputUtils.class
    C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\target\classes\router\Routes$$anonfun$documentation$1.class
-   C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\target\classes\router\Routes$$anonfun$router$Routes$$tech_onder_consumer_CollectorController_push0_invoker$1.class
-   C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\target\classes\router\Routes$$anonfun$router$Routes$$tech_onder_consumer_CollectorController_pushList1_invoker$1.class
-   C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\target\classes\router\Routes$$anonfun$router$Routes$$tech_onder_meters_CommonController_addMeter5_invoker$1.class
-   C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\target\classes\router\Routes$$anonfun$router$Routes$$tech_onder_meters_CommonController_meterRelations11_invoker$1.class
-   C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\target\classes\router\Routes$$anonfun$router$Routes$$tech_onder_meters_CommonController_meterRelations6_invoker$1.class
-   C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\target\classes\router\Routes$$anonfun$router$Routes$$tech_onder_meters_CommonController_meters4_invoker$1.class
-   C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\target\classes\router\Routes$$anonfun$router$Routes$$tech_onder_queue_QueueController_backup2_invoker$1.class
-   C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\target\classes\router\Routes$$anonfun$router$Routes$$tech_onder_queue_QueueController_restore3_invoker$1.class
-   C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\target\classes\router\Routes$$anonfun$router$Routes$$tech_onder_reports_ReportController_consumption7_invoker$1.class
-   C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\target\classes\router\Routes$$anonfun$router$Routes$$tech_onder_reports_ReportController_lastConsumption8_invoker$1.class
-   C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\target\classes\router\Routes$$anonfun$router$Routes$$tech_onder_reports_ReportController_meters10_invoker$1.class
-   C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\target\classes\router\Routes$$anonfun$router$Routes$$tech_onder_reports_ReportController_prices9_invoker$1.class
-   C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\target\classes\router\Routes$$anonfun$router$Routes$$tech_onder_reports_ReportController_ws12_invoker$1.class
+   C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\target\classes\router\Routes$$anonfun$router$Routes$$tech_onder_collector_controllers_CollectorController_push0_invoker$1.class
+   C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\target\classes\router\Routes$$anonfun$router$Routes$$tech_onder_collector_controllers_CollectorController_pushList1_invoker$1.class
+   C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\target\classes\router\Routes$$anonfun$router$Routes$$tech_onder_meters_controllers_MeterController_add5_invoker$1.class
+   C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\target\classes\router\Routes$$anonfun$router$Routes$$tech_onder_meters_controllers_MeterController_list4_invoker$1.class
+   C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\target\classes\router\Routes$$anonfun$router$Routes$$tech_onder_meters_controllers_MeterController_meterRelations6_invoker$1.class
+   C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\target\classes\router\Routes$$anonfun$router$Routes$$tech_onder_queue_controllers_QueueController_backup2_invoker$1.class
+   C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\target\classes\router\Routes$$anonfun$router$Routes$$tech_onder_queue_controllers_QueueController_restore3_invoker$1.class
+   C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\target\classes\router\Routes$$anonfun$router$Routes$$tech_onder_reports_controllers_ReportController_consumption7_invoker$1.class
+   C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\target\classes\router\Routes$$anonfun$router$Routes$$tech_onder_reports_controllers_ReportController_lastConsumption8_invoker$1.class
+   C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\target\classes\router\Routes$$anonfun$router$Routes$$tech_onder_reports_controllers_ReportController_meters10_invoker$1.class
+   C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\target\classes\router\Routes$$anonfun$router$Routes$$tech_onder_reports_controllers_ReportController_prices9_invoker$1.class
+   C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\target\classes\router\Routes$$anonfun$router$Routes$$tech_onder_reports_controllers_ReportController_ws11_invoker$1.class
    C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\target\classes\router\Routes$$anonfun$routes$1$$anonfun$applyOrElse$1$$anonfun$apply$1.class
    C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\target\classes\router\Routes$$anonfun$routes$1$$anonfun$applyOrElse$1.class
    C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\target\classes\router\Routes$$anonfun$routes$1$$anonfun$applyOrElse$10$$anonfun$apply$10.class
@@ -59,8 +67,6 @@ products:
    C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\target\classes\router\Routes$$anonfun$routes$1$$anonfun$applyOrElse$11.class
    C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\target\classes\router\Routes$$anonfun$routes$1$$anonfun$applyOrElse$12$$anonfun$apply$12.class
    C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\target\classes\router\Routes$$anonfun$routes$1$$anonfun$applyOrElse$12.class
-   C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\target\classes\router\Routes$$anonfun$routes$1$$anonfun$applyOrElse$13$$anonfun$apply$13.class
-   C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\target\classes\router\Routes$$anonfun$routes$1$$anonfun$applyOrElse$13.class
    C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\target\classes\router\Routes$$anonfun$routes$1$$anonfun$applyOrElse$2$$anonfun$apply$2.class
    C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\target\classes\router\Routes$$anonfun$routes$1$$anonfun$applyOrElse$2.class
    C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\target\classes\router\Routes$$anonfun$routes$1$$anonfun$applyOrElse$3$$anonfun$apply$3.class
@@ -82,50 +88,51 @@ products:
    C:\work\report-brocker\target\routes\main\router\RoutesPrefix.scala -> C:\work\report-brocker\target\classes\router\RoutesPrefix$$anonfun$1.class
    C:\work\report-brocker\target\routes\main\router\RoutesPrefix.scala -> C:\work\report-brocker\target\classes\router\RoutesPrefix$.class
    C:\work\report-brocker\target\routes\main\router\RoutesPrefix.scala -> C:\work\report-brocker\target\classes\router\RoutesPrefix.class
-   C:\work\report-brocker\target\routes\main\tech\onder\consumer\javascript\JavaScriptReverseRoutes.scala -> C:\work\report-brocker\target\classes\tech\onder\consumer\javascript\ReverseCollectorController.class
-   C:\work\report-brocker\target\routes\main\tech\onder\consumer\ReverseRoutes.scala -> C:\work\report-brocker\target\classes\tech\onder\consumer\ReverseCollectorController.class
-   C:\work\report-brocker\target\routes\main\tech\onder\consumer\routes.java -> C:\work\report-brocker\target\classes\tech\onder\consumer\routes$javascript.class
-   C:\work\report-brocker\target\routes\main\tech\onder\consumer\routes.java -> C:\work\report-brocker\target\classes\tech\onder\consumer\routes.class
-   C:\work\report-brocker\target\routes\main\tech\onder\meters\javascript\JavaScriptReverseRoutes.scala -> C:\work\report-brocker\target\classes\tech\onder\meters\javascript\ReverseCommonController.class
-   C:\work\report-brocker\target\routes\main\tech\onder\meters\ReverseRoutes.scala -> C:\work\report-brocker\target\classes\tech\onder\meters\ReverseCommonController.class
-   C:\work\report-brocker\target\routes\main\tech\onder\meters\routes.java -> C:\work\report-brocker\target\classes\tech\onder\meters\routes$javascript.class
-   C:\work\report-brocker\target\routes\main\tech\onder\meters\routes.java -> C:\work\report-brocker\target\classes\tech\onder\meters\routes.class
-   C:\work\report-brocker\target\routes\main\tech\onder\queue\javascript\JavaScriptReverseRoutes.scala -> C:\work\report-brocker\target\classes\tech\onder\queue\javascript\ReverseQueueController.class
-   C:\work\report-brocker\target\routes\main\tech\onder\queue\ReverseRoutes.scala -> C:\work\report-brocker\target\classes\tech\onder\queue\ReverseQueueController.class
-   C:\work\report-brocker\target\routes\main\tech\onder\queue\routes.java -> C:\work\report-brocker\target\classes\tech\onder\queue\routes$javascript.class
-   C:\work\report-brocker\target\routes\main\tech\onder\queue\routes.java -> C:\work\report-brocker\target\classes\tech\onder\queue\routes.class
-   C:\work\report-brocker\target\routes\main\tech\onder\reports\javascript\JavaScriptReverseRoutes.scala -> C:\work\report-brocker\target\classes\tech\onder\reports\javascript\ReverseReportController.class
-   C:\work\report-brocker\target\routes\main\tech\onder\reports\ReverseRoutes.scala -> C:\work\report-brocker\target\classes\tech\onder\reports\ReverseReportController.class
-   C:\work\report-brocker\target\routes\main\tech\onder\reports\routes.java -> C:\work\report-brocker\target\classes\tech\onder\reports\routes$javascript.class
-   C:\work\report-brocker\target\routes\main\tech\onder\reports\routes.java -> C:\work\report-brocker\target\classes\tech\onder\reports\routes.class
+   C:\work\report-brocker\target\routes\main\tech\onder\collector\controllers\javascript\JavaScriptReverseRoutes.scala -> C:\work\report-brocker\target\classes\tech\onder\collector\controllers\javascript\ReverseCollectorController.class
+   C:\work\report-brocker\target\routes\main\tech\onder\collector\controllers\ReverseRoutes.scala -> C:\work\report-brocker\target\classes\tech\onder\collector\controllers\ReverseCollectorController.class
+   C:\work\report-brocker\target\routes\main\tech\onder\collector\controllers\routes.java -> C:\work\report-brocker\target\classes\tech\onder\collector\controllers\routes$javascript.class
+   C:\work\report-brocker\target\routes\main\tech\onder\collector\controllers\routes.java -> C:\work\report-brocker\target\classes\tech\onder\collector\controllers\routes.class
+   C:\work\report-brocker\target\routes\main\tech\onder\meters\controllers\javascript\JavaScriptReverseRoutes.scala -> C:\work\report-brocker\target\classes\tech\onder\meters\controllers\javascript\ReverseMeterController.class
+   C:\work\report-brocker\target\routes\main\tech\onder\meters\controllers\ReverseRoutes.scala -> C:\work\report-brocker\target\classes\tech\onder\meters\controllers\ReverseMeterController.class
+   C:\work\report-brocker\target\routes\main\tech\onder\meters\controllers\routes.java -> C:\work\report-brocker\target\classes\tech\onder\meters\controllers\routes$javascript.class
+   C:\work\report-brocker\target\routes\main\tech\onder\meters\controllers\routes.java -> C:\work\report-brocker\target\classes\tech\onder\meters\controllers\routes.class
+   C:\work\report-brocker\target\routes\main\tech\onder\queue\controllers\javascript\JavaScriptReverseRoutes.scala -> C:\work\report-brocker\target\classes\tech\onder\queue\controllers\javascript\ReverseQueueController.class
+   C:\work\report-brocker\target\routes\main\tech\onder\queue\controllers\ReverseRoutes.scala -> C:\work\report-brocker\target\classes\tech\onder\queue\controllers\ReverseQueueController.class
+   C:\work\report-brocker\target\routes\main\tech\onder\queue\controllers\routes.java -> C:\work\report-brocker\target\classes\tech\onder\queue\controllers\routes$javascript.class
+   C:\work\report-brocker\target\routes\main\tech\onder\queue\controllers\routes.java -> C:\work\report-brocker\target\classes\tech\onder\queue\controllers\routes.class
+   C:\work\report-brocker\target\routes\main\tech\onder\reports\controllers\javascript\JavaScriptReverseRoutes.scala -> C:\work\report-brocker\target\classes\tech\onder\reports\controllers\javascript\ReverseReportController.class
+   C:\work\report-brocker\target\routes\main\tech\onder\reports\controllers\ReverseRoutes.scala -> C:\work\report-brocker\target\classes\tech\onder\reports\controllers\ReverseReportController.class
+   C:\work\report-brocker\target\routes\main\tech\onder\reports\controllers\routes.java -> C:\work\report-brocker\target\classes\tech\onder\reports\controllers\routes$javascript.class
+   C:\work\report-brocker\target\routes\main\tech\onder\reports\controllers\routes.java -> C:\work\report-brocker\target\classes\tech\onder\reports\controllers\routes.class
 binary dependencies:
-   C:\work\report-brocker\src\main\java\tech\onder\consumer\ChunkConverter.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
-   C:\work\report-brocker\src\main\java\tech\onder\consumer\CollectorController.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
-   C:\work\report-brocker\src\main\java\tech\onder\consumer\CollectorController.java -> C:\Users\User\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.8.11.1\jackson-databind-2.8.11.1.jar
-   C:\work\report-brocker\src\main\java\tech\onder\consumer\CollectorController.java -> C:\Users\User\.m2\repository\com\typesafe\play\play_2.11\2.6.10\play_2.11-2.6.10.jar
-   C:\work\report-brocker\src\main\java\tech\onder\consumer\CollectorController.java -> C:\Users\User\.m2\repository\commons-io\commons-io\1.3.2\commons-io-1.3.2.jar
-   C:\work\report-brocker\src\main\java\tech\onder\consumer\CollectorController.java -> C:\Users\User\.m2\repository\org\slf4j\slf4j-api\1.7.7\slf4j-api-1.7.7.jar
-   C:\work\report-brocker\src\main\java\tech\onder\consumer\models\ConsumptionChunkReport.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
-   C:\work\report-brocker\src\main\java\tech\onder\consumer\models\ConsumptionChunkReport.java -> C:\Users\User\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.8.11\jackson-annotations-2.8.11.jar
-   C:\work\report-brocker\src\main\java\tech\onder\consumer\models\MeterInputDTO.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
-   C:\work\report-brocker\src\main\java\tech\onder\consumer\models\PeriodReport.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
-   C:\work\report-brocker\src\main\java\tech\onder\consumer\services\ChunkReportManagementService.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
-   C:\work\report-brocker\src\main\java\tech\onder\consumer\services\ChunkReportManagementService.java -> C:\Users\User\.m2\repository\org\slf4j\slf4j-api\1.7.7\slf4j-api-1.7.7.jar
-   C:\work\report-brocker\src\main\java\tech\onder\consumer\services\ChunkService.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
-   C:\work\report-brocker\src\main\java\tech\onder\consumer\services\CollectorService.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
-   C:\work\report-brocker\src\main\java\tech\onder\meters\CommonController.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
-   C:\work\report-brocker\src\main\java\tech\onder\meters\CommonController.java -> C:\Users\User\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.8.11.1\jackson-databind-2.8.11.1.jar
-   C:\work\report-brocker\src\main\java\tech\onder\meters\CommonController.java -> C:\Users\User\.m2\repository\com\typesafe\play\play_2.11\2.6.10\play_2.11-2.6.10.jar
-   C:\work\report-brocker\src\main\java\tech\onder\meters\MeterConverter.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
-   C:\work\report-brocker\src\main\java\tech\onder\meters\MeterService.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
-   C:\work\report-brocker\src\main\java\tech\onder\meters\models\BuyerSeller.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
+   C:\work\report-brocker\src\main\java\tech\onder\collector\controllers\CollectorController.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
+   C:\work\report-brocker\src\main\java\tech\onder\collector\controllers\CollectorController.java -> C:\Users\User\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.8.11.1\jackson-databind-2.8.11.1.jar
+   C:\work\report-brocker\src\main\java\tech\onder\collector\controllers\CollectorController.java -> C:\Users\User\.m2\repository\com\typesafe\play\play_2.11\2.6.10\play_2.11-2.6.10.jar
+   C:\work\report-brocker\src\main\java\tech\onder\collector\controllers\CollectorController.java -> C:\Users\User\.m2\repository\commons-io\commons-io\1.3.2\commons-io-1.3.2.jar
+   C:\work\report-brocker\src\main\java\tech\onder\collector\controllers\CollectorController.java -> C:\Users\User\.m2\repository\org\slf4j\slf4j-api\1.7.7\slf4j-api-1.7.7.jar
+   C:\work\report-brocker\src\main\java\tech\onder\collector\IConsumptionStorage.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
+   C:\work\report-brocker\src\main\java\tech\onder\collector\models\dto\TransactionInputDTO.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
+   C:\work\report-brocker\src\main\java\tech\onder\collector\services\converters\ConsumptionConverter.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
+   C:\work\report-brocker\src\main\java\tech\onder\collector\services\impl\CollectorService.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
+   C:\work\report-brocker\src\main\java\tech\onder\collector\services\impl\CollectorService.java -> C:\Users\User\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.8.11.1\jackson-databind-2.8.11.1.jar
+   C:\work\report-brocker\src\main\java\tech\onder\collector\services\impl\CollectorService.java -> C:\Users\User\.m2\repository\com\typesafe\play\play_2.11\2.6.10\play_2.11-2.6.10.jar
+   C:\work\report-brocker\src\main\java\tech\onder\collector\services\impl\CollectorService.java -> C:\Users\User\.m2\repository\org\slf4j\slf4j-api\1.7.7\slf4j-api-1.7.7.jar
+   C:\work\report-brocker\src\main\java\tech\onder\common\exceptions\NotFoundException.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
+   C:\work\report-brocker\src\main\java\tech\onder\common\StreamUtils.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
+   C:\work\report-brocker\src\main\java\tech\onder\meters\controllers\MeterController.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
+   C:\work\report-brocker\src\main\java\tech\onder\meters\controllers\MeterController.java -> C:\Users\User\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.8.11.1\jackson-databind-2.8.11.1.jar
+   C:\work\report-brocker\src\main\java\tech\onder\meters\controllers\MeterController.java -> C:\Users\User\.m2\repository\com\typesafe\play\play_2.11\2.6.10\play_2.11-2.6.10.jar
+   C:\work\report-brocker\src\main\java\tech\onder\meters\models\dto\MeterDTO.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
    C:\work\report-brocker\src\main\java\tech\onder\meters\models\dto\MeterInputDTO.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
+   C:\work\report-brocker\src\main\java\tech\onder\meters\models\dto\RelationDTO.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
+   C:\work\report-brocker\src\main\java\tech\onder\meters\models\IEntity.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
    C:\work\report-brocker\src\main\java\tech\onder\meters\models\Meter.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
-   C:\work\report-brocker\src\main\java\tech\onder\meters\OutputUtils.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
+   C:\work\report-brocker\src\main\java\tech\onder\meters\models\MeterRelation.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
    C:\work\report-brocker\src\main\java\tech\onder\meters\repositories\AbstractInMemoryRepo.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
    C:\work\report-brocker\src\main\java\tech\onder\meters\repositories\IInMemoryRepo.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
-   C:\work\report-brocker\src\main\java\tech\onder\meters\repositories\MeterRelationRepo.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
    C:\work\report-brocker\src\main\java\tech\onder\meters\repositories\MeterRepo.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
+   C:\work\report-brocker\src\main\java\tech\onder\meters\services\converters\MeterConverter.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
+   C:\work\report-brocker\src\main\java\tech\onder\meters\services\MeterService.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
    C:\work\report-brocker\src\main\java\tech\onder\modules\AppConfig.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
    C:\work\report-brocker\src\main\java\tech\onder\modules\AppConfig.java -> C:\Users\User\.m2\repository\com\typesafe\config\1.3.2\config-1.3.2.jar
    C:\work\report-brocker\src\main\java\tech\onder\modules\AppConfig.java -> C:\Users\User\.m2\repository\org\slf4j\slf4j-api\1.7.7\slf4j-api-1.7.7.jar
@@ -135,247 +142,281 @@ binary dependencies:
    C:\work\report-brocker\src\main\java\tech\onder\modules\ApplicationModule.java -> C:\Users\User\.m2\repository\com\typesafe\play\play-guice_2.11\2.6.10\play-guice_2.11-2.6.10.jar
    C:\work\report-brocker\src\main\java\tech\onder\modules\ApplicationModule.java -> C:\Users\User\.m2\repository\com\typesafe\play\play_2.11\2.6.10\play_2.11-2.6.10.jar
    C:\work\report-brocker\src\main\java\tech\onder\modules\ApplicationModule.java -> C:\Users\User\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar
-   C:\work\report-brocker\src\main\java\tech\onder\modules\ChunkServiceProvider.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
-   C:\work\report-brocker\src\main\java\tech\onder\modules\ChunkServiceProvider.java -> C:\Users\User\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar
-   C:\work\report-brocker\src\main\java\tech\onder\queue\QueueController.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
-   C:\work\report-brocker\src\main\java\tech\onder\queue\QueueController.java -> C:\Users\User\.m2\repository\com\typesafe\play\play_2.11\2.6.10\play_2.11-2.6.10.jar
-   C:\work\report-brocker\src\main\java\tech\onder\queue\QueueService.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
-   C:\work\report-brocker\src\main\java\tech\onder\queue\QueueService.java -> C:\Users\User\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.8.11.1\jackson-databind-2.8.11.1.jar
-   C:\work\report-brocker\src\main\java\tech\onder\queue\QueueService.java -> C:\Users\User\.m2\repository\com\typesafe\play\play_2.11\2.6.10\play_2.11-2.6.10.jar
-   C:\work\report-brocker\src\main\java\tech\onder\queue\QueueService.java -> C:\Users\User\.m2\repository\commons-io\commons-io\1.3.2\commons-io-1.3.2.jar
+   C:\work\report-brocker\src\main\java\tech\onder\queue\actors\ForceUpdate.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
+   C:\work\report-brocker\src\main\java\tech\onder\queue\actors\ForceUpdate.java -> C:\Users\User\.m2\repository\com\typesafe\akka\akka-actor_2.11\2.5.8\akka-actor_2.11-2.5.8.jar
+   C:\work\report-brocker\src\main\java\tech\onder\queue\actors\ForceUpdate.java -> C:\Users\User\.m2\repository\org\scala-lang\scala-library\2.11.11\scala-library-2.11.11.jar
+   C:\work\report-brocker\src\main\java\tech\onder\queue\conf\ConsumptionQueueConf.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
+   C:\work\report-brocker\src\main\java\tech\onder\queue\conf\ConsumptionQueueConf.java -> C:\Users\User\.m2\repository\com\typesafe\config\1.3.2\config-1.3.2.jar
+   C:\work\report-brocker\src\main\java\tech\onder\queue\controllers\QueueController.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
+   C:\work\report-brocker\src\main\java\tech\onder\queue\controllers\QueueController.java -> C:\Users\User\.m2\repository\com\typesafe\play\play_2.11\2.6.10\play_2.11-2.6.10.jar
+   C:\work\report-brocker\src\main\java\tech\onder\queue\IRestorableStorage.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
+   C:\work\report-brocker\src\main\java\tech\onder\queue\manager\ConsumptionQueuesManager.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
+   C:\work\report-brocker\src\main\java\tech\onder\queue\manager\ConsumptionQueuesManager.java -> C:\Users\User\.m2\repository\org\slf4j\slf4j-api\1.7.7\slf4j-api-1.7.7.jar
+   C:\work\report-brocker\src\main\java\tech\onder\queue\models\ConsumptionChunk.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
+   C:\work\report-brocker\src\main\java\tech\onder\queue\models\ConsumptionChunk.java -> C:\Users\User\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.8.11\jackson-annotations-2.8.11.jar
+   C:\work\report-brocker\src\main\java\tech\onder\queue\models\dto\ConsumptionReportDTO.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
+   C:\work\report-brocker\src\main\java\tech\onder\queue\models\dto\PeriodReportDTO.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
+   C:\work\report-brocker\src\main\java\tech\onder\queue\models\WebsocketQueueItem.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
+   C:\work\report-brocker\src\main\java\tech\onder\queue\service\QueueBackupService.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
+   C:\work\report-brocker\src\main\java\tech\onder\queue\service\QueueBackupService.java -> C:\Users\User\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.8.11.1\jackson-databind-2.8.11.1.jar
+   C:\work\report-brocker\src\main\java\tech\onder\queue\service\QueueBackupService.java -> C:\Users\User\.m2\repository\com\typesafe\play\play_2.11\2.6.10\play_2.11-2.6.10.jar
+   C:\work\report-brocker\src\main\java\tech\onder\queue\service\QueueBackupService.java -> C:\Users\User\.m2\repository\commons-io\commons-io\1.3.2\commons-io-1.3.2.jar
+   C:\work\report-brocker\src\main\java\tech\onder\reports\actors\IWebsocketQueuePublisher.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
    C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserActor.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
    C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserActor.java -> C:\Users\User\.m2\repository\com\typesafe\akka\akka-actor_2.11\2.5.8\akka-actor_2.11-2.5.8.jar
-   C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserActor.java -> C:\Users\User\.m2\repository\com\typesafe\akka\akka-stream_2.11\2.5.8\akka-stream_2.11-2.5.8.jar
    C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserActor.java -> C:\Users\User\.m2\repository\com\typesafe\play\play_2.11\2.6.10\play_2.11-2.6.10.jar
-   C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserActor.java -> C:\Users\User\.m2\repository\org\scala-lang\scala-library\2.11.11\scala-library-2.11.11.jar
    C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserParentActor.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
    C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserParentActor.java -> C:\Users\User\.m2\repository\com\typesafe\akka\akka-actor_2.11\2.5.8\akka-actor_2.11-2.5.8.jar
+   C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserParentActor.java -> C:\Users\User\.m2\repository\com\typesafe\config\1.3.2\config-1.3.2.jar
    C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserParentActor.java -> C:\Users\User\.m2\repository\com\typesafe\play\play_2.11\2.6.10\play_2.11-2.6.10.jar
-   C:\work\report-brocker\src\main\java\tech\onder\reports\models\MeterReportDTO.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
-   C:\work\report-brocker\src\main\java\tech\onder\reports\models\ReportDTO.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
-   C:\work\report-brocker\src\main\java\tech\onder\reports\models\WebsocketDTO.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
-   C:\work\report-brocker\src\main\java\tech\onder\reports\Publisher.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
-   C:\work\report-brocker\src\main\java\tech\onder\reports\Publisher.java -> C:\Users\User\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.8.11.1\jackson-databind-2.8.11.1.jar
-   C:\work\report-brocker\src\main\java\tech\onder\reports\Publisher.java -> C:\Users\User\.m2\repository\com\typesafe\akka\akka-actor_2.11\2.5.8\akka-actor_2.11-2.5.8.jar
-   C:\work\report-brocker\src\main\java\tech\onder\reports\Publisher.java -> C:\Users\User\.m2\repository\com\typesafe\akka\akka-stream_2.11\2.5.8\akka-stream_2.11-2.5.8.jar
-   C:\work\report-brocker\src\main\java\tech\onder\reports\ReportController.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
-   C:\work\report-brocker\src\main\java\tech\onder\reports\ReportController.java -> C:\Users\User\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.8.11.1\jackson-databind-2.8.11.1.jar
-   C:\work\report-brocker\src\main\java\tech\onder\reports\ReportController.java -> C:\Users\User\.m2\repository\com\typesafe\akka\akka-actor_2.11\2.5.8\akka-actor_2.11-2.5.8.jar
-   C:\work\report-brocker\src\main\java\tech\onder\reports\ReportController.java -> C:\Users\User\.m2\repository\com\typesafe\akka\akka-stream_2.11\2.5.8\akka-stream_2.11-2.5.8.jar
-   C:\work\report-brocker\src\main\java\tech\onder\reports\ReportController.java -> C:\Users\User\.m2\repository\com\typesafe\play\play_2.11\2.6.10\play_2.11-2.6.10.jar
-   C:\work\report-brocker\src\main\java\tech\onder\reports\ReportController.java -> C:\Users\User\.m2\repository\org\scala-lang\modules\scala-java8-compat_2.11\0.8.0\scala-java8-compat_2.11-0.8.0.jar
-   C:\work\report-brocker\src\main\java\tech\onder\reports\ReportController.java -> C:\Users\User\.m2\repository\org\scala-lang\scala-library\2.11.11\scala-library-2.11.11.jar
-   C:\work\report-brocker\src\main\java\tech\onder\reports\ReportController.java -> C:\Users\User\.m2\repository\org\slf4j\slf4j-api\1.7.7\slf4j-api-1.7.7.jar
-   C:\work\report-brocker\src\main\java\tech\onder\reports\ReportConverter.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
-   C:\work\report-brocker\src\main\java\tech\onder\reports\ReportRepository.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
-   C:\work\report-brocker\src\main\java\tech\onder\reports\ReportService.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
+   C:\work\report-brocker\src\main\java\tech\onder\reports\controllers\ReportController.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
+   C:\work\report-brocker\src\main\java\tech\onder\reports\controllers\ReportController.java -> C:\Users\User\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.8.11.1\jackson-databind-2.8.11.1.jar
+   C:\work\report-brocker\src\main\java\tech\onder\reports\controllers\ReportController.java -> C:\Users\User\.m2\repository\com\typesafe\akka\akka-actor_2.11\2.5.8\akka-actor_2.11-2.5.8.jar
+   C:\work\report-brocker\src\main\java\tech\onder\reports\controllers\ReportController.java -> C:\Users\User\.m2\repository\com\typesafe\akka\akka-stream_2.11\2.5.8\akka-stream_2.11-2.5.8.jar
+   C:\work\report-brocker\src\main\java\tech\onder\reports\controllers\ReportController.java -> C:\Users\User\.m2\repository\com\typesafe\play\play_2.11\2.6.10\play_2.11-2.6.10.jar
+   C:\work\report-brocker\src\main\java\tech\onder\reports\controllers\ReportController.java -> C:\Users\User\.m2\repository\org\scala-lang\modules\scala-java8-compat_2.11\0.8.0\scala-java8-compat_2.11-0.8.0.jar
+   C:\work\report-brocker\src\main\java\tech\onder\reports\controllers\ReportController.java -> C:\Users\User\.m2\repository\org\scala-lang\scala-library\2.11.11\scala-library-2.11.11.jar
+   C:\work\report-brocker\src\main\java\tech\onder\reports\controllers\ReportController.java -> C:\Users\User\.m2\repository\org\slf4j\slf4j-api\1.7.7\slf4j-api-1.7.7.jar
+   C:\work\report-brocker\src\main\java\tech\onder\reports\IReportDataSupplier.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
+   C:\work\report-brocker\src\main\java\tech\onder\reports\models\dto\MeterReportDTO.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
+   C:\work\report-brocker\src\main\java\tech\onder\reports\models\dto\ReportDTO.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
+   C:\work\report-brocker\src\main\java\tech\onder\reports\models\dto\WebsocketDTO.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
+   C:\work\report-brocker\src\main\java\tech\onder\reports\services\converters\ReportConverter.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
+   C:\work\report-brocker\src\main\java\tech\onder\reports\services\ReportService.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
+   C:\work\report-brocker\src\main\java\tech\onder\reports\utils\OutputUtils.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
    C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
    C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\Users\User\.m2\repository\com\typesafe\play\play_2.11\2.6.10\play_2.11-2.6.10.jar
    C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\Users\User\.m2\repository\org\scala-lang\scala-library\2.11.11\scala-library-2.11.11.jar
    C:\work\report-brocker\target\routes\main\router\RoutesPrefix.scala -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
    C:\work\report-brocker\target\routes\main\router\RoutesPrefix.scala -> C:\Users\User\.m2\repository\org\scala-lang\scala-library\2.11.11\scala-library-2.11.11.jar
-   C:\work\report-brocker\target\routes\main\tech\onder\consumer\javascript\JavaScriptReverseRoutes.scala -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
-   C:\work\report-brocker\target\routes\main\tech\onder\consumer\javascript\JavaScriptReverseRoutes.scala -> C:\Users\User\.m2\repository\com\typesafe\play\play_2.11\2.6.10\play_2.11-2.6.10.jar
-   C:\work\report-brocker\target\routes\main\tech\onder\consumer\javascript\JavaScriptReverseRoutes.scala -> C:\Users\User\.m2\repository\org\scala-lang\scala-library\2.11.11\scala-library-2.11.11.jar
-   C:\work\report-brocker\target\routes\main\tech\onder\consumer\ReverseRoutes.scala -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
-   C:\work\report-brocker\target\routes\main\tech\onder\consumer\ReverseRoutes.scala -> C:\Users\User\.m2\repository\com\typesafe\play\play_2.11\2.6.10\play_2.11-2.6.10.jar
-   C:\work\report-brocker\target\routes\main\tech\onder\consumer\ReverseRoutes.scala -> C:\Users\User\.m2\repository\org\scala-lang\scala-library\2.11.11\scala-library-2.11.11.jar
-   C:\work\report-brocker\target\routes\main\tech\onder\consumer\routes.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
-   C:\work\report-brocker\target\routes\main\tech\onder\meters\javascript\JavaScriptReverseRoutes.scala -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
-   C:\work\report-brocker\target\routes\main\tech\onder\meters\javascript\JavaScriptReverseRoutes.scala -> C:\Users\User\.m2\repository\com\typesafe\play\play_2.11\2.6.10\play_2.11-2.6.10.jar
-   C:\work\report-brocker\target\routes\main\tech\onder\meters\javascript\JavaScriptReverseRoutes.scala -> C:\Users\User\.m2\repository\org\scala-lang\scala-library\2.11.11\scala-library-2.11.11.jar
-   C:\work\report-brocker\target\routes\main\tech\onder\meters\ReverseRoutes.scala -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
-   C:\work\report-brocker\target\routes\main\tech\onder\meters\ReverseRoutes.scala -> C:\Users\User\.m2\repository\com\typesafe\play\play_2.11\2.6.10\play_2.11-2.6.10.jar
-   C:\work\report-brocker\target\routes\main\tech\onder\meters\ReverseRoutes.scala -> C:\Users\User\.m2\repository\org\scala-lang\scala-library\2.11.11\scala-library-2.11.11.jar
-   C:\work\report-brocker\target\routes\main\tech\onder\meters\routes.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
-   C:\work\report-brocker\target\routes\main\tech\onder\queue\javascript\JavaScriptReverseRoutes.scala -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
-   C:\work\report-brocker\target\routes\main\tech\onder\queue\javascript\JavaScriptReverseRoutes.scala -> C:\Users\User\.m2\repository\com\typesafe\play\play_2.11\2.6.10\play_2.11-2.6.10.jar
-   C:\work\report-brocker\target\routes\main\tech\onder\queue\javascript\JavaScriptReverseRoutes.scala -> C:\Users\User\.m2\repository\org\scala-lang\scala-library\2.11.11\scala-library-2.11.11.jar
-   C:\work\report-brocker\target\routes\main\tech\onder\queue\ReverseRoutes.scala -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
-   C:\work\report-brocker\target\routes\main\tech\onder\queue\ReverseRoutes.scala -> C:\Users\User\.m2\repository\com\typesafe\play\play_2.11\2.6.10\play_2.11-2.6.10.jar
-   C:\work\report-brocker\target\routes\main\tech\onder\queue\ReverseRoutes.scala -> C:\Users\User\.m2\repository\org\scala-lang\scala-library\2.11.11\scala-library-2.11.11.jar
-   C:\work\report-brocker\target\routes\main\tech\onder\queue\routes.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
-   C:\work\report-brocker\target\routes\main\tech\onder\reports\javascript\JavaScriptReverseRoutes.scala -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
-   C:\work\report-brocker\target\routes\main\tech\onder\reports\javascript\JavaScriptReverseRoutes.scala -> C:\Users\User\.m2\repository\com\typesafe\play\play_2.11\2.6.10\play_2.11-2.6.10.jar
-   C:\work\report-brocker\target\routes\main\tech\onder\reports\javascript\JavaScriptReverseRoutes.scala -> C:\Users\User\.m2\repository\org\scala-lang\scala-library\2.11.11\scala-library-2.11.11.jar
-   C:\work\report-brocker\target\routes\main\tech\onder\reports\ReverseRoutes.scala -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
-   C:\work\report-brocker\target\routes\main\tech\onder\reports\ReverseRoutes.scala -> C:\Users\User\.m2\repository\com\typesafe\play\play_2.11\2.6.10\play_2.11-2.6.10.jar
-   C:\work\report-brocker\target\routes\main\tech\onder\reports\ReverseRoutes.scala -> C:\Users\User\.m2\repository\org\scala-lang\scala-library\2.11.11\scala-library-2.11.11.jar
-   C:\work\report-brocker\target\routes\main\tech\onder\reports\routes.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
+   C:\work\report-brocker\target\routes\main\tech\onder\collector\controllers\javascript\JavaScriptReverseRoutes.scala -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
+   C:\work\report-brocker\target\routes\main\tech\onder\collector\controllers\javascript\JavaScriptReverseRoutes.scala -> C:\Users\User\.m2\repository\com\typesafe\play\play_2.11\2.6.10\play_2.11-2.6.10.jar
+   C:\work\report-brocker\target\routes\main\tech\onder\collector\controllers\javascript\JavaScriptReverseRoutes.scala -> C:\Users\User\.m2\repository\org\scala-lang\scala-library\2.11.11\scala-library-2.11.11.jar
+   C:\work\report-brocker\target\routes\main\tech\onder\collector\controllers\ReverseRoutes.scala -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
+   C:\work\report-brocker\target\routes\main\tech\onder\collector\controllers\ReverseRoutes.scala -> C:\Users\User\.m2\repository\com\typesafe\play\play_2.11\2.6.10\play_2.11-2.6.10.jar
+   C:\work\report-brocker\target\routes\main\tech\onder\collector\controllers\ReverseRoutes.scala -> C:\Users\User\.m2\repository\org\scala-lang\scala-library\2.11.11\scala-library-2.11.11.jar
+   C:\work\report-brocker\target\routes\main\tech\onder\collector\controllers\routes.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
+   C:\work\report-brocker\target\routes\main\tech\onder\meters\controllers\javascript\JavaScriptReverseRoutes.scala -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
+   C:\work\report-brocker\target\routes\main\tech\onder\meters\controllers\javascript\JavaScriptReverseRoutes.scala -> C:\Users\User\.m2\repository\com\typesafe\play\play_2.11\2.6.10\play_2.11-2.6.10.jar
+   C:\work\report-brocker\target\routes\main\tech\onder\meters\controllers\javascript\JavaScriptReverseRoutes.scala -> C:\Users\User\.m2\repository\org\scala-lang\scala-library\2.11.11\scala-library-2.11.11.jar
+   C:\work\report-brocker\target\routes\main\tech\onder\meters\controllers\ReverseRoutes.scala -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
+   C:\work\report-brocker\target\routes\main\tech\onder\meters\controllers\ReverseRoutes.scala -> C:\Users\User\.m2\repository\com\typesafe\play\play_2.11\2.6.10\play_2.11-2.6.10.jar
+   C:\work\report-brocker\target\routes\main\tech\onder\meters\controllers\ReverseRoutes.scala -> C:\Users\User\.m2\repository\org\scala-lang\scala-library\2.11.11\scala-library-2.11.11.jar
+   C:\work\report-brocker\target\routes\main\tech\onder\meters\controllers\routes.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
+   C:\work\report-brocker\target\routes\main\tech\onder\queue\controllers\javascript\JavaScriptReverseRoutes.scala -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
+   C:\work\report-brocker\target\routes\main\tech\onder\queue\controllers\javascript\JavaScriptReverseRoutes.scala -> C:\Users\User\.m2\repository\com\typesafe\play\play_2.11\2.6.10\play_2.11-2.6.10.jar
+   C:\work\report-brocker\target\routes\main\tech\onder\queue\controllers\javascript\JavaScriptReverseRoutes.scala -> C:\Users\User\.m2\repository\org\scala-lang\scala-library\2.11.11\scala-library-2.11.11.jar
+   C:\work\report-brocker\target\routes\main\tech\onder\queue\controllers\ReverseRoutes.scala -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
+   C:\work\report-brocker\target\routes\main\tech\onder\queue\controllers\ReverseRoutes.scala -> C:\Users\User\.m2\repository\com\typesafe\play\play_2.11\2.6.10\play_2.11-2.6.10.jar
+   C:\work\report-brocker\target\routes\main\tech\onder\queue\controllers\ReverseRoutes.scala -> C:\Users\User\.m2\repository\org\scala-lang\scala-library\2.11.11\scala-library-2.11.11.jar
+   C:\work\report-brocker\target\routes\main\tech\onder\queue\controllers\routes.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
+   C:\work\report-brocker\target\routes\main\tech\onder\reports\controllers\javascript\JavaScriptReverseRoutes.scala -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
+   C:\work\report-brocker\target\routes\main\tech\onder\reports\controllers\javascript\JavaScriptReverseRoutes.scala -> C:\Users\User\.m2\repository\com\typesafe\play\play_2.11\2.6.10\play_2.11-2.6.10.jar
+   C:\work\report-brocker\target\routes\main\tech\onder\reports\controllers\javascript\JavaScriptReverseRoutes.scala -> C:\Users\User\.m2\repository\org\scala-lang\scala-library\2.11.11\scala-library-2.11.11.jar
+   C:\work\report-brocker\target\routes\main\tech\onder\reports\controllers\ReverseRoutes.scala -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
+   C:\work\report-brocker\target\routes\main\tech\onder\reports\controllers\ReverseRoutes.scala -> C:\Users\User\.m2\repository\com\typesafe\play\play_2.11\2.6.10\play_2.11-2.6.10.jar
+   C:\work\report-brocker\target\routes\main\tech\onder\reports\controllers\ReverseRoutes.scala -> C:\Users\User\.m2\repository\org\scala-lang\scala-library\2.11.11\scala-library-2.11.11.jar
+   C:\work\report-brocker\target\routes\main\tech\onder\reports\controllers\routes.java -> C:\Program Files\Java\jre1.8.0_191\lib\rt.jar
 source dependencies:
-   C:\work\report-brocker\src\main\java\tech\onder\consumer\ChunkConverter.java -> C:\work\report-brocker\src\main\java\tech\onder\consumer\ChunkConverter.java
-   C:\work\report-brocker\src\main\java\tech\onder\consumer\ChunkConverter.java -> C:\work\report-brocker\src\main\java\tech\onder\consumer\models\ConsumptionChunkReport.java
-   C:\work\report-brocker\src\main\java\tech\onder\consumer\ChunkConverter.java -> C:\work\report-brocker\src\main\java\tech\onder\consumer\models\MeterInputDTO.java
-   C:\work\report-brocker\src\main\java\tech\onder\consumer\ChunkConverter.java -> C:\work\report-brocker\src\main\java\tech\onder\consumer\models\PeriodReport.java
-   C:\work\report-brocker\src\main\java\tech\onder\consumer\ChunkConverter.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\OutputUtils.java
-   C:\work\report-brocker\src\main\java\tech\onder\consumer\ChunkConverter.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\models\Meter.java
-   C:\work\report-brocker\src\main\java\tech\onder\consumer\ChunkConverter.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\models\MeterReportDTO.java
-   C:\work\report-brocker\src\main\java\tech\onder\consumer\ChunkConverter.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\models\WebsocketDTO.java
-   C:\work\report-brocker\src\main\java\tech\onder\consumer\CollectorController.java -> C:\work\report-brocker\src\main\java\tech\onder\consumer\ChunkConverter.java
-   C:\work\report-brocker\src\main\java\tech\onder\consumer\CollectorController.java -> C:\work\report-brocker\src\main\java\tech\onder\consumer\CollectorController.java
-   C:\work\report-brocker\src\main\java\tech\onder\consumer\CollectorController.java -> C:\work\report-brocker\src\main\java\tech\onder\consumer\models\ConsumptionChunkReport.java
-   C:\work\report-brocker\src\main\java\tech\onder\consumer\CollectorController.java -> C:\work\report-brocker\src\main\java\tech\onder\consumer\models\MeterInputDTO.java
-   C:\work\report-brocker\src\main\java\tech\onder\consumer\CollectorController.java -> C:\work\report-brocker\src\main\java\tech\onder\consumer\services\ChunkReportManagementService.java
-   C:\work\report-brocker\src\main\java\tech\onder\consumer\models\ConsumptionChunkReport.java -> C:\work\report-brocker\src\main\java\tech\onder\consumer\models\ConsumptionChunkReport.java
-   C:\work\report-brocker\src\main\java\tech\onder\consumer\models\MeterInputDTO.java -> C:\work\report-brocker\src\main\java\tech\onder\consumer\models\MeterInputDTO.java
-   C:\work\report-brocker\src\main\java\tech\onder\consumer\models\PeriodReport.java -> C:\work\report-brocker\src\main\java\tech\onder\consumer\models\PeriodReport.java
-   C:\work\report-brocker\src\main\java\tech\onder\consumer\services\ChunkReportManagementService.java -> C:\work\report-brocker\src\main\java\tech\onder\consumer\ChunkConverter.java
-   C:\work\report-brocker\src\main\java\tech\onder\consumer\services\ChunkReportManagementService.java -> C:\work\report-brocker\src\main\java\tech\onder\consumer\models\ConsumptionChunkReport.java
-   C:\work\report-brocker\src\main\java\tech\onder\consumer\services\ChunkReportManagementService.java -> C:\work\report-brocker\src\main\java\tech\onder\consumer\models\PeriodReport.java
-   C:\work\report-brocker\src\main\java\tech\onder\consumer\services\ChunkReportManagementService.java -> C:\work\report-brocker\src\main\java\tech\onder\consumer\services\ChunkReportManagementService.java
-   C:\work\report-brocker\src\main\java\tech\onder\consumer\services\ChunkReportManagementService.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\models\Meter.java
-   C:\work\report-brocker\src\main\java\tech\onder\consumer\services\ChunkReportManagementService.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\repositories\MeterRepo.java
-   C:\work\report-brocker\src\main\java\tech\onder\consumer\services\ChunkReportManagementService.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\models\MeterReportDTO.java
-   C:\work\report-brocker\src\main\java\tech\onder\consumer\services\ChunkReportManagementService.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\models\WebsocketDTO.java
-   C:\work\report-brocker\src\main\java\tech\onder\consumer\services\ChunkService.java -> C:\work\report-brocker\src\main\java\tech\onder\consumer\services\ChunkService.java
-   C:\work\report-brocker\src\main\java\tech\onder\consumer\services\CollectorService.java -> C:\work\report-brocker\src\main\java\tech\onder\consumer\services\ChunkReportManagementService.java
-   C:\work\report-brocker\src\main\java\tech\onder\consumer\services\CollectorService.java -> C:\work\report-brocker\src\main\java\tech\onder\consumer\services\CollectorService.java
-   C:\work\report-brocker\src\main\java\tech\onder\meters\CommonController.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\CommonController.java
-   C:\work\report-brocker\src\main\java\tech\onder\meters\CommonController.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\MeterService.java
-   C:\work\report-brocker\src\main\java\tech\onder\meters\CommonController.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\models\dto\MeterInputDTO.java
-   C:\work\report-brocker\src\main\java\tech\onder\meters\CommonController.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\repositories\AbstractInMemoryRepo.java
-   C:\work\report-brocker\src\main\java\tech\onder\meters\CommonController.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\repositories\MeterRelationRepo.java
-   C:\work\report-brocker\src\main\java\tech\onder\meters\CommonController.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\repositories\MeterRepo.java
-   C:\work\report-brocker\src\main\java\tech\onder\meters\MeterConverter.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\MeterConverter.java
-   C:\work\report-brocker\src\main\java\tech\onder\meters\MeterConverter.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\models\BuyerSeller.java
-   C:\work\report-brocker\src\main\java\tech\onder\meters\MeterConverter.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\models\Meter.java
-   C:\work\report-brocker\src\main\java\tech\onder\meters\MeterConverter.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\models\dto\MeterInputDTO.java
-   C:\work\report-brocker\src\main\java\tech\onder\meters\MeterService.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\MeterConverter.java
-   C:\work\report-brocker\src\main\java\tech\onder\meters\MeterService.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\MeterService.java
-   C:\work\report-brocker\src\main\java\tech\onder\meters\MeterService.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\models\dto\MeterInputDTO.java
-   C:\work\report-brocker\src\main\java\tech\onder\meters\MeterService.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\repositories\MeterRelationRepo.java
-   C:\work\report-brocker\src\main\java\tech\onder\meters\MeterService.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\repositories\MeterRepo.java
-   C:\work\report-brocker\src\main\java\tech\onder\meters\models\BuyerSeller.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\models\BuyerSeller.java
+   C:\work\report-brocker\src\main\java\tech\onder\collector\controllers\CollectorController.java -> C:\work\report-brocker\src\main\java\tech\onder\collector\controllers\CollectorController.java
+   C:\work\report-brocker\src\main\java\tech\onder\collector\controllers\CollectorController.java -> C:\work\report-brocker\src\main\java\tech\onder\collector\models\dto\TransactionInputDTO.java
+   C:\work\report-brocker\src\main\java\tech\onder\collector\controllers\CollectorController.java -> C:\work\report-brocker\src\main\java\tech\onder\collector\services\impl\CollectorService.java
+   C:\work\report-brocker\src\main\java\tech\onder\collector\IConsumptionStorage.java -> C:\work\report-brocker\src\main\java\tech\onder\collector\IConsumptionStorage.java
+   C:\work\report-brocker\src\main\java\tech\onder\collector\IConsumptionStorage.java -> C:\work\report-brocker\src\main\java\tech\onder\queue\models\ConsumptionChunk.java
+   C:\work\report-brocker\src\main\java\tech\onder\collector\models\dto\TransactionInputDTO.java -> C:\work\report-brocker\src\main\java\tech\onder\collector\models\dto\TransactionInputDTO.java
+   C:\work\report-brocker\src\main\java\tech\onder\collector\services\converters\ConsumptionConverter.java -> C:\work\report-brocker\src\main\java\tech\onder\collector\models\dto\TransactionInputDTO.java
+   C:\work\report-brocker\src\main\java\tech\onder\collector\services\converters\ConsumptionConverter.java -> C:\work\report-brocker\src\main\java\tech\onder\collector\services\converters\ConsumptionConverter.java
+   C:\work\report-brocker\src\main\java\tech\onder\collector\services\converters\ConsumptionConverter.java -> C:\work\report-brocker\src\main\java\tech\onder\queue\models\ConsumptionChunk.java
+   C:\work\report-brocker\src\main\java\tech\onder\collector\services\impl\CollectorService.java -> C:\work\report-brocker\src\main\java\tech\onder\collector\IConsumptionStorage.java
+   C:\work\report-brocker\src\main\java\tech\onder\collector\services\impl\CollectorService.java -> C:\work\report-brocker\src\main\java\tech\onder\collector\models\dto\TransactionInputDTO.java
+   C:\work\report-brocker\src\main\java\tech\onder\collector\services\impl\CollectorService.java -> C:\work\report-brocker\src\main\java\tech\onder\collector\services\converters\ConsumptionConverter.java
+   C:\work\report-brocker\src\main\java\tech\onder\collector\services\impl\CollectorService.java -> C:\work\report-brocker\src\main\java\tech\onder\collector\services\impl\CollectorService.java
+   C:\work\report-brocker\src\main\java\tech\onder\collector\services\impl\CollectorService.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\services\MeterService.java
+   C:\work\report-brocker\src\main\java\tech\onder\collector\services\impl\CollectorService.java -> C:\work\report-brocker\src\main\java\tech\onder\queue\models\ConsumptionChunk.java
+   C:\work\report-brocker\src\main\java\tech\onder\common\exceptions\NotFoundException.java -> C:\work\report-brocker\src\main\java\tech\onder\common\exceptions\NotFoundException.java
+   C:\work\report-brocker\src\main\java\tech\onder\common\StreamUtils.java -> C:\work\report-brocker\src\main\java\tech\onder\common\StreamUtils.java
+   C:\work\report-brocker\src\main\java\tech\onder\meters\controllers\MeterController.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\controllers\MeterController.java
+   C:\work\report-brocker\src\main\java\tech\onder\meters\controllers\MeterController.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\models\dto\MeterInputDTO.java
+   C:\work\report-brocker\src\main\java\tech\onder\meters\controllers\MeterController.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\services\MeterService.java
+   C:\work\report-brocker\src\main\java\tech\onder\meters\models\dto\MeterDTO.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\models\dto\MeterDTO.java
    C:\work\report-brocker\src\main\java\tech\onder\meters\models\dto\MeterInputDTO.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\models\dto\MeterInputDTO.java
+   C:\work\report-brocker\src\main\java\tech\onder\meters\models\dto\RelationDTO.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\models\dto\RelationDTO.java
+   C:\work\report-brocker\src\main\java\tech\onder\meters\models\IEntity.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\models\IEntity.java
+   C:\work\report-brocker\src\main\java\tech\onder\meters\models\Meter.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\models\IEntity.java
    C:\work\report-brocker\src\main\java\tech\onder\meters\models\Meter.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\models\Meter.java
-   C:\work\report-brocker\src\main\java\tech\onder\meters\OutputUtils.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\OutputUtils.java
+   C:\work\report-brocker\src\main\java\tech\onder\meters\models\MeterRelation.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\models\IEntity.java
+   C:\work\report-brocker\src\main\java\tech\onder\meters\models\MeterRelation.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\models\MeterRelation.java
    C:\work\report-brocker\src\main\java\tech\onder\meters\repositories\AbstractInMemoryRepo.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\repositories\AbstractInMemoryRepo.java
    C:\work\report-brocker\src\main\java\tech\onder\meters\repositories\AbstractInMemoryRepo.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\repositories\IInMemoryRepo.java
    C:\work\report-brocker\src\main\java\tech\onder\meters\repositories\IInMemoryRepo.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\repositories\IInMemoryRepo.java
-   C:\work\report-brocker\src\main\java\tech\onder\meters\repositories\MeterRelationRepo.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\models\BuyerSeller.java
-   C:\work\report-brocker\src\main\java\tech\onder\meters\repositories\MeterRelationRepo.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\repositories\AbstractInMemoryRepo.java
-   C:\work\report-brocker\src\main\java\tech\onder\meters\repositories\MeterRelationRepo.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\repositories\MeterRelationRepo.java
    C:\work\report-brocker\src\main\java\tech\onder\meters\repositories\MeterRepo.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\models\Meter.java
    C:\work\report-brocker\src\main\java\tech\onder\meters\repositories\MeterRepo.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\repositories\AbstractInMemoryRepo.java
    C:\work\report-brocker\src\main\java\tech\onder\meters\repositories\MeterRepo.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\repositories\MeterRepo.java
+   C:\work\report-brocker\src\main\java\tech\onder\meters\services\converters\MeterConverter.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\models\Meter.java
+   C:\work\report-brocker\src\main\java\tech\onder\meters\services\converters\MeterConverter.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\models\dto\MeterDTO.java
+   C:\work\report-brocker\src\main\java\tech\onder\meters\services\converters\MeterConverter.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\models\dto\MeterInputDTO.java
+   C:\work\report-brocker\src\main\java\tech\onder\meters\services\converters\MeterConverter.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\models\dto\RelationDTO.java
+   C:\work\report-brocker\src\main\java\tech\onder\meters\services\converters\MeterConverter.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\services\converters\MeterConverter.java
+   C:\work\report-brocker\src\main\java\tech\onder\meters\services\MeterService.java -> C:\work\report-brocker\src\main\java\tech\onder\common\exceptions\NotFoundException.java
+   C:\work\report-brocker\src\main\java\tech\onder\meters\services\MeterService.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\models\Meter.java
+   C:\work\report-brocker\src\main\java\tech\onder\meters\services\MeterService.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\models\dto\MeterInputDTO.java
+   C:\work\report-brocker\src\main\java\tech\onder\meters\services\MeterService.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\repositories\MeterRepo.java
+   C:\work\report-brocker\src\main\java\tech\onder\meters\services\MeterService.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\services\MeterService.java
+   C:\work\report-brocker\src\main\java\tech\onder\meters\services\MeterService.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\services\converters\MeterConverter.java
    C:\work\report-brocker\src\main\java\tech\onder\modules\AppConfig.java -> C:\work\report-brocker\src\main\java\tech\onder\modules\AppConfig.java
-   C:\work\report-brocker\src\main\java\tech\onder\modules\ApplicationModule.java -> C:\work\report-brocker\src\main\java\tech\onder\consumer\services\ChunkReportManagementService.java
+   C:\work\report-brocker\src\main\java\tech\onder\modules\ApplicationModule.java -> C:\work\report-brocker\src\main\java\tech\onder\collector\IConsumptionStorage.java
+   C:\work\report-brocker\src\main\java\tech\onder\modules\ApplicationModule.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\models\dto\MeterInputDTO.java
+   C:\work\report-brocker\src\main\java\tech\onder\modules\ApplicationModule.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\repositories\MeterRepo.java
+   C:\work\report-brocker\src\main\java\tech\onder\modules\ApplicationModule.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\services\MeterService.java
+   C:\work\report-brocker\src\main\java\tech\onder\modules\ApplicationModule.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\services\converters\MeterConverter.java
    C:\work\report-brocker\src\main\java\tech\onder\modules\ApplicationModule.java -> C:\work\report-brocker\src\main\java\tech\onder\modules\AppConfig.java
    C:\work\report-brocker\src\main\java\tech\onder\modules\ApplicationModule.java -> C:\work\report-brocker\src\main\java\tech\onder\modules\ApplicationModule.java
-   C:\work\report-brocker\src\main\java\tech\onder\modules\ApplicationModule.java -> C:\work\report-brocker\src\main\java\tech\onder\modules\ChunkServiceProvider.java
+   C:\work\report-brocker\src\main\java\tech\onder\modules\ApplicationModule.java -> C:\work\report-brocker\src\main\java\tech\onder\queue\IRestorableStorage.java
+   C:\work\report-brocker\src\main\java\tech\onder\modules\ApplicationModule.java -> C:\work\report-brocker\src\main\java\tech\onder\queue\actors\ForceUpdate.java
+   C:\work\report-brocker\src\main\java\tech\onder\modules\ApplicationModule.java -> C:\work\report-brocker\src\main\java\tech\onder\queue\manager\ConsumptionQueuesManager.java
+   C:\work\report-brocker\src\main\java\tech\onder\modules\ApplicationModule.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\IReportDataSupplier.java
+   C:\work\report-brocker\src\main\java\tech\onder\modules\ApplicationModule.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\actors\IWebsocketQueuePublisher.java
    C:\work\report-brocker\src\main\java\tech\onder\modules\ApplicationModule.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserActor.java
-   C:\work\report-brocker\src\main\java\tech\onder\modules\ApplicationModule.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserParentActor.java
-   C:\work\report-brocker\src\main\java\tech\onder\modules\ChunkServiceProvider.java -> C:\work\report-brocker\src\main\java\tech\onder\consumer\ChunkConverter.java
-   C:\work\report-brocker\src\main\java\tech\onder\modules\ChunkServiceProvider.java -> C:\work\report-brocker\src\main\java\tech\onder\consumer\services\ChunkReportManagementService.java
-   C:\work\report-brocker\src\main\java\tech\onder\modules\ChunkServiceProvider.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\repositories\MeterRepo.java
-   C:\work\report-brocker\src\main\java\tech\onder\modules\ChunkServiceProvider.java -> C:\work\report-brocker\src\main\java\tech\onder\modules\ChunkServiceProvider.java
-   C:\work\report-brocker\src\main\java\tech\onder\queue\QueueController.java -> C:\work\report-brocker\src\main\java\tech\onder\queue\QueueController.java
-   C:\work\report-brocker\src\main\java\tech\onder\queue\QueueController.java -> C:\work\report-brocker\src\main\java\tech\onder\queue\QueueService.java
-   C:\work\report-brocker\src\main\java\tech\onder\queue\QueueService.java -> C:\work\report-brocker\src\main\java\tech\onder\consumer\models\ConsumptionChunkReport.java
-   C:\work\report-brocker\src\main\java\tech\onder\queue\QueueService.java -> C:\work\report-brocker\src\main\java\tech\onder\consumer\services\ChunkReportManagementService.java
-   C:\work\report-brocker\src\main\java\tech\onder\queue\QueueService.java -> C:\work\report-brocker\src\main\java\tech\onder\queue\QueueService.java
-   C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserActor.java -> C:\work\report-brocker\src\main\java\tech\onder\consumer\services\ChunkReportManagementService.java
+   C:\work\report-brocker\src\main\java\tech\onder\queue\actors\ForceUpdate.java -> C:\work\report-brocker\src\main\java\tech\onder\queue\actors\ForceUpdate.java
+   C:\work\report-brocker\src\main\java\tech\onder\queue\actors\ForceUpdate.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\actors\IWebsocketQueuePublisher.java
+   C:\work\report-brocker\src\main\java\tech\onder\queue\conf\ConsumptionQueueConf.java -> C:\work\report-brocker\src\main\java\tech\onder\queue\conf\ConsumptionQueueConf.java
+   C:\work\report-brocker\src\main\java\tech\onder\queue\controllers\QueueController.java -> C:\work\report-brocker\src\main\java\tech\onder\queue\controllers\QueueController.java
+   C:\work\report-brocker\src\main\java\tech\onder\queue\controllers\QueueController.java -> C:\work\report-brocker\src\main\java\tech\onder\queue\service\QueueBackupService.java
+   C:\work\report-brocker\src\main\java\tech\onder\queue\IRestorableStorage.java -> C:\work\report-brocker\src\main\java\tech\onder\queue\IRestorableStorage.java
+   C:\work\report-brocker\src\main\java\tech\onder\queue\manager\ConsumptionQueuesManager.java -> C:\work\report-brocker\src\main\java\tech\onder\common\StreamUtils.java
+   C:\work\report-brocker\src\main\java\tech\onder\queue\manager\ConsumptionQueuesManager.java -> C:\work\report-brocker\src\main\java\tech\onder\queue\IRestorableStorage.java
+   C:\work\report-brocker\src\main\java\tech\onder\queue\manager\ConsumptionQueuesManager.java -> C:\work\report-brocker\src\main\java\tech\onder\queue\conf\ConsumptionQueueConf.java
+   C:\work\report-brocker\src\main\java\tech\onder\queue\manager\ConsumptionQueuesManager.java -> C:\work\report-brocker\src\main\java\tech\onder\queue\manager\ConsumptionQueuesManager.java
+   C:\work\report-brocker\src\main\java\tech\onder\queue\manager\ConsumptionQueuesManager.java -> C:\work\report-brocker\src\main\java\tech\onder\queue\models\ConsumptionChunk.java
+   C:\work\report-brocker\src\main\java\tech\onder\queue\manager\ConsumptionQueuesManager.java -> C:\work\report-brocker\src\main\java\tech\onder\queue\models\WebsocketQueueItem.java
+   C:\work\report-brocker\src\main\java\tech\onder\queue\manager\ConsumptionQueuesManager.java -> C:\work\report-brocker\src\main\java\tech\onder\queue\models\dto\ConsumptionReportDTO.java
+   C:\work\report-brocker\src\main\java\tech\onder\queue\manager\ConsumptionQueuesManager.java -> C:\work\report-brocker\src\main\java\tech\onder\queue\models\dto\PeriodReportDTO.java
+   C:\work\report-brocker\src\main\java\tech\onder\queue\models\ConsumptionChunk.java -> C:\work\report-brocker\src\main\java\tech\onder\queue\models\ConsumptionChunk.java
+   C:\work\report-brocker\src\main\java\tech\onder\queue\models\dto\ConsumptionReportDTO.java -> C:\work\report-brocker\src\main\java\tech\onder\queue\models\dto\ConsumptionReportDTO.java
+   C:\work\report-brocker\src\main\java\tech\onder\queue\models\dto\PeriodReportDTO.java -> C:\work\report-brocker\src\main\java\tech\onder\queue\models\dto\PeriodReportDTO.java
+   C:\work\report-brocker\src\main\java\tech\onder\queue\models\WebsocketQueueItem.java -> C:\work\report-brocker\src\main\java\tech\onder\queue\models\WebsocketQueueItem.java
+   C:\work\report-brocker\src\main\java\tech\onder\queue\models\WebsocketQueueItem.java -> C:\work\report-brocker\src\main\java\tech\onder\queue\models\dto\PeriodReportDTO.java
+   C:\work\report-brocker\src\main\java\tech\onder\queue\service\QueueBackupService.java -> C:\work\report-brocker\src\main\java\tech\onder\queue\IRestorableStorage.java
+   C:\work\report-brocker\src\main\java\tech\onder\queue\service\QueueBackupService.java -> C:\work\report-brocker\src\main\java\tech\onder\queue\conf\ConsumptionQueueConf.java
+   C:\work\report-brocker\src\main\java\tech\onder\queue\service\QueueBackupService.java -> C:\work\report-brocker\src\main\java\tech\onder\queue\models\ConsumptionChunk.java
+   C:\work\report-brocker\src\main\java\tech\onder\queue\service\QueueBackupService.java -> C:\work\report-brocker\src\main\java\tech\onder\queue\service\QueueBackupService.java
+   C:\work\report-brocker\src\main\java\tech\onder\reports\actors\IWebsocketQueuePublisher.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\actors\IWebsocketQueuePublisher.java
+   C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserActor.java -> C:\work\report-brocker\src\main\java\tech\onder\queue\models\WebsocketQueueItem.java
+   C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserActor.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\actors\IWebsocketQueuePublisher.java
    C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserActor.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserActor.java
-   C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserParentActor.java -> C:\work\report-brocker\src\main\java\tech\onder\consumer\services\ChunkReportManagementService.java
+   C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserActor.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\services\ReportService.java
    C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserParentActor.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserActor.java
    C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserParentActor.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserParentActor.java
-   C:\work\report-brocker\src\main\java\tech\onder\reports\models\MeterReportDTO.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\models\MeterReportDTO.java
-   C:\work\report-brocker\src\main\java\tech\onder\reports\models\ReportDTO.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\models\ReportDTO.java
-   C:\work\report-brocker\src\main\java\tech\onder\reports\models\WebsocketDTO.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\models\WebsocketDTO.java
-   C:\work\report-brocker\src\main\java\tech\onder\reports\Publisher.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\Publisher.java
-   C:\work\report-brocker\src\main\java\tech\onder\reports\Publisher.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserActor.java
-   C:\work\report-brocker\src\main\java\tech\onder\reports\ReportController.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\ReportController.java
-   C:\work\report-brocker\src\main\java\tech\onder\reports\ReportController.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\ReportService.java
-   C:\work\report-brocker\src\main\java\tech\onder\reports\ReportController.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserActor.java
-   C:\work\report-brocker\src\main\java\tech\onder\reports\ReportController.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\models\ReportDTO.java
-   C:\work\report-brocker\src\main\java\tech\onder\reports\ReportConverter.java -> C:\work\report-brocker\src\main\java\tech\onder\consumer\models\PeriodReport.java
-   C:\work\report-brocker\src\main\java\tech\onder\reports\ReportConverter.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\OutputUtils.java
-   C:\work\report-brocker\src\main\java\tech\onder\reports\ReportConverter.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\ReportConverter.java
-   C:\work\report-brocker\src\main\java\tech\onder\reports\ReportConverter.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\models\ReportDTO.java
-   C:\work\report-brocker\src\main\java\tech\onder\reports\ReportRepository.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\ReportRepository.java
-   C:\work\report-brocker\src\main\java\tech\onder\reports\ReportService.java -> C:\work\report-brocker\src\main\java\tech\onder\consumer\ChunkConverter.java
-   C:\work\report-brocker\src\main\java\tech\onder\reports\ReportService.java -> C:\work\report-brocker\src\main\java\tech\onder\consumer\models\ConsumptionChunkReport.java
-   C:\work\report-brocker\src\main\java\tech\onder\reports\ReportService.java -> C:\work\report-brocker\src\main\java\tech\onder\consumer\models\PeriodReport.java
-   C:\work\report-brocker\src\main\java\tech\onder\reports\ReportService.java -> C:\work\report-brocker\src\main\java\tech\onder\consumer\services\ChunkReportManagementService.java
-   C:\work\report-brocker\src\main\java\tech\onder\reports\ReportService.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\repositories\MeterRepo.java
-   C:\work\report-brocker\src\main\java\tech\onder\reports\ReportService.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\ReportConverter.java
-   C:\work\report-brocker\src\main\java\tech\onder\reports\ReportService.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\ReportService.java
-   C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\src\main\java\tech\onder\consumer\CollectorController.java
-   C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\src\main\java\tech\onder\meters\CommonController.java
-   C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\src\main\java\tech\onder\queue\QueueController.java
-   C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\src\main\java\tech\onder\reports\ReportController.java
+   C:\work\report-brocker\src\main\java\tech\onder\reports\controllers\ReportController.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserActor.java
+   C:\work\report-brocker\src\main\java\tech\onder\reports\controllers\ReportController.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\controllers\ReportController.java
+   C:\work\report-brocker\src\main\java\tech\onder\reports\controllers\ReportController.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\models\dto\ReportDTO.java
+   C:\work\report-brocker\src\main\java\tech\onder\reports\controllers\ReportController.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\services\ReportService.java
+   C:\work\report-brocker\src\main\java\tech\onder\reports\IReportDataSupplier.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\IReportDataSupplier.java
+   C:\work\report-brocker\src\main\java\tech\onder\reports\models\dto\MeterReportDTO.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\models\dto\MeterReportDTO.java
+   C:\work\report-brocker\src\main\java\tech\onder\reports\models\dto\ReportDTO.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\models\dto\ReportDTO.java
+   C:\work\report-brocker\src\main\java\tech\onder\reports\models\dto\WebsocketDTO.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\models\dto\WebsocketDTO.java
+   C:\work\report-brocker\src\main\java\tech\onder\reports\services\converters\ReportConverter.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\models\dto\MeterDTO.java
+   C:\work\report-brocker\src\main\java\tech\onder\reports\services\converters\ReportConverter.java -> C:\work\report-brocker\src\main\java\tech\onder\queue\models\dto\ConsumptionReportDTO.java
+   C:\work\report-brocker\src\main\java\tech\onder\reports\services\converters\ReportConverter.java -> C:\work\report-brocker\src\main\java\tech\onder\queue\models\dto\PeriodReportDTO.java
+   C:\work\report-brocker\src\main\java\tech\onder\reports\services\converters\ReportConverter.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\models\dto\MeterReportDTO.java
+   C:\work\report-brocker\src\main\java\tech\onder\reports\services\converters\ReportConverter.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\models\dto\ReportDTO.java
+   C:\work\report-brocker\src\main\java\tech\onder\reports\services\converters\ReportConverter.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\models\dto\WebsocketDTO.java
+   C:\work\report-brocker\src\main\java\tech\onder\reports\services\converters\ReportConverter.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\services\converters\ReportConverter.java
+   C:\work\report-brocker\src\main\java\tech\onder\reports\services\converters\ReportConverter.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\utils\OutputUtils.java
+   C:\work\report-brocker\src\main\java\tech\onder\reports\services\ReportService.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\models\dto\MeterDTO.java
+   C:\work\report-brocker\src\main\java\tech\onder\reports\services\ReportService.java -> C:\work\report-brocker\src\main\java\tech\onder\meters\services\MeterService.java
+   C:\work\report-brocker\src\main\java\tech\onder\reports\services\ReportService.java -> C:\work\report-brocker\src\main\java\tech\onder\queue\models\WebsocketQueueItem.java
+   C:\work\report-brocker\src\main\java\tech\onder\reports\services\ReportService.java -> C:\work\report-brocker\src\main\java\tech\onder\queue\models\dto\PeriodReportDTO.java
+   C:\work\report-brocker\src\main\java\tech\onder\reports\services\ReportService.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\IReportDataSupplier.java
+   C:\work\report-brocker\src\main\java\tech\onder\reports\services\ReportService.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\models\dto\MeterReportDTO.java
+   C:\work\report-brocker\src\main\java\tech\onder\reports\services\ReportService.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\models\dto\WebsocketDTO.java
+   C:\work\report-brocker\src\main\java\tech\onder\reports\services\ReportService.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\services\ReportService.java
+   C:\work\report-brocker\src\main\java\tech\onder\reports\services\ReportService.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\services\converters\ReportConverter.java
+   C:\work\report-brocker\src\main\java\tech\onder\reports\utils\OutputUtils.java -> C:\work\report-brocker\src\main\java\tech\onder\reports\utils\OutputUtils.java
+   C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\src\main\java\tech\onder\collector\controllers\CollectorController.java
+   C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\src\main\java\tech\onder\meters\controllers\MeterController.java
+   C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\src\main\java\tech\onder\queue\controllers\QueueController.java
+   C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\src\main\java\tech\onder\reports\controllers\ReportController.java
    C:\work\report-brocker\target\routes\main\router\Routes.scala -> C:\work\report-brocker\target\routes\main\router\RoutesPrefix.scala
-   C:\work\report-brocker\target\routes\main\tech\onder\consumer\routes.java -> C:\work\report-brocker\target\routes\main\router\RoutesPrefix.scala
-   C:\work\report-brocker\target\routes\main\tech\onder\consumer\routes.java -> C:\work\report-brocker\target\routes\main\tech\onder\consumer\ReverseRoutes.scala
-   C:\work\report-brocker\target\routes\main\tech\onder\consumer\routes.java -> C:\work\report-brocker\target\routes\main\tech\onder\consumer\javascript\JavaScriptReverseRoutes.scala
-   C:\work\report-brocker\target\routes\main\tech\onder\consumer\routes.java -> C:\work\report-brocker\target\routes\main\tech\onder\consumer\routes.java
-   C:\work\report-brocker\target\routes\main\tech\onder\meters\routes.java -> C:\work\report-brocker\target\routes\main\router\RoutesPrefix.scala
-   C:\work\report-brocker\target\routes\main\tech\onder\meters\routes.java -> C:\work\report-brocker\target\routes\main\tech\onder\meters\ReverseRoutes.scala
-   C:\work\report-brocker\target\routes\main\tech\onder\meters\routes.java -> C:\work\report-brocker\target\routes\main\tech\onder\meters\javascript\JavaScriptReverseRoutes.scala
-   C:\work\report-brocker\target\routes\main\tech\onder\meters\routes.java -> C:\work\report-brocker\target\routes\main\tech\onder\meters\routes.java
-   C:\work\report-brocker\target\routes\main\tech\onder\queue\routes.java -> C:\work\report-brocker\target\routes\main\router\RoutesPrefix.scala
-   C:\work\report-brocker\target\routes\main\tech\onder\queue\routes.java -> C:\work\report-brocker\target\routes\main\tech\onder\queue\ReverseRoutes.scala
-   C:\work\report-brocker\target\routes\main\tech\onder\queue\routes.java -> C:\work\report-brocker\target\routes\main\tech\onder\queue\javascript\JavaScriptReverseRoutes.scala
-   C:\work\report-brocker\target\routes\main\tech\onder\queue\routes.java -> C:\work\report-brocker\target\routes\main\tech\onder\queue\routes.java
-   C:\work\report-brocker\target\routes\main\tech\onder\reports\routes.java -> C:\work\report-brocker\target\routes\main\router\RoutesPrefix.scala
-   C:\work\report-brocker\target\routes\main\tech\onder\reports\routes.java -> C:\work\report-brocker\target\routes\main\tech\onder\reports\ReverseRoutes.scala
-   C:\work\report-brocker\target\routes\main\tech\onder\reports\routes.java -> C:\work\report-brocker\target\routes\main\tech\onder\reports\javascript\JavaScriptReverseRoutes.scala
-   C:\work\report-brocker\target\routes\main\tech\onder\reports\routes.java -> C:\work\report-brocker\target\routes\main\tech\onder\reports\routes.java
+   C:\work\report-brocker\target\routes\main\tech\onder\collector\controllers\routes.java -> C:\work\report-brocker\target\routes\main\router\RoutesPrefix.scala
+   C:\work\report-brocker\target\routes\main\tech\onder\collector\controllers\routes.java -> C:\work\report-brocker\target\routes\main\tech\onder\collector\controllers\ReverseRoutes.scala
+   C:\work\report-brocker\target\routes\main\tech\onder\collector\controllers\routes.java -> C:\work\report-brocker\target\routes\main\tech\onder\collector\controllers\javascript\JavaScriptReverseRoutes.scala
+   C:\work\report-brocker\target\routes\main\tech\onder\collector\controllers\routes.java -> C:\work\report-brocker\target\routes\main\tech\onder\collector\controllers\routes.java
+   C:\work\report-brocker\target\routes\main\tech\onder\meters\controllers\routes.java -> C:\work\report-brocker\target\routes\main\router\RoutesPrefix.scala
+   C:\work\report-brocker\target\routes\main\tech\onder\meters\controllers\routes.java -> C:\work\report-brocker\target\routes\main\tech\onder\meters\controllers\ReverseRoutes.scala
+   C:\work\report-brocker\target\routes\main\tech\onder\meters\controllers\routes.java -> C:\work\report-brocker\target\routes\main\tech\onder\meters\controllers\javascript\JavaScriptReverseRoutes.scala
+   C:\work\report-brocker\target\routes\main\tech\onder\meters\controllers\routes.java -> C:\work\report-brocker\target\routes\main\tech\onder\meters\controllers\routes.java
+   C:\work\report-brocker\target\routes\main\tech\onder\queue\controllers\routes.java -> C:\work\report-brocker\target\routes\main\router\RoutesPrefix.scala
+   C:\work\report-brocker\target\routes\main\tech\onder\queue\controllers\routes.java -> C:\work\report-brocker\target\routes\main\tech\onder\queue\controllers\ReverseRoutes.scala
+   C:\work\report-brocker\target\routes\main\tech\onder\queue\controllers\routes.java -> C:\work\report-brocker\target\routes\main\tech\onder\queue\controllers\javascript\JavaScriptReverseRoutes.scala
+   C:\work\report-brocker\target\routes\main\tech\onder\queue\controllers\routes.java -> C:\work\report-brocker\target\routes\main\tech\onder\queue\controllers\routes.java
+   C:\work\report-brocker\target\routes\main\tech\onder\reports\controllers\routes.java -> C:\work\report-brocker\target\routes\main\router\RoutesPrefix.scala
+   C:\work\report-brocker\target\routes\main\tech\onder\reports\controllers\routes.java -> C:\work\report-brocker\target\routes\main\tech\onder\reports\controllers\ReverseRoutes.scala
+   C:\work\report-brocker\target\routes\main\tech\onder\reports\controllers\routes.java -> C:\work\report-brocker\target\routes\main\tech\onder\reports\controllers\javascript\JavaScriptReverseRoutes.scala
+   C:\work\report-brocker\target\routes\main\tech\onder\reports\controllers\routes.java -> C:\work\report-brocker\target\routes\main\tech\onder\reports\controllers\routes.java
 external dependencies:
 class names:
-   C:\work\report-brocker\src\main\java\tech\onder\consumer\ChunkConverter.java -> tech.onder.consumer.ChunkConverter
-   C:\work\report-brocker\src\main\java\tech\onder\consumer\CollectorController.java -> tech.onder.consumer.CollectorController
-   C:\work\report-brocker\src\main\java\tech\onder\consumer\models\ConsumptionChunkReport.java -> tech.onder.consumer.models.ConsumptionChunkReport
-   C:\work\report-brocker\src\main\java\tech\onder\consumer\models\MeterInputDTO.java -> tech.onder.consumer.models.MeterInputDTO
-   C:\work\report-brocker\src\main\java\tech\onder\consumer\models\PeriodReport.java -> tech.onder.consumer.models.PeriodReport
-   C:\work\report-brocker\src\main\java\tech\onder\consumer\services\ChunkReportManagementService.java -> tech.onder.consumer.services.ChunkReportManagementService
-   C:\work\report-brocker\src\main\java\tech\onder\consumer\services\ChunkService.java -> tech.onder.consumer.services.ChunkService
-   C:\work\report-brocker\src\main\java\tech\onder\consumer\services\CollectorService.java -> tech.onder.consumer.services.CollectorService
-   C:\work\report-brocker\src\main\java\tech\onder\meters\CommonController.java -> tech.onder.meters.CommonController
-   C:\work\report-brocker\src\main\java\tech\onder\meters\MeterConverter.java -> tech.onder.meters.MeterConverter
-   C:\work\report-brocker\src\main\java\tech\onder\meters\MeterService.java -> tech.onder.meters.MeterService
-   C:\work\report-brocker\src\main\java\tech\onder\meters\models\BuyerSeller.java -> tech.onder.meters.models.BuyerSeller
+   C:\work\report-brocker\src\main\java\tech\onder\collector\controllers\CollectorController.java -> tech.onder.collector.controllers.CollectorController
+   C:\work\report-brocker\src\main\java\tech\onder\collector\IConsumptionStorage.java -> tech.onder.collector.IConsumptionStorage
+   C:\work\report-brocker\src\main\java\tech\onder\collector\models\dto\TransactionInputDTO.java -> tech.onder.collector.models.dto.TransactionInputDTO
+   C:\work\report-brocker\src\main\java\tech\onder\collector\services\converters\ConsumptionConverter.java -> tech.onder.collector.services.converters.ConsumptionConverter
+   C:\work\report-brocker\src\main\java\tech\onder\collector\services\impl\CollectorService.java -> tech.onder.collector.services.impl.CollectorService
+   C:\work\report-brocker\src\main\java\tech\onder\common\exceptions\NotFoundException.java -> tech.onder.common.exceptions.NotFoundException
+   C:\work\report-brocker\src\main\java\tech\onder\common\StreamUtils.java -> tech.onder.common.StreamUtils
+   C:\work\report-brocker\src\main\java\tech\onder\meters\controllers\MeterController.java -> tech.onder.meters.controllers.MeterController
+   C:\work\report-brocker\src\main\java\tech\onder\meters\models\dto\MeterDTO.java -> tech.onder.meters.models.dto.MeterDTO
    C:\work\report-brocker\src\main\java\tech\onder\meters\models\dto\MeterInputDTO.java -> tech.onder.meters.models.dto.MeterInputDTO
+   C:\work\report-brocker\src\main\java\tech\onder\meters\models\dto\RelationDTO.java -> tech.onder.meters.models.dto.RelationDTO
+   C:\work\report-brocker\src\main\java\tech\onder\meters\models\IEntity.java -> tech.onder.meters.models.IEntity
    C:\work\report-brocker\src\main\java\tech\onder\meters\models\Meter.java -> tech.onder.meters.models.Meter
-   C:\work\report-brocker\src\main\java\tech\onder\meters\OutputUtils.java -> tech.onder.meters.OutputUtils
+   C:\work\report-brocker\src\main\java\tech\onder\meters\models\MeterRelation.java -> tech.onder.meters.models.MeterRelation
    C:\work\report-brocker\src\main\java\tech\onder\meters\repositories\AbstractInMemoryRepo.java -> tech.onder.meters.repositories.AbstractInMemoryRepo
    C:\work\report-brocker\src\main\java\tech\onder\meters\repositories\IInMemoryRepo.java -> tech.onder.meters.repositories.IInMemoryRepo
-   C:\work\report-brocker\src\main\java\tech\onder\meters\repositories\MeterRelationRepo.java -> tech.onder.meters.repositories.MeterRelationRepo
    C:\work\report-brocker\src\main\java\tech\onder\meters\repositories\MeterRepo.java -> tech.onder.meters.repositories.MeterRepo
+   C:\work\report-brocker\src\main\java\tech\onder\meters\services\converters\MeterConverter.java -> tech.onder.meters.services.converters.MeterConverter
+   C:\work\report-brocker\src\main\java\tech\onder\meters\services\MeterService.java -> tech.onder.meters.services.MeterService
    C:\work\report-brocker\src\main\java\tech\onder\modules\AppConfig.java -> tech.onder.modules.AppConfig
    C:\work\report-brocker\src\main\java\tech\onder\modules\ApplicationModule.java -> tech.onder.modules.ApplicationModule
-   C:\work\report-brocker\src\main\java\tech\onder\modules\ChunkServiceProvider.java -> tech.onder.modules.ChunkServiceProvider
-   C:\work\report-brocker\src\main\java\tech\onder\queue\QueueController.java -> tech.onder.queue.QueueController
-   C:\work\report-brocker\src\main\java\tech\onder\queue\QueueService.java -> tech.onder.queue.QueueService
+   C:\work\report-brocker\src\main\java\tech\onder\queue\actors\ForceUpdate.java -> tech.onder.queue.actors.ForceUpdate
+   C:\work\report-brocker\src\main\java\tech\onder\queue\actors\ForceUpdate.java -> tech.onder.queue.actors.ForceUpdate$FirstTick
+   C:\work\report-brocker\src\main\java\tech\onder\queue\actors\ForceUpdate.java -> tech.onder.queue.actors.ForceUpdate$Tick
+   C:\work\report-brocker\src\main\java\tech\onder\queue\conf\ConsumptionQueueConf.java -> tech.onder.queue.conf.ConsumptionQueueConf
+   C:\work\report-brocker\src\main\java\tech\onder\queue\controllers\QueueController.java -> tech.onder.queue.controllers.QueueController
+   C:\work\report-brocker\src\main\java\tech\onder\queue\IRestorableStorage.java -> tech.onder.queue.IRestorableStorage
+   C:\work\report-brocker\src\main\java\tech\onder\queue\manager\ConsumptionQueuesManager.java -> tech.onder.queue.manager.ConsumptionQueuesManager
+   C:\work\report-brocker\src\main\java\tech\onder\queue\models\ConsumptionChunk.java -> tech.onder.queue.models.ConsumptionChunk
+   C:\work\report-brocker\src\main\java\tech\onder\queue\models\dto\ConsumptionReportDTO.java -> tech.onder.queue.models.dto.ConsumptionReportDTO
+   C:\work\report-brocker\src\main\java\tech\onder\queue\models\dto\PeriodReportDTO.java -> tech.onder.queue.models.dto.PeriodReportDTO
+   C:\work\report-brocker\src\main\java\tech\onder\queue\models\WebsocketQueueItem.java -> tech.onder.queue.models.WebsocketQueueItem
+   C:\work\report-brocker\src\main\java\tech\onder\queue\service\QueueBackupService.java -> tech.onder.queue.service.QueueBackupService
+   C:\work\report-brocker\src\main\java\tech\onder\reports\actors\IWebsocketQueuePublisher.java -> tech.onder.reports.actors.IWebsocketQueuePublisher
    C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserActor.java -> tech.onder.reports.actors.UserActor
    C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserActor.java -> tech.onder.reports.actors.UserActor$Factory
-   C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserActor.java -> tech.onder.reports.actors.UserActor$FirstTick
    C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserActor.java -> tech.onder.reports.actors.UserActor$Tick
    C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserParentActor.java -> tech.onder.reports.actors.UserParentActor
    C:\work\report-brocker\src\main\java\tech\onder\reports\actors\UserParentActor.java -> tech.onder.reports.actors.UserParentActor$Create
-   C:\work\report-brocker\src\main\java\tech\onder\reports\models\MeterReportDTO.java -> tech.onder.reports.models.MeterReportDTO
-   C:\work\report-brocker\src\main\java\tech\onder\reports\models\ReportDTO.java -> tech.onder.reports.models.ReportDTO
-   C:\work\report-brocker\src\main\java\tech\onder\reports\models\WebsocketDTO.java -> tech.onder.reports.models.WebsocketDTO
-   C:\work\report-brocker\src\main\java\tech\onder\reports\Publisher.java -> tech.onder.reports.Publisher
-   C:\work\report-brocker\src\main\java\tech\onder\reports\ReportController.java -> tech.onder.reports.ReportController
-   C:\work\report-brocker\src\main\java\tech\onder\reports\ReportConverter.java -> tech.onder.reports.ReportConverter
-   C:\work\report-brocker\src\main\java\tech\onder\reports\ReportRepository.java -> tech.onder.reports.ReportRepository
-   C:\work\report-brocker\src\main\java\tech\onder\reports\ReportService.java -> tech.onder.reports.ReportService
+   C:\work\report-brocker\src\main\java\tech\onder\reports\controllers\ReportController.java -> tech.onder.reports.controllers.ReportController
+   C:\work\report-brocker\src\main\java\tech\onder\reports\IReportDataSupplier.java -> tech.onder.reports.IReportDataSupplier
+   C:\work\report-brocker\src\main\java\tech\onder\reports\models\dto\MeterReportDTO.java -> tech.onder.reports.models.dto.MeterReportDTO
+   C:\work\report-brocker\src\main\java\tech\onder\reports\models\dto\ReportDTO.java -> tech.onder.reports.models.dto.ReportDTO
+   C:\work\report-brocker\src\main\java\tech\onder\reports\models\dto\WebsocketDTO.java -> tech.onder.reports.models.dto.WebsocketDTO
+   C:\work\report-brocker\src\main\java\tech\onder\reports\services\converters\ReportConverter.java -> tech.onder.reports.services.converters.ReportConverter
+   C:\work\report-brocker\src\main\java\tech\onder\reports\services\ReportService.java -> tech.onder.reports.services.ReportService
+   C:\work\report-brocker\src\main\java\tech\onder\reports\utils\OutputUtils.java -> tech.onder.reports.utils.OutputUtils
    C:\work\report-brocker\target\routes\main\router\Routes.scala -> router.Routes
    C:\work\report-brocker\target\routes\main\router\Routes.scala -> router.Routes$$anonfun$documentation$1
-   C:\work\report-brocker\target\routes\main\router\Routes.scala -> router.Routes$$anonfun$router$Routes$$tech_onder_consumer_CollectorController_push0_invoker$1
-   C:\work\report-brocker\target\routes\main\router\Routes.scala -> router.Routes$$anonfun$router$Routes$$tech_onder_consumer_CollectorController_pushList1_invoker$1
-   C:\work\report-brocker\target\routes\main\router\Routes.scala -> router.Routes$$anonfun$router$Routes$$tech_onder_meters_CommonController_addMeter5_invoker$1
-   C:\work\report-brocker\target\routes\main\router\Routes.scala -> router.Routes$$anonfun$router$Routes$$tech_onder_meters_CommonController_meterRelations11_invoker$1
-   C:\work\report-brocker\target\routes\main\router\Routes.scala -> router.Routes$$anonfun$router$Routes$$tech_onder_meters_CommonController_meterRelations6_invoker$1
-   C:\work\report-brocker\target\routes\main\router\Routes.scala -> router.Routes$$anonfun$router$Routes$$tech_onder_meters_CommonController_meters4_invoker$1
-   C:\work\report-brocker\target\routes\main\router\Routes.scala -> router.Routes$$anonfun$router$Routes$$tech_onder_queue_QueueController_backup2_invoker$1
-   C:\work\report-brocker\target\routes\main\router\Routes.scala -> router.Routes$$anonfun$router$Routes$$tech_onder_queue_QueueController_restore3_invoker$1
-   C:\work\report-brocker\target\routes\main\router\Routes.scala -> router.Routes$$anonfun$router$Routes$$tech_onder_reports_ReportController_consumption7_invoker$1
-   C:\work\report-brocker\target\routes\main\router\Routes.scala -> router.Routes$$anonfun$router$Routes$$tech_onder_reports_ReportController_lastConsumption8_invoker$1
-   C:\work\report-brocker\target\routes\main\router\Routes.scala -> router.Routes$$anonfun$router$Routes$$tech_onder_reports_ReportController_meters10_invoker$1
-   C:\work\report-brocker\target\routes\main\router\Routes.scala -> router.Routes$$anonfun$router$Routes$$tech_onder_reports_ReportController_prices9_invoker$1
-   C:\work\report-brocker\target\routes\main\router\Routes.scala -> router.Routes$$anonfun$router$Routes$$tech_onder_reports_ReportController_ws12_invoker$1
+   C:\work\report-brocker\target\routes\main\router\Routes.scala -> router.Routes$$anonfun$router$Routes$$tech_onder_collector_controllers_CollectorController_push0_invoker$1
+   C:\work\report-brocker\target\routes\main\router\Routes.scala -> router.Routes$$anonfun$router$Routes$$tech_onder_collector_controllers_CollectorController_pushList1_invoker$1
+   C:\work\report-brocker\target\routes\main\router\Routes.scala -> router.Routes$$anonfun$router$Routes$$tech_onder_meters_controllers_MeterController_add5_invoker$1
+   C:\work\report-brocker\target\routes\main\router\Routes.scala -> router.Routes$$anonfun$router$Routes$$tech_onder_meters_controllers_MeterController_list4_invoker$1
+   C:\work\report-brocker\target\routes\main\router\Routes.scala -> router.Routes$$anonfun$router$Routes$$tech_onder_meters_controllers_MeterController_meterRelations6_invoker$1
+   C:\work\report-brocker\target\routes\main\router\Routes.scala -> router.Routes$$anonfun$router$Routes$$tech_onder_queue_controllers_QueueController_backup2_invoker$1
+   C:\work\report-brocker\target\routes\main\router\Routes.scala -> router.Routes$$anonfun$router$Routes$$tech_onder_queue_controllers_QueueController_restore3_invoker$1
+   C:\work\report-brocker\target\routes\main\router\Routes.scala -> router.Routes$$anonfun$router$Routes$$tech_onder_reports_controllers_ReportController_consumption7_invoker$1
+   C:\work\report-brocker\target\routes\main\router\Routes.scala -> router.Routes$$anonfun$router$Routes$$tech_onder_reports_controllers_ReportController_lastConsumption8_invoker$1
+   C:\work\report-brocker\target\routes\main\router\Routes.scala -> router.Routes$$anonfun$router$Routes$$tech_onder_reports_controllers_ReportController_meters10_invoker$1
+   C:\work\report-brocker\target\routes\main\router\Routes.scala -> router.Routes$$anonfun$router$Routes$$tech_onder_reports_controllers_ReportController_prices9_invoker$1
+   C:\work\report-brocker\target\routes\main\router\Routes.scala -> router.Routes$$anonfun$router$Routes$$tech_onder_reports_controllers_ReportController_ws11_invoker$1
    C:\work\report-brocker\target\routes\main\router\Routes.scala -> router.Routes$$anonfun$routes$1
    C:\work\report-brocker\target\routes\main\router\Routes.scala -> router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$1
    C:\work\report-brocker\target\routes\main\router\Routes.scala -> router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$1$$anonfun$apply$1
@@ -385,8 +426,6 @@ class names:
    C:\work\report-brocker\target\routes\main\router\Routes.scala -> router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$11$$anonfun$apply$11
    C:\work\report-brocker\target\routes\main\router\Routes.scala -> router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$12
    C:\work\report-brocker\target\routes\main\router\Routes.scala -> router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$12$$anonfun$apply$12
-   C:\work\report-brocker\target\routes\main\router\Routes.scala -> router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$13
-   C:\work\report-brocker\target\routes\main\router\Routes.scala -> router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$13$$anonfun$apply$13
    C:\work\report-brocker\target\routes\main\router\Routes.scala -> router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$2
    C:\work\report-brocker\target\routes\main\router\Routes.scala -> router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$2$$anonfun$apply$2
    C:\work\report-brocker\target\routes\main\router\Routes.scala -> router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$3
@@ -406,19 +445,19 @@ class names:
    C:\work\report-brocker\target\routes\main\router\RoutesPrefix.scala -> router.RoutesPrefix
    C:\work\report-brocker\target\routes\main\router\RoutesPrefix.scala -> router.RoutesPrefix$
    C:\work\report-brocker\target\routes\main\router\RoutesPrefix.scala -> router.RoutesPrefix$$anonfun$1
-   C:\work\report-brocker\target\routes\main\tech\onder\consumer\javascript\JavaScriptReverseRoutes.scala -> tech.onder.consumer.javascript.ReverseCollectorController
-   C:\work\report-brocker\target\routes\main\tech\onder\consumer\ReverseRoutes.scala -> tech.onder.consumer.ReverseCollectorController
-   C:\work\report-brocker\target\routes\main\tech\onder\consumer\routes.java -> tech.onder.consumer.routes
-   C:\work\report-brocker\target\routes\main\tech\onder\consumer\routes.java -> tech.onder.consumer.routes$javascript
-   C:\work\report-brocker\target\routes\main\tech\onder\meters\javascript\JavaScriptReverseRoutes.scala -> tech.onder.meters.javascript.ReverseCommonController
-   C:\work\report-brocker\target\routes\main\tech\onder\meters\ReverseRoutes.scala -> tech.onder.meters.ReverseCommonController
-   C:\work\report-brocker\target\routes\main\tech\onder\meters\routes.java -> tech.onder.meters.routes
-   C:\work\report-brocker\target\routes\main\tech\onder\meters\routes.java -> tech.onder.meters.routes$javascript
-   C:\work\report-brocker\target\routes\main\tech\onder\queue\javascript\JavaScriptReverseRoutes.scala -> tech.onder.queue.javascript.ReverseQueueController
-   C:\work\report-brocker\target\routes\main\tech\onder\queue\ReverseRoutes.scala -> tech.onder.queue.ReverseQueueController
-   C:\work\report-brocker\target\routes\main\tech\onder\queue\routes.java -> tech.onder.queue.routes
-   C:\work\report-brocker\target\routes\main\tech\onder\queue\routes.java -> tech.onder.queue.routes$javascript
-   C:\work\report-brocker\target\routes\main\tech\onder\reports\javascript\JavaScriptReverseRoutes.scala -> tech.onder.reports.javascript.ReverseReportController
-   C:\work\report-brocker\target\routes\main\tech\onder\reports\ReverseRoutes.scala -> tech.onder.reports.ReverseReportController
-   C:\work\report-brocker\target\routes\main\tech\onder\reports\routes.java -> tech.onder.reports.routes
-   C:\work\report-brocker\target\routes\main\tech\onder\reports\routes.java -> tech.onder.reports.routes$javascript
+   C:\work\report-brocker\target\routes\main\tech\onder\collector\controllers\javascript\JavaScriptReverseRoutes.scala -> tech.onder.collector.controllers.javascript.ReverseCollectorController
+   C:\work\report-brocker\target\routes\main\tech\onder\collector\controllers\ReverseRoutes.scala -> tech.onder.collector.controllers.ReverseCollectorController
+   C:\work\report-brocker\target\routes\main\tech\onder\collector\controllers\routes.java -> tech.onder.collector.controllers.routes
+   C:\work\report-brocker\target\routes\main\tech\onder\collector\controllers\routes.java -> tech.onder.collector.controllers.routes$javascript
+   C:\work\report-brocker\target\routes\main\tech\onder\meters\controllers\javascript\JavaScriptReverseRoutes.scala -> tech.onder.meters.controllers.javascript.ReverseMeterController
+   C:\work\report-brocker\target\routes\main\tech\onder\meters\controllers\ReverseRoutes.scala -> tech.onder.meters.controllers.ReverseMeterController
+   C:\work\report-brocker\target\routes\main\tech\onder\meters\controllers\routes.java -> tech.onder.meters.controllers.routes
+   C:\work\report-brocker\target\routes\main\tech\onder\meters\controllers\routes.java -> tech.onder.meters.controllers.routes$javascript
+   C:\work\report-brocker\target\routes\main\tech\onder\queue\controllers\javascript\JavaScriptReverseRoutes.scala -> tech.onder.queue.controllers.javascript.ReverseQueueController
+   C:\work\report-brocker\target\routes\main\tech\onder\queue\controllers\ReverseRoutes.scala -> tech.onder.queue.controllers.ReverseQueueController
+   C:\work\report-brocker\target\routes\main\tech\onder\queue\controllers\routes.java -> tech.onder.queue.controllers.routes
+   C:\work\report-brocker\target\routes\main\tech\onder\queue\controllers\routes.java -> tech.onder.queue.controllers.routes$javascript
+   C:\work\report-brocker\target\routes\main\tech\onder\reports\controllers\javascript\JavaScriptReverseRoutes.scala -> tech.onder.reports.controllers.javascript.ReverseReportController
+   C:\work\report-brocker\target\routes\main\tech\onder\reports\controllers\ReverseRoutes.scala -> tech.onder.reports.controllers.ReverseReportController
+   C:\work\report-brocker\target\routes\main\tech\onder\reports\controllers\routes.java -> tech.onder.reports.controllers.routes
+   C:\work\report-brocker\target\routes\main\tech\onder\reports\controllers\routes.java -> tech.onder.reports.controllers.routes$javascript

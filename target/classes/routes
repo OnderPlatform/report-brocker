@@ -1,28 +1,21 @@
 
-POST       /api/meters/:id      tech.onder.consumer.CollectorController.push(id: String)
-
-POST /api/meters tech.onder.consumer.CollectorController.pushList()
-
-
-POST /queue/backup  tech.onder.queue.QueueController.backup()
-POST /queue/restore tech.onder.queue.QueueController.restore()
+POST        /api/meters/:id                 tech.onder.collector.controllers.CollectorController.push(id: String)
+POST        /api/meters/fromlog             tech.onder.collector.controllers.CollectorController.pushList()
 
 
-GET        /api/meters              tech.onder.meters.CommonController.meters()
+POST        /api/queue/backup               tech.onder.queue.controllers.QueueController.backup()
+POST        /api/queue/restore              tech.onder.queue.controllers.QueueController.restore()
 
-POST        /api/meters    tech.onder.meters.CommonController.addMeter()
 
-GET        /api/meters/relations    tech.onder.meters.CommonController.meterRelations()
+GET         /api/meters                     tech.onder.meters.controllers.MeterController.list()
+POST        /api/meters                     tech.onder.meters.controllers.MeterController.add()
+GET         /api/meters/relations           tech.onder.meters.controllers.MeterController.meterRelations()
+
 #Reports
 
-GET        /api/reports/consumption  tech.onder.reports.ReportController.consumption()
+GET         /api/reports/consumption        tech.onder.reports.controllers.ReportController.consumption()
+GET         /api/reports/consumption/last   tech.onder.reports.controllers.ReportController.lastConsumption(offset: Integer?=null)
+GET         /api/reports/price              tech.onder.reports.controllers.ReportController.prices()
+GET         /api/reports/meters             tech.onder.reports.controllers.ReportController.meters()
+GET         /ws                             tech.onder.reports.controllers.ReportController.ws()
 
-GET        /api/reports/consumption/last  tech.onder.reports.ReportController.lastConsumption(shift: Integer?=null)
-
-GET        /api/reports/price        tech.onder.reports.ReportController.prices()
-
-GET         /api/reports/meters        tech.onder.reports.ReportController.meters()
-
-
-POST  /api/queue/back               tech.onder.meters.CommonController.meterRelations()
-GET         /api/ws                         tech.onder.reports.ReportController.ws()

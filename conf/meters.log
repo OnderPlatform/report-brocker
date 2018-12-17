@@ -1,6 +1,6 @@
 [02:20:07.404] Application initialization 
 [02:20:07.476] Slf4jLogger started
-[02:20:07.508] application.conf @ file:/C:/work/report-brocker/target/classes/application.conf: 1: play.crypto.secret is deprecated, use play.http.secret.key instead
+[02:20:07.508] application.reportQueueConf @ file:/C:/work/report-brocker/target/classes/application.reportQueueConf: 1: play.crypto.secret is deprecated, use play.http.secret.key instead
 [02:20:07.722] Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
 

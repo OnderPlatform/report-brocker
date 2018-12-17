@@ -19,7 +19,7 @@
       <param name="ConversionPattern" value="[%p] [%d{HH:mm:ss.SSS}] %m%n" />
     </layout>
   </appender>
-  <category name="tech.onder.consumer" additivity="false">
+  <category name="tech.onder.collector" additivity="false">
     <level value="INFO"/>
     <appender-ref ref="file"/>
   </category>
